@@ -14,6 +14,7 @@ sys.path.insert(0, str(ROOT / "src"))
 sys.path.insert(0, str(ROOT / "scripts"))
 
 from darwin_cl.donor.baseline import load_donor  # noqa: E402
+from darwin_cl.eval.relational_answer import verdict  # noqa: E402
 from darwin_cl.plastic.bank import bare_donor_fingerprint  # noqa: E402
 from run_phase4_srb import PHASE2_FINGERPRINT, configure  # noqa: E402
 from run_unblock_relational import (  # noqa: E402
@@ -88,6 +89,8 @@ def main() -> int:
         raise SystemExit("donor fingerprint mismatch")
     counts = {name: {"n": 0, "exact": 0, "limit": 0} for name in ("paraphrase", "inverse", "composition", "false_premise")}
     examples = {name: [] for name in counts}
+    kind_counts = {name: {"n": 0, "exact": 0, "correct": 0, "incorrect": 0, "review": 0, "limit": 0} for name in ("atomic", "inverse", "composition", "false_claim", "missing")}
+    predictions = []
     print("SPAN", flush=True)
     for index, row in enumerate(rows, start=1):
         generated = generate_span(model, tokenizer, facts + row["prompt"])
@@ -96,6 +99,13 @@ def main() -> int:
         bucket["n"] += 1
         bucket["exact"] += int(hit)
         bucket["limit"] += int(generated["hit_limit"])
+        decision = verdict(row, generated["span"])
+        kind_bucket = kind_counts[row["kind"]]
+        kind_bucket["n"] += 1
+        kind_bucket["exact"] += int(hit)
+        kind_bucket[decision] += 1
+        kind_bucket["limit"] += int(generated["hit_limit"])
+        predictions.append({"index": index, "kind": row["kind"], "category": row["category"], "question": row["question"], "query": row["query"], "answer": row["answer"], **generated, "exact": hit, "verdict": decision})
         if (not hit) and len(examples[row["category"]]) < 5:
             examples[row["category"]].append(
                 {"answer": row["answer"], "span": generated["span"], "raw": generated["raw"][:180], "limit": generated["hit_limit"]}
@@ -114,7 +124,9 @@ def main() -> int:
         generated = generate_span(model, tokenizer, prompt)
         ladder.append({"rung": name, "answer": answer, "span": generated["span"], "exact": exact(generated["span"], answer), "raw": generated["raw"][:180]})
         print(name, ladder[-1]["exact"], generated["span"][:80].replace("\n", " "), flush=True)
-    payload = {"counts": counts, "examples": examples, "ladder": ladder, "max_new_tokens": MAX_NEW, "stops": list(STOPS)}
+    assert len(predictions) == len(rows)
+    assert sum(bucket["n"] for bucket in kind_counts.values()) == len(rows)
+    payload = {"counts": counts, "kind_counts": kind_counts, "predictions": predictions, "examples": examples, "ladder": ladder, "max_new_tokens": MAX_NEW, "stops": list(STOPS)}
     (OUT / "score_fix.json").write_text(json.dumps(payload, indent=2), encoding="utf-8")
     lines = [
         "# RELATIONAL SCORE FIX",
@@ -128,11 +140,22 @@ def main() -> int:
         "| composition | 3/128 | {p}/{n} |".format(p=counts["composition"]["exact"], n=counts["composition"]["n"]),
         "| false premise | 5/192 | {p}/{n} |".format(p=counts["false_premise"]["exact"], n=counts["false_premise"]["n"]),
         "",
+        "## Tipos de pergunta (auditoria conservadora)",
+        "",
+        "Os acertos conservadores sao apenas um limite inferior; `review` requer leitura humana. `false_claim` e `missing` tinham sido agregados na mesma categoria historica.",
+        "",
+        "| Tipo | Exact | Correto automatico | Incorreto automatico | Revisar | Limite |",
+        "|---|---:|---:|---:|---:|---:|",
+    ]
+    for kind, bucket in kind_counts.items():
+        lines.append(f"| {kind} | {bucket['exact']}/{bucket['n']} | {bucket['correct']} | {bucket['incorrect']} | {bucket['review']} | {bucket['limit']} |")
+    lines.extend([
+        "",
         "## Escada",
         "",
         "| Degrau | Exato | Trecho |",
         "|---|---|---|",
-    ]
+    ])
     for row in ladder:
         lines.append(f"| {row['rung']} | {row['exact']} | {row['span'][:120].replace(chr(10), ' ')} |")
     lines.extend(["", "## Erros que continuam", ""])
@@ -146,6 +169,7 @@ def main() -> int:
     lines.append("")
     REPORT.write_text("\n".join(lines), encoding="utf-8")
     print(counts)
+    print(kind_counts)
     print("SCORE_FIX_DONE")
     return 0
 
