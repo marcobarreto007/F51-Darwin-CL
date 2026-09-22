@@ -1,0 +1,10 @@
+
+OS Name:                       Microsoft Windows 11 Pro
+OS Version:                    10.0.26200 N/A Build 26200
+OS Build Type:                 Multiprocessor Free
+System Type:                   x64-based PC
+Processor(s):                  1 Processor(s) Installed.
+BIOS Version:                  American Megatrends International, LLC. A.H0, 2025-06-04
+Total Physical Memory:         65,248 MB
+Available Physical Memory:     41,816 MB
+

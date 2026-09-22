@@ -1,0 +1,9 @@
+exe C:\Users\marco\AppData\Local\Programs\Python\Python312\Lib\site-packages\torch\__init__.py
+version 2.8.0+cu129
+cuda_build 12.9
+available True
+count 2
+device 0 NVIDIA GeForce RTX 5060 Ti cap (12, 0)
+sum 0 36.0
+device 1 NVIDIA GeForce RTX 3060 cap (8, 6)
+sum 1 36.0

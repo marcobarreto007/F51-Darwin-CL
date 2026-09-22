@@ -1,0 +1,2 @@
+{"id":"B1","domain":"code","text":"def factorial(n):\n    result = 1\n    for i in range(1, n + 1):\n        result *= i\n    return result\n","prompt":"def factorial(n):\n    result = 1\n"}
+{"id":"B2","domain":"code","text":"def is_palindrome(text):\n    cleaned = text.lower().replace(' ', '')\n    return cleaned == cleaned[::-1]\n","prompt":"def is_palindrome(text):\n"}

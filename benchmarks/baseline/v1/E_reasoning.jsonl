@@ -1,0 +1,2 @@
+{"id":"E1","domain":"reasoning","text":"Every item in the red box is a cube. The marble is not a cube. Therefore the marble is not in the red box.","prompt":"Every item in the red box is a cube. The marble is not a cube. Therefore the marble"}
+{"id":"E2","domain":"reasoning","text":"If the lamp is off, the room is dark. The room is not dark. Therefore the lamp is not off.","prompt":"If the lamp is off, the room is dark. The room is not dark. Therefore the lamp"}

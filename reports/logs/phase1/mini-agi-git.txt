@@ -1,0 +1,31 @@
+DATE 2026-09-22T06:52:38.4378862-04:00
+PATH C:\Users\marco\Desktop\F51-Darwin-CL\references\mini-AGI
+https://github.com/volotat/mini-AGI.git
+main
+96784b78008a22c4a1ee2c9961640c22137320ef
+## main...origin/main
+commit 96784b78008a22c4a1ee2c9961640c22137320ef
+subject #4
+author Alexey Borsky
+date 2026-09-22T03:41:31+03:00
+LICENSE_FILE LICENSE
+MIT License
+
+Copyright (c) 2026 Alexey Borsky
+
+Permission is hereby granted, free of charge, to any person obtaining a copy
+of this software and associated documentation files (the "Software"), to deal
+in the Software without restriction, including without limitation the rights
+to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
+copies of the Software, and to permit persons to whom the Software is
+furnished to do so, subject to the following conditions:
+
+The above copyright notice and this permission notice shall be included in all
+copies or substantial portions of the Software.
+
+THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
+IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
+FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
+AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
+LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
+OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE

@@ -1,0 +1,1260 @@
+F51 DARWIN-CL — ARQUIVO UNICO
+Checklist em cima. Relatorio de cada fase embaixo, na ordem.
+So avanca depois de: APPROVED PHASE N
+Projeto: C:\Users\marco\Desktop\F51-Darwin-CL
+Relatorio oficial da fase: C:\Users\marco\Desktop\F51-Darwin-CL\reports\
+
+REGRA
+[x] Nao apagar projetos existentes
+[x] Nao modificar F51-Darwin-SSD nem mini-AGI originais
+[x] Nao instalar nada na Fase 0
+[ ] Cada fase termina com teste, log e PHASE_N_REPORT.md
+[ ] Se falhar: BLOCKED PHASE N, com causa e log
+[ ] Nao declarar vitoria antes do benchmark cru
+
+FASE 0 — INVENTARIO DA MAQUINA
+[x] Windows, Python, Git, CUDA, driver, PyTorch, GPUs, VRAM, RAM, disco, CPU
+[x] Teste CUDA simples nas duas placas (soma 36.0)
+[x] reports\PHASE_0_REPORT.md
+[x] SHA-256 99d02fe478c3bafd5688f2b0dac852e3f0d6d053e0da74a64d823a2267aa68b0
+[ ] APPROVED PHASE 0
+
+FASE 1 — CLONE E INVENTARIO DAS REFERENCIAS
+[x] Clonar mini-AGI em references\mini-AGI
+[x] Clonar F51-Darwin-SSD em references\F51-Darwin-SSD
+[x] Registrar SHA dos dois clones
+[x] Ler model, pool, paged, plasticity, recur, stream, store, config, train
+[x] Ler transplante Smol, paridade, lineage, rollback, ROME, MEMIT
+[x] Tabela: FEATURE | MINI-AGI | DARWIN OLD | DARWIN-CL | COPY / REIMPLEMENT / IGNORE
+[x] THIRD_PARTY_NOTICES.md (MIT do mini-AGI, sem fingir autoria)
+[x] reports\PHASE_1_REPORT.md
+[ ] APPROVED PHASE 1
+
+FASE 2 — DONOR BASELINE
+[x] Justificar modelo pequeno (licenca, tamanho, VRAM, tokenizer) antes de baixar
+[x] load_donor, generate, score_loss, score_nats_per_byte, save_reference_outputs
+[x] Suite fixa: linguagem, codigo, matematica, factual, raciocinio
+[x] Salvar losses, greedy, hash e config
+[x] Nenhum treino
+[x] Gate: DONOR_BASELINE_PASS
+[x] reports\PHASE_2_REPORT.md
+[ ] APPROVED PHASE 2
+
+FASE 3 — PLASTIC EXPERT BANK V0
+[x] 8 experts SwiGLU, top-k 2, router, residual gate
+[x] Gate inicial perto de zero: Darwin-CL quase igual ao donor
+[x] Sem crescimento, poda, paging, ROME, memoria, replay, treino de backbone
+[x] Medir KL, top-1, max logit delta, mean logit delta
+[x] Greedy identico na suite, sempre que possivel
+[x] Paridade passou. Nao parei por falha.
+[x] reports\PHASE_3_REPORT.md
+[ ] APPROVED PHASE 3
+
+FASE 4 — PRIMEIRO APRENDIZADO REAL
+[x] Backbone congelado
+[x] Treinar so experts, router e gate
+[x] Dominio novo sintetico SRB V0
+[x] Medir antes e depois
+[x] delta, drift, tokens, steps, tempo, VRAM, RAM
+[x] Sem RAG e sem memoria externa
+[x] Gate medido: SYNTHETIC_KNOWLEDGE_ACQUISITION_FAIL
+[x] reports\PHASE_4_REPORT.md
+[ ] APPROVED PHASE 4
+
+FASE 5 — MATRIZ DE ESQUECIMENTO
+[ ] Dominios A linguagem, B codigo, C matematica, D factual, E raciocinio, F novo
+[ ] Treinar so F
+[ ] ARM 0 donor intacto
+[ ] ARM 1 so experts
+[ ] ARM 2 backbone 0.01x
+[ ] ARM 3 backbone 0.03x
+[ ] ARM 4 backbone 0.05x
+[ ] ARM 5 backbone 0.10x
+[ ] Mesma seed, dados, steps, eval, ordem, batch, tokenizer
+[ ] Tabela: NEW GAIN, MEAN OLD DRIFT, WORST OLD DRIFT, TOKENS, TIME, VRAM
+[ ] Nao declarar vitoria
+[ ] reports\PHASE_5_REPORT.md
+[ ] APPROVED PHASE 5
+
+FASE 6 — PLASTICIDADE GOVERNADA POR HELD-OUT
+[ ] Controlador sem horizonte fixo, observando held-out
+[ ] Melhora: manter ou subir LR
+[ ] Estabilizou: descer suave
+[ ] Piora persistente: reduzir forte
+[ ] Regime novo confirmado: recuperar LR com controle
+[ ] Testes unitarios e log de cada decisao
+[ ] Comparar LR fixo, cosseno e controlador
+[ ] Gate: controlador estavel e nao pior que o LR fixo
+[ ] reports\PHASE_6_REPORT.md
+[ ] APPROVED PHASE 6
+
+FASE 7 — ANCHOR / DESTILACAO
+[ ] Teacher = modelo antes de aprender, congelado
+[ ] loss = dominio novo + lambda * KL(student || teacher) nos prompts antigos
+[ ] Lambda 0, 0.01, 0.03, 0.10, 0.30, 1.0
+[ ] Tabela completa
+[ ] reports\PHASE_7_REPORT.md
+[ ] APPROVED PHASE 7
+
+FASE 8 — REPLAY CONTROLADO
+[ ] 100/0, 95/5, 90/10, 80/20
+[ ] Mesmo numero total de tokens
+[ ] Curva: ganho novo contra retencao antiga
+[ ] reports\PHASE_8_REPORT.md
+[ ] APPROVED PHASE 8
+
+FASE 9 — NASCIMENTO DE EXPERT
+[ ] Nascer so com evidencia: uso, saturacao, entropia, ganho de held-out, falta de capacidade
+[ ] Expert novo quase neutro
+[ ] Genealogia com expert_id, born_step, motivo, checkpoint pai, sha256
+[ ] Poda so depois do crescimento funcionar
+[ ] Poda so de expert inutil, com rollback
+[ ] reports\PHASE_9_REPORT.md
+[ ] APPROVED PHASE 9
+
+FASE 10 — PAGING DISCO / RAM / VRAM
+[ ] So se o pool justificar
+[ ] Disco frio, RAM morno, VRAM residente
+[ ] Comparar tudo residente contra paginado
+[ ] Medir tok/s, VRAM, RAM, leituras, cache hit, paridade, gradiente no expert certo
+[ ] Rejeitar paging que misture gradiente entre experts
+[ ] reports\PHASE_10_REPORT.md
+[ ] APPROVED PHASE 10
+
+FASE 11 — APRENDIZADO CIRURGICO (trilha separada)
+[ ] Fato atomico vai para ROME/MEMIT
+[ ] Dominio, comportamento ou habilidade vai para gradiente
+[ ] Validar fato, paraphrases, locality, tensores, hashes, rollback
+[ ] Nao misturar com o benchmark de aprendizado continuo
+[ ] reports\PHASE_11_REPORT.md
+[ ] APPROVED PHASE 11
+
+FASE 12 — BENCHMARK CONTRA O MINI-AGI
+[ ] Rodar o mini-AGI original, sem enfraquecer o dele
+[ ] Mesmo dominio, volume, metrica, maquina
+[ ] Publicar numeros crus dos dois
+[ ] NEW GAIN, MEAN OLD DRIFT, WORST OLD DRIFT, tokens, tempo, GPU-hora, VRAM, RAM, parametros atualizados, tamanho
+[ ] Alvo inicial: drift medio dos dominios antigos <= 0.005 nat, com aprendizado novo de pe
+[ ] Alvo agressivo: aprender pelo menos tanto quanto ele, esquecer menos, com menos dado
+[ ] Se perder uma metrica, publicar a derrota
+[ ] reports\PHASE_12_REPORT.md
+[ ] APPROVED PHASE 12
+
+TESTE SEQUENCIAL
+[ ] Entrar A, depois B, depois C, depois D, depois E
+[ ] Depois de cada um, medir todos os anteriores
+[ ] Matriz de retencao
+[ ] Forward transfer, backward transfer, forgetting, retention, media final, custo
+
+FORA DESTA LISTA ATE O BASICO VENCER
+[ ] consciousness, soul, senate, hormonios, GABA, IHS, Ghost, JEPA, TTM, Heartbeat
+[ ] agentes autonomos, web search, RAG, voz, orquestracao, GUI
+
+LEGENDA
+[x] feito e medido
+[ ] nao feito
+APPROVED so entra quando Marco escrever a frase
+
+
+================================================================================
+RELATORIO — FASE 0 — INVENTARIO DA MAQUINA
+Status: PHASE 0 complete
+Data local: 2026-09-22
+Copia oficial: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_0_REPORT.md
+SHA-256 do oficial: 99d02fe478c3bafd5688f2b0dac852e3f0d6d053e0da74a64d823a2267aa68b0
+================================================================================
+
+Nenhum codigo de arquitetura. Nenhum clone em references\. Nenhuma instalacao.
+Nada foi apagado, movido ou escrito dentro de F51-Darwin-SSD ou mini-AGI.
+
+RESULTADO
+A maquina tem Windows 11 Pro build 26200, Python 3.12.10, Git 2.47.1, driver NVIDIA 595.97, toolkit CUDA 12.9 (nvcc) e PyTorch 2.8.0+cu129 ja instalado no Python do sistema. Um tensor de 8 elementos rodou nas duas placas e devolveu soma 36.0 nas duas. O teste CUDA simples passou.
+
+Restricao medida, nao corrigida: a RTX 3060 reporta 5329 MiB em uso, utilizacao 0%, sem processo de compute. O teste pequeno coube. Livre nela: 6785 MiB.
+
+MAQUINA
+OS systeminfo          Microsoft Windows 11 Pro, 10.0.26200, x64
+OS registro            Windows 10 Pro, DisplayVersion 25H2, build 26200, UBR 8875
+cmd /c ver             Microsoft Windows [Version 10.0.26200.8875]
+CPU                    12th Gen Intel Core i7-12700K, 12 cores, 20 threads, 3600 MHz
+RAM total              68417347584 bytes (systeminfo: 65248 MB)
+RAM livre no registro  42707128 KB
+Disco C                666.52 GB usados, 281.67 GB livres
+Disco E                2.49 GB usados, 29.49 GB livres
+Python                 3.12.10
+                       C:\Users\marco\AppData\Local\Programs\Python\Python312\python.exe
+Outros Pythons         CPython 3.15.0a8 e 3.12.13 via uv
+Git                    2.47.1.windows.1
+Driver NVIDIA          595.97
+CUDA do driver         13.2
+nvcc                   release 12.9, V12.9.86
+gcc                    15.2.0
+cmake                  4.4.2
+cl (MSVC)              nao esta no PATH
+clang                  nao esta no PATH
+
+O registro diz Windows 10 Pro. O systeminfo diz Windows 11 Pro, no mesmo build. Os dois foram gravados. Windows, driver, CUDA e BIOS nao foram alterados.
+
+GPUs — nvidia-smi em 2026-09-22 06:45:18
+0  RTX 5060 Ti   cap 12.0   16311 MiB   uso 602    livre 15449   util 0%   monitor
+1  RTX 3060      cap 8.6    12288 MiB   uso 5329   livre 6785    util 0%   sem processo de compute
+
+A 5060 Ti e a placa do monitor. Os processos nela sao a area de trabalho. Nenhum compute.
+A 3060 nao tem processo na tabela e marca 5329 MiB. nvidia-smi desta maquina nao tem --gpu-reset. Disable-PnpDevice na 3060 falhou com Generic failure. Fase 0 nao rebootou.
+
+PYTORCH E TESTE CUDA
+Python do sistema, sem instalar nada.
+torch 2.8.0+cu129
+cuda build 12.9
+torch.cuda.is_available() True
+device_count 2
+cuda:0 NVIDIA GeForce RTX 5060 Ti cap (12, 0) sum 36.0
+cuda:1 NVIDIA GeForce RTX 3060 cap (8, 6) sum 36.0
+Soma esperada de (arange(8)+1) = 36. Exit code 0.
+
+O venv C:\Users\marco\Desktop\mike\.venv tem o mesmo 2.8.0+cu129. Nao foi usado na soma. Nenhum venv novo foi criado.
+
+PATHS
+EXISTE   C:\Users\marco\Desktop\F51-Darwin-CL          so reports\
+AUSENTE  C:\Users\marco\Desktop\F51-Darwin-NITRO
+AUSENTE  C:\Users\marco\Desktop\F51-Darwin-SSD
+AUSENTE  C:\Users\marco\Desktop\F51-Nitro-MoE
+EXISTE   C:\Users\marco\Desktop\_arch_compare\mini-AGI          fora do projeto novo
+EXISTE   C:\Users\marco\Desktop\_arch_compare\F51-Darwin-SSD    fora do projeto novo
+EXISTE   C:\Users\marco\qwen38-runtime\models
+EXISTE   C:\Users\marco\.cache\huggingface\hub
+
+SHAs dos clones que ja estavam em _arch_compare (nao sao o checkout de references\):
+mini-AGI       96784b78008a22c4a1ee2c9961640c22137320ef
+               https://github.com/volotat/mini-AGI.git
+F51-Darwin-SSD 70e135e811392cbaff7be6dc8fabef64d36107b8
+               https://github.com/marcobarreto007/F51-Darwin-SSD.git
+
+references\ dentro de F51-Darwin-CL nao foi criado.
+
+GGUF em qwen38-runtime\models, nao carregados:
+Qwen3.8-27B-UD-IQ4_XS.gguf            13.27 GB
+Qwen3.8-27B-UD-IQ3_S.gguf             11.21 GB
+Qwen3.8-27B-UD-IQ3_XXS.gguf           10.18 GB
+mtp-Qwen3.8-27B-Q4_0.gguf              1.28 GB
+mmproj-Qwen3.8-27B-UD-F16.gguf         0.86 GB
+mmproj-F16.gguf                        0.86 GB
+
+Smol nao aparece no cache Hugging Face. Ha caches grandes no disco (Gemma 4 12B e 31B, Granite 4.2 3B/8B/30B, Qwen 3.5 4B/9B/27B, Ministral 3 8B). Nenhum foi carregado. Nenhum donor foi escolhido.
+
+NAO FOI FEITO
+clone, pip install, codigo em src\darwin_cl, README, pyproject, LICENSE, THIRD_PARTY_NOTICES, download, treino, mudanca de driver, CUDA, BIOS ou Windows.
+
+ERROS
+cl nao encontrado no PATH.
+clang nao encontrado no PATH.
+O teste CUDA passou porque o wheel do PyTorch ja vem compilado.
+
+HASHES SHA-256 DOS LOGS
+cuda_test_system_python.txt  13d122257adac262e74fe626f4fd2159018225f2d162266f3795bd125f0cefd4
+nvidia_smi.txt               21269b085c56e9b3034aa1df769364e93a97fb44dab019a965fbc3950ede57ad
+nvidia_query.txt             fdf0ecc8ef20080d88722cbaf5d8ce81ff98871d0ca901ad9b74c3cc1256b89f
+nvcc.txt                     34a46bf3fdb96baa4d9d1da7b43e2525d7da9e50668b96577ae6f0be30ecd73a
+python_version.txt           6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a
+git_version.txt              7af00adc72027ec7a4de0f7d321b6e3d94a02ec90a8edb291afe50ba9576a974
+disk.txt                     8d9020a3b32fb5a24cb353a691e3a72479d6c6af9831cdfeb9357f58661b85b5
+cpu.txt                      9b64b3237852fc1eff07baad1d6c7127a8c5ce12b0efce0285d5049e94280b6c
+model_paths.txt              8e3fa0d6c7fd6bdc1ee8ef89ea813e568f053b5fc52a961c8c9bbb0bebc0a9a4
+hf_hub.txt                   02474e370b7da80da6e5cea43d7b554135a3de66d64f1d51adb7cecce4373c1f
+existing_miniagi_sha.txt     ebead5a5454f6e065ca72e176a7bc85a112a17cbd1836de481c3b9e17e2f17bc
+existing_darwin_sha.txt      a3ba232dad8c4179fd9b3fcfb3482fc231247cb59429bcace90d4de5626a5a23
+smol_present.txt             e05b50467d0c81962a949f5df376639d0de1c8c6b7322f0da6d290d188da516e
+
+PROXIMO PASSO
+Fase 1, so depois de APPROVED PHASE 0.
+Clonar mini-AGI e F51-Darwin-SSD em F51-Darwin-CL\references\, registrar o SHA de cada clone novo, e montar a tabela copy / reimplement / ignore. Sem codigo de modelo.
+O relatorio da Fase 1 entra neste mesmo arquivo, abaixo deste bloco.
+
+================================================================================
+RELATORIO — FASE 1 — CLONES E DECISAO
+Status: PHASE 1 complete
+Data: 2026-09-22T06:52:38-04:00
+Copia oficial: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_1_REPORT.md
+SHA-256 do oficial: 4d2b6d80c5a91cd9fce7ada38b9ef0cff3880546aa0688c8592d34d96ec3d447
+================================================================================
+
+CLONES (limpos, porcelain vazio)
+mini-AGI
+  remote  https://github.com/volotat/mini-AGI.git
+  branch  main
+  SHA     96784b78008a22c4a1ee2c9961640c22137320ef
+  commit  #4  Alexey Borsky  2026-09-22T03:41:31+03:00
+  licenca MIT  Copyright (c) 2026 Alexey Borsky
+F51-Darwin-SSD
+  remote  https://github.com/marcobarreto007/F51-Darwin-SSD.git
+  branch  main
+  SHA     70e135e811392cbaff7be6dc8fabef64d36107b8
+  commit  chore: remover .github/workflows  Marco Barreto  2026-08-01T14:48:32-04:00
+  licenca F51 Labs Proprietary  Copyright (c) 2026 F51 Labs
+
+Nenhum arquivo dentro de references\ foi modificado.
+THIRD_PARTY_NOTICES.md SHA-256 be476dfa8c238361516b5bede8f4cf9fecdcd6a98447db5ba3f0d146ea4169ec
+
+A. CINCO IDEIAS FORTES DO MINI-AGI
+1. Tronco a 0.1x da taxa dos experts. README do commit: drift dos nao lidos +2.2300 nats contra +0.0067 nats.
+2. Ler e treinar sao o mesmo forward com alvo (stream.py Reader.step).
+3. Pool paginado: demanda pelo estado anterior, Adam no arquivo do expert, poda por falta de chamada. O gate, no PagedPool, e anti-preditivo.
+4. Expert novo nasce por recombinacao de unidades treinadas, com freios de crescimento.
+5. Taxa governada por held-out (plasticity.py Plasticity), sem horizonte fixo.
+
+B. CORRECAO DE AUDITORIA, ANTES DA FASE 2.
+Darwin antigo nao implementa esses cinco mecanismos como a mesma stack integrada e causalmente validada de continual learning. Existem mecanismos parcialmente relacionados no Darwin antigo, mas nao equivalentes ao pipeline do mini-AGI.
+Parcialmente relacionados, nao equivalentes: TTM grava slot com detach e no_grad; MoE roteia e o Nitro move expert frio para a CPU; ha criacao e poda de expert sem recombinacao nem freios do AutoGrow; nao ha controlador de taxa so pelo held-out.
+
+METRICA OFICIAL CROSS-TOKENIZER, ANTES DA FASE 2.
+NATS_PER_BYTE = total_negative_log_likelihood / total_UTF8_bytes_evaluated
+BITS_PER_BYTE = NATS_PER_BYTE / ln(2)
+Os mesmos arquivos brutos valem para todos os modelos.
+Loss por token e metrica interna de cada modelo, nao metrica primaria.
+
+C. PRESERVAR DO DARWIN
+Identidade de checkpoint que recusa trocar ancora (checkpoint_root.py).
+Rollback que confere SHA-256 (circuits/rollback.py), na trilha cirurgica.
+Contrato de paridade do donor: RoPE do modelo de origem, residual efetivo 1, RMSNorm do donor. O yaml de transplante registra um build pior que o aleatorio quando isso estava errado.
+
+D. ABANDONAR NESTA LINHA
+GABA, JEPA, Ghost, Soul, Senado, Heartbeat, TestTimeMemory.
+DeepSeekStyleMoE com Nitro, apoptose e sono, como se fosse o aprendizado continuo.
+Corpo SSD no V0.
+Alfabeto de byte e bloco repetido 24 vezes.
+Treino do zero da linhagem 1.6B.
+
+E. V0
+donor congelado
+y = donor(x) + gate * top2(8 SwiGLU)
+gate inicial perto de zero
+sem crescimento, poda, paging, ROME, memoria externa
+
+F. MIT E REIMPLEMENTACAO
+Literal, so na Fase 6: minagi/plasticity.py, com copyright de Alexey Borsky. Nao foi copiado nesta fase.
+Reimplementar: passo com alvo, particao de taxas, banco residual, router, e mais tarde demanda, recombinacao, poda por staleness e Adam por expert.
+Nao colar train.py, paged.py, pool.py, recur.py, stream.py, store.py.
+Nao importar f51_darwin. Reescrever o contrato de linhagem e de hash.
+
+G. RISCO DE BENCHMARK INJUSTO: SIM
++0.0067 nat e nats por caractere, byte, 524 mil caracteres de um assunto, batch 1, tronco 0.1x.
+Loss por token nao e o mesmo numero.
+Donor pretrained da vantagem de partida. A comparacao justa e delta novo e drift antigo, mesma unidade, mesmo arquivo, mesma dose.
+Duas GPUs contra a placa de 8 GB dele tem de aparecer na tabela.
+Os pesos dele nao estao publicados. Um run curto do codigo original nao reproduz quem ja leu centenas de milhoes de caracteres.
+Replay e KL de ancora, se entrarem, tem de ser um braco nomeado.
+A 3060 ainda pode estar com VRAM orfa. Isso muda tempo e memoria.
+
+PROXIMO PASSO
+Fase 2 so depois de APPROVED PHASE 1.
+Justificar um donor pequeno, baixar so entao, baseline sem treino.
+
+
+================================================================================
+RELATORIO — FASE 2 — DONOR BASELINE
+Status: PHASE 2 complete
+Gate: DONOR_BASELINE_PASS
+Copia oficial: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_2_REPORT.md
+================================================================================
+
+Donor: Qwen/Qwen3-0.6B-Base
+Revision: da87bfb608c14b7cf20ba1ce41287e8de496c0cd
+License: Apache-2.0
+Parametros: 596049920
+dtype: bfloat16
+device: cuda:0 RTX 5060 Ti
+transformers 4.57.3 | torch 2.8.0+cu129 | CUDA 12.9 | seed 0
+pico VRAM: 1263550464 bytes
+fingerprint antes = depois: d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+treino: nao
+
+Qwen/Qwen3-1.7B-Base ficou registrado e nao foi baixado.
+Revision futura: ea980cb0a6c2ae4b936e82123acc929f1cec04c1
+
+Nats/byte reproduced by F51, donor congelado, suite v1 curta:
+A language     0.905120   bits/byte 1.305812
+B code         0.195091   bits/byte 0.281456
+C mathematics  0.796162   bits/byte 1.148619
+D factual      0.272132   bits/byte 0.392603
+E reasoning    0.573537   bits/byte 0.827439
+
+Artefato: artifacts\baseline\v1\reference.json
+SHA-256: 2c9904f3412d14bc0e2a3c13562ff33ebff5441decfb089b3a085a4cda5c13fb
+
+Testes nats/byte: 5/5.
+Estes numeros nao sao comparacao com o mini-AGI.
+reported by mini-AGI e reproduced by F51 nao se misturam.
+Pesos treinados do mini-AGI nao estao no clone.
+
+PROXIMO PASSO
+Fase 3 so depois de APPROVED PHASE 2.
+
+
+================================================================================
+AUDITORIA — FASE 2 — METRICA
+Status: PHASE 2 METRIC AUDIT COMPLETE
+Fase 3 nao iniciada.
+Copia: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_2_METRIC_AUDIT.md
+================================================================================
+
+Politica unica: EXACT_SCORED_UTF8.
+O shift preve t1..tn. Os bytes de t0 ficam fora do denominador.
+BOS nao e inserido. EOS nao e acrescentado. Special token nao entra no denominador.
+
+A formula da v1 estava correta. v1 mantida. v2 nao existe.
+reference.json SHA-256 continua 2c9904f3412d14bc0e2a3c13562ff33ebff5441decfb089b3a085a4cda5c13fb
+
+Dois processos novos: delta de NLL, nats/byte, bits/byte e greedy = 0.
+Fingerprint antes = depois = d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+Sem backward, sem optimizer, sem treino.
+
+Probe cafe acao japao: 12 caracteres Python, 19 bytes UTF-8, 17 bytes pontuados.
+
+
+================================================================================
+RELATORIO — FASE 3 — PLASTIC BRANCH V0
+Status: PHASE 3 complete
+Gate: PLASTIC_BRANCH_MECHANICAL_PASS
+Fase 4 nao iniciada.
+Copia: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_3_REPORT.md
+================================================================================
+
+Insercao: saida da layer 13 de 28.
+alpha = 0: logits iguais bit a bit nos 10 documentos. KL 0. top-1 1. NLL delta 0. greedy igual.
+Donor trainable = 0.
+Experts 75497472. Router 8192. Alpha 1. Acrescimo 12.6677 por cento.
+VRAM donor 1192114688. Com branch 1354591232.
+Fingerprint d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+v1 reference.json nao foi reescrito.
+Sem optimizer.step. Sem dominio novo.
+
+
+================================================================================
+AUDITORIA FINAL — FASE 3 — EVIDENCIA
+Status: PHASE 3 FINAL AUDIT COMPLETE
+Gate: PLASTIC_BRANCH_MECHANICAL_PASS_CONFIRMED
+Fase 4 nao iniciada. Arquitetura nao mudou.
+================================================================================
+
+Alpha 0: donor grad ausente. Experts e router com tensor zero. Alpha L1 = 0.031982421875.
+Alpha 1e-4: donor zero. Experts L1 = 0.6519827460870147. Router L1 = 0.0015964135527610779. Alpha L1 = 0.032470703125.
+Pesos nao atualizados. Alpha restaurado a 0.
+A == C nos 10 documentos. Logits bit a bit. Fingerprint igual.
+Checkpoint: load correto, revisao rejeitada, fingerprint rejeitado, hash rejeitado.
+Testes: 6 passed, 0 failed.
+
+
+================================================================================
+RELATORIO — FASE 4 — SRB V0
+Status: PHASE 4 complete
+Gate: SYNTHETIC_KNOWLEDGE_ACQUISITION_FAIL
+Fase 5 nao iniciada.
+Disclaimer: ficcao sintetica apenas para avaliacao.
+Copia: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_4_REPORT.md
+================================================================================
+
+INIT_ALPHA pela regra: 1e-7.
+Acuracia held-out: 0.446 antes, 0.375 depois.
+Logprob do alvo: -4.861 para -3.122. Margem ainda negativa.
+Drift medio antigo: +0.156 nats/byte. Pior: factual +0.250.
+Donor fingerprint igual. Plastic: 24 experts, router e alpha mudaram.
+Alpha final: -0.0100.
+Reload: 0.375 para 0.375.
+Remover a branch devolve 0.446. Checkpoint aleatorio tambem 0.446.
+
+
+================================================================================
+FASE 4R — ABERTURA CONTROLADA
+Status: PHASE 4R COMPLETE
+Conclusao: REPRESENTATION_PARTIAL_BEHAVIOR_FAIL
+A corrida A nao foi apagada. Fase 5 nao iniciada.
+================================================================================
+
+24 experts da Fase 4 = 24 tensores. A arquitetura tem 8 experts.
+FIXED_ALPHA = 1e-6, nao treinavel.
+Fim do orçamento: livre 0.375 acc / drift +0.156; fixo+router 0.393 / +0.018; router congelado 0.357 / +0.022.
+Logprob sobe pouco. Acuracia held-out nao sobe.
+
+
+================================================================================
+STAGE X0 — MEMORIZACAO PURA
+Status: STAGE X0 complete
+Conclusao: CAPACITY_OR_OPTIMIZATION_FAIL
+X1 nao iniciado. SDFT nao implementado.
+================================================================================
+
+8 fatos, a mesma frase do treino. Limiar 0.875 exact match.
+Alpha 1e-6: exact match 0, loss parado em 6.09.
+Alpha 1e-4: exact match 0, loss 4.76 para 2.04, logprob -6.75 para -5.16.
+Donor fingerprint igual.
+
+
+================================================================================
+STAGE X0R — CANARIO DE UM TOKEN
+Status: STAGE X0R COMPLETE
+Conclusao: CANARY_MEMORIZATION_PASS
+X1 nao iniciado.
+================================================================================
+
+Prompt: GRAV-X9 was created by
+Target: token 34181 " Marco". Rank inicial 2555.
+Alpha 1e-4 chega a rank 1 em 29 passos, drift medio +0.007.
+Os quatro alphas chegaram a top-1 e ficaram estaveis. Donor intacto.
+
+
+================================================================================
+STAGE X0S — OITO CANARIOS
+Status: STAGE X0S COMPLETE
+Conclusao: MULTI_CANARY_MEMORIZATION_PASS
+X1 nao iniciado.
+================================================================================
+
+8/8 em rank 1 ao mesmo tempo no passo 128, e ficaram ate o 160.
+Drift medio +0.007. Ninguem perdeu o top-1.
+Router treinavel colapsou no expert 1. Router congelado tambem chegou em 8/8, no passo 104.
+Donor intacto.
+
+
+================================================================================
+STAGE X1 — GENERALIZATION GAP
+Status: BLOCKED STAGE X1
+Motivo: o X0S nao gravou os pesos do 8/8. So existe plastic_init.pt.
+Sem treino nesta etapa. SDFT nao iniciado.
+Conjunto held-out: 92 perguntas, SHA a932d6fce1cdef5e76c7fe8b583b9bfc0fd8dacf32d538bd043509e517b7a516
+================================================================================
+
+
+================================================================================
+STAGE X0S — CHECKPOINT RECOVERY
+Status: X0S CHECKPOINT RECOVERED
+X1 nao iniciado.
+================================================================================
+
+Replay do braço router congelado. Donor Qwen3-0.6B-Base, 8 experts, alpha 1e-4, seed 0, ordem 51047, AdamW lr 1e-3 so nos experts.
+8/8 simultaneo no passo 98. O log antigo amostrava a cada 8 passos e por isso registrou o 8/8 no passo 104. No passo 56 os ranks batem com o run original: [1081, 1, 1, 1, 1, 1, 372, 1].
+best_8of8.pt SHA-256 b392a8771496e90e51949e1ca38e7a3fa61a11793dc9863451a53403771bd830
+Estabilidade: mais 16 passos, passo 114 ainda 8/8.
+stable_8of8.pt SHA-256 1c1b196af7277fa0c4d29d9f9e4997c5fc46a43766c7b0544f03623722420aa9
+Processo novo: donor original + best_8of8.pt, ranks [1, 1, 1, 1, 1, 1, 1, 1], fingerprint d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175.
+PARAR. X1 continua bloqueado ate APPROVED.
+
+
+F51 DARWIN-CL — ARQUIVO UNICO
+Checklist em cima. Relatorio de cada fase embaixo, na ordem.
+So avanca depois de: APPROVED PHASE N
+Projeto: C:\Users\marco\Desktop\F51-Darwin-CL
+Relatorio oficial da fase: C:\Users\marco\Desktop\F51-Darwin-CL\reports\
+
+REGRA
+[x] Nao apagar projetos existentes
+[x] Nao modificar F51-Darwin-SSD nem mini-AGI originais
+[x] Nao instalar nada na Fase 0
+[ ] Cada fase termina com teste, log e PHASE_N_REPORT.md
+[ ] Se falhar: BLOCKED PHASE N, com causa e log
+[ ] Nao declarar vitoria antes do benchmark cru
+
+FASE 0 — INVENTARIO DA MAQUINA
+[x] Windows, Python, Git, CUDA, driver, PyTorch, GPUs, VRAM, RAM, disco, CPU
+[x] Teste CUDA simples nas duas placas (soma 36.0)
+[x] reports\PHASE_0_REPORT.md
+[x] SHA-256 99d02fe478c3bafd5688f2b0dac852e3f0d6d053e0da74a64d823a2267aa68b0
+[ ] APPROVED PHASE 0
+
+FASE 1 — CLONE E INVENTARIO DAS REFERENCIAS
+[x] Clonar mini-AGI em references\mini-AGI
+[x] Clonar F51-Darwin-SSD em references\F51-Darwin-SSD
+[x] Registrar SHA dos dois clones
+[x] Ler model, pool, paged, plasticity, recur, stream, store, config, train
+[x] Ler transplante Smol, paridade, lineage, rollback, ROME, MEMIT
+[x] Tabela: FEATURE | MINI-AGI | DARWIN OLD | DARWIN-CL | COPY / REIMPLEMENT / IGNORE
+[x] THIRD_PARTY_NOTICES.md (MIT do mini-AGI, sem fingir autoria)
+[x] reports\PHASE_1_REPORT.md
+[ ] APPROVED PHASE 1
+
+FASE 2 — DONOR BASELINE
+[x] Justificar modelo pequeno (licenca, tamanho, VRAM, tokenizer) antes de baixar
+[x] load_donor, generate, score_loss, score_nats_per_byte, save_reference_outputs
+[x] Suite fixa: linguagem, codigo, matematica, factual, raciocinio
+[x] Salvar losses, greedy, hash e config
+[x] Nenhum treino
+[x] Gate: DONOR_BASELINE_PASS
+[x] reports\PHASE_2_REPORT.md
+[ ] APPROVED PHASE 2
+
+FASE 3 — PLASTIC EXPERT BANK V0
+[x] 8 experts SwiGLU, top-k 2, router, residual gate
+[x] Gate inicial perto de zero: Darwin-CL quase igual ao donor
+[x] Sem crescimento, poda, paging, ROME, memoria, replay, treino de backbone
+[x] Medir KL, top-1, max logit delta, mean logit delta
+[x] Greedy identico na suite, sempre que possivel
+[x] Paridade passou. Nao parei por falha.
+[x] reports\PHASE_3_REPORT.md
+[ ] APPROVED PHASE 3
+
+FASE 4 — PRIMEIRO APRENDIZADO REAL
+[x] Backbone congelado
+[x] Treinar so experts, router e gate
+[x] Dominio novo sintetico SRB V0
+[x] Medir antes e depois
+[x] delta, drift, tokens, steps, tempo, VRAM, RAM
+[x] Sem RAG e sem memoria externa
+[x] Gate medido: SYNTHETIC_KNOWLEDGE_ACQUISITION_FAIL
+[x] reports\PHASE_4_REPORT.md
+[ ] APPROVED PHASE 4
+
+FASE 5 — MATRIZ DE ESQUECIMENTO
+[ ] Dominios A linguagem, B codigo, C matematica, D factual, E raciocinio, F novo
+[ ] Treinar so F
+[ ] ARM 0 donor intacto
+[ ] ARM 1 so experts
+[ ] ARM 2 backbone 0.01x
+[ ] ARM 3 backbone 0.03x
+[ ] ARM 4 backbone 0.05x
+[ ] ARM 5 backbone 0.10x
+[ ] Mesma seed, dados, steps, eval, ordem, batch, tokenizer
+[ ] Tabela: NEW GAIN, MEAN OLD DRIFT, WORST OLD DRIFT, TOKENS, TIME, VRAM
+[ ] Nao declarar vitoria
+[ ] reports\PHASE_5_REPORT.md
+[ ] APPROVED PHASE 5
+
+FASE 6 — PLASTICIDADE GOVERNADA POR HELD-OUT
+[ ] Controlador sem horizonte fixo, observando held-out
+[ ] Melhora: manter ou subir LR
+[ ] Estabilizou: descer suave
+[ ] Piora persistente: reduzir forte
+[ ] Regime novo confirmado: recuperar LR com controle
+[ ] Testes unitarios e log de cada decisao
+[ ] Comparar LR fixo, cosseno e controlador
+[ ] Gate: controlador estavel e nao pior que o LR fixo
+[ ] reports\PHASE_6_REPORT.md
+[ ] APPROVED PHASE 6
+
+FASE 7 — ANCHOR / DESTILACAO
+[ ] Teacher = modelo antes de aprender, congelado
+[ ] loss = dominio novo + lambda * KL(student || teacher) nos prompts antigos
+[ ] Lambda 0, 0.01, 0.03, 0.10, 0.30, 1.0
+[ ] Tabela completa
+[ ] reports\PHASE_7_REPORT.md
+[ ] APPROVED PHASE 7
+
+FASE 8 — REPLAY CONTROLADO
+[ ] 100/0, 95/5, 90/10, 80/20
+[ ] Mesmo numero total de tokens
+[ ] Curva: ganho novo contra retencao antiga
+[ ] reports\PHASE_8_REPORT.md
+[ ] APPROVED PHASE 8
+
+FASE 9 — NASCIMENTO DE EXPERT
+[ ] Nascer so com evidencia: uso, saturacao, entropia, ganho de held-out, falta de capacidade
+[ ] Expert novo quase neutro
+[ ] Genealogia com expert_id, born_step, motivo, checkpoint pai, sha256
+[ ] Poda so depois do crescimento funcionar
+[ ] Poda so de expert inutil, com rollback
+[ ] reports\PHASE_9_REPORT.md
+[ ] APPROVED PHASE 9
+
+FASE 10 — PAGING DISCO / RAM / VRAM
+[ ] So se o pool justificar
+[ ] Disco frio, RAM morno, VRAM residente
+[ ] Comparar tudo residente contra paginado
+[ ] Medir tok/s, VRAM, RAM, leituras, cache hit, paridade, gradiente no expert certo
+[ ] Rejeitar paging que misture gradiente entre experts
+[ ] reports\PHASE_10_REPORT.md
+[ ] APPROVED PHASE 10
+
+FASE 11 — APRENDIZADO CIRURGICO (trilha separada)
+[ ] Fato atomico vai para ROME/MEMIT
+[ ] Dominio, comportamento ou habilidade vai para gradiente
+[ ] Validar fato, paraphrases, locality, tensores, hashes, rollback
+[ ] Nao misturar com o benchmark de aprendizado continuo
+[ ] reports\PHASE_11_REPORT.md
+[ ] APPROVED PHASE 11
+
+FASE 12 — BENCHMARK CONTRA O MINI-AGI
+[ ] Rodar o mini-AGI original, sem enfraquecer o dele
+[ ] Mesmo dominio, volume, metrica, maquina
+[ ] Publicar numeros crus dos dois
+[ ] NEW GAIN, MEAN OLD DRIFT, WORST OLD DRIFT, tokens, tempo, GPU-hora, VRAM, RAM, parametros atualizados, tamanho
+[ ] Alvo inicial: drift medio dos dominios antigos <= 0.005 nat, com aprendizado novo de pe
+[ ] Alvo agressivo: aprender pelo menos tanto quanto ele, esquecer menos, com menos dado
+[ ] Se perder uma metrica, publicar a derrota
+[ ] reports\PHASE_12_REPORT.md
+[ ] APPROVED PHASE 12
+
+TESTE SEQUENCIAL
+[ ] Entrar A, depois B, depois C, depois D, depois E
+[ ] Depois de cada um, medir todos os anteriores
+[ ] Matriz de retencao
+[ ] Forward transfer, backward transfer, forgetting, retention, media final, custo
+
+FORA DESTA LISTA ATE O BASICO VENCER
+[ ] consciousness, soul, senate, hormonios, GABA, IHS, Ghost, JEPA, TTM, Heartbeat
+[ ] agentes autonomos, web search, RAG, voz, orquestracao, GUI
+
+LEGENDA
+[x] feito e medido
+[ ] nao feito
+APPROVED so entra quando Marco escrever a frase
+
+
+================================================================================
+RELATORIO — FASE 0 — INVENTARIO DA MAQUINA
+Status: PHASE 0 complete
+Data local: 2026-09-22
+Copia oficial: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_0_REPORT.md
+SHA-256 do oficial: 99d02fe478c3bafd5688f2b0dac852e3f0d6d053e0da74a64d823a2267aa68b0
+================================================================================
+
+Nenhum codigo de arquitetura. Nenhum clone em references\. Nenhuma instalacao.
+Nada foi apagado, movido ou escrito dentro de F51-Darwin-SSD ou mini-AGI.
+
+RESULTADO
+A maquina tem Windows 11 Pro build 26200, Python 3.12.10, Git 2.47.1, driver NVIDIA 595.97, toolkit CUDA 12.9 (nvcc) e PyTorch 2.8.0+cu129 ja instalado no Python do sistema. Um tensor de 8 elementos rodou nas duas placas e devolveu soma 36.0 nas duas. O teste CUDA simples passou.
+
+Restricao medida, nao corrigida: a RTX 3060 reporta 5329 MiB em uso, utilizacao 0%, sem processo de compute. O teste pequeno coube. Livre nela: 6785 MiB.
+
+MAQUINA
+OS systeminfo          Microsoft Windows 11 Pro, 10.0.26200, x64
+OS registro            Windows 10 Pro, DisplayVersion 25H2, build 26200, UBR 8875
+cmd /c ver             Microsoft Windows [Version 10.0.26200.8875]
+CPU                    12th Gen Intel Core i7-12700K, 12 cores, 20 threads, 3600 MHz
+RAM total              68417347584 bytes (systeminfo: 65248 MB)
+RAM livre no registro  42707128 KB
+Disco C                666.52 GB usados, 281.67 GB livres
+Disco E                2.49 GB usados, 29.49 GB livres
+Python                 3.12.10
+                       C:\Users\marco\AppData\Local\Programs\Python\Python312\python.exe
+Outros Pythons         CPython 3.15.0a8 e 3.12.13 via uv
+Git                    2.47.1.windows.1
+Driver NVIDIA          595.97
+CUDA do driver         13.2
+nvcc                   release 12.9, V12.9.86
+gcc                    15.2.0
+cmake                  4.4.2
+cl (MSVC)              nao esta no PATH
+clang                  nao esta no PATH
+
+O registro diz Windows 10 Pro. O systeminfo diz Windows 11 Pro, no mesmo build. Os dois foram gravados. Windows, driver, CUDA e BIOS nao foram alterados.
+
+GPUs — nvidia-smi em 2026-09-22 06:45:18
+0  RTX 5060 Ti   cap 12.0   16311 MiB   uso 602    livre 15449   util 0%   monitor
+1  RTX 3060      cap 8.6    12288 MiB   uso 5329   livre 6785    util 0%   sem processo de compute
+
+A 5060 Ti e a placa do monitor. Os processos nela sao a area de trabalho. Nenhum compute.
+A 3060 nao tem processo na tabela e marca 5329 MiB. nvidia-smi desta maquina nao tem --gpu-reset. Disable-PnpDevice na 3060 falhou com Generic failure. Fase 0 nao rebootou.
+
+PYTORCH E TESTE CUDA
+Python do sistema, sem instalar nada.
+torch 2.8.0+cu129
+cuda build 12.9
+torch.cuda.is_available() True
+device_count 2
+cuda:0 NVIDIA GeForce RTX 5060 Ti cap (12, 0) sum 36.0
+cuda:1 NVIDIA GeForce RTX 3060 cap (8, 6) sum 36.0
+Soma esperada de (arange(8)+1) = 36. Exit code 0.
+
+O venv C:\Users\marco\Desktop\mike\.venv tem o mesmo 2.8.0+cu129. Nao foi usado na soma. Nenhum venv novo foi criado.
+
+PATHS
+EXISTE   C:\Users\marco\Desktop\F51-Darwin-CL          so reports\
+AUSENTE  C:\Users\marco\Desktop\F51-Darwin-NITRO
+AUSENTE  C:\Users\marco\Desktop\F51-Darwin-SSD
+AUSENTE  C:\Users\marco\Desktop\F51-Nitro-MoE
+EXISTE   C:\Users\marco\Desktop\_arch_compare\mini-AGI          fora do projeto novo
+EXISTE   C:\Users\marco\Desktop\_arch_compare\F51-Darwin-SSD    fora do projeto novo
+EXISTE   C:\Users\marco\qwen38-runtime\models
+EXISTE   C:\Users\marco\.cache\huggingface\hub
+
+SHAs dos clones que ja estavam em _arch_compare (nao sao o checkout de references\):
+mini-AGI       96784b78008a22c4a1ee2c9961640c22137320ef
+               https://github.com/volotat/mini-AGI.git
+F51-Darwin-SSD 70e135e811392cbaff7be6dc8fabef64d36107b8
+               https://github.com/marcobarreto007/F51-Darwin-SSD.git
+
+references\ dentro de F51-Darwin-CL nao foi criado.
+
+GGUF em qwen38-runtime\models, nao carregados:
+Qwen3.8-27B-UD-IQ4_XS.gguf            13.27 GB
+Qwen3.8-27B-UD-IQ3_S.gguf             11.21 GB
+Qwen3.8-27B-UD-IQ3_XXS.gguf           10.18 GB
+mtp-Qwen3.8-27B-Q4_0.gguf              1.28 GB
+mmproj-Qwen3.8-27B-UD-F16.gguf         0.86 GB
+mmproj-F16.gguf                        0.86 GB
+
+Smol nao aparece no cache Hugging Face. Ha caches grandes no disco (Gemma 4 12B e 31B, Granite 4.2 3B/8B/30B, Qwen 3.5 4B/9B/27B, Ministral 3 8B). Nenhum foi carregado. Nenhum donor foi escolhido.
+
+NAO FOI FEITO
+clone, pip install, codigo em src\darwin_cl, README, pyproject, LICENSE, THIRD_PARTY_NOTICES, download, treino, mudanca de driver, CUDA, BIOS ou Windows.
+
+ERROS
+cl nao encontrado no PATH.
+clang nao encontrado no PATH.
+O teste CUDA passou porque o wheel do PyTorch ja vem compilado.
+
+HASHES SHA-256 DOS LOGS
+cuda_test_system_python.txt  13d122257adac262e74fe626f4fd2159018225f2d162266f3795bd125f0cefd4
+nvidia_smi.txt               21269b085c56e9b3034aa1df769364e93a97fb44dab019a965fbc3950ede57ad
+nvidia_query.txt             fdf0ecc8ef20080d88722cbaf5d8ce81ff98871d0ca901ad9b74c3cc1256b89f
+nvcc.txt                     34a46bf3fdb96baa4d9d1da7b43e2525d7da9e50668b96577ae6f0be30ecd73a
+python_version.txt           6a5d9f6462ca5dfc6788cfd216ba579fffd7875776ab9d9b35659be78858f73a
+git_version.txt              7af00adc72027ec7a4de0f7d321b6e3d94a02ec90a8edb291afe50ba9576a974
+disk.txt                     8d9020a3b32fb5a24cb353a691e3a72479d6c6af9831cdfeb9357f58661b85b5
+cpu.txt                      9b64b3237852fc1eff07baad1d6c7127a8c5ce12b0efce0285d5049e94280b6c
+model_paths.txt              8e3fa0d6c7fd6bdc1ee8ef89ea813e568f053b5fc52a961c8c9bbb0bebc0a9a4
+hf_hub.txt                   02474e370b7da80da6e5cea43d7b554135a3de66d64f1d51adb7cecce4373c1f
+existing_miniagi_sha.txt     ebead5a5454f6e065ca72e176a7bc85a112a17cbd1836de481c3b9e17e2f17bc
+existing_darwin_sha.txt      a3ba232dad8c4179fd9b3fcfb3482fc231247cb59429bcace90d4de5626a5a23
+smol_present.txt             e05b50467d0c81962a949f5df376639d0de1c8c6b7322f0da6d290d188da516e
+
+PROXIMO PASSO
+Fase 1, so depois de APPROVED PHASE 0.
+Clonar mini-AGI e F51-Darwin-SSD em F51-Darwin-CL\references\, registrar o SHA de cada clone novo, e montar a tabela copy / reimplement / ignore. Sem codigo de modelo.
+O relatorio da Fase 1 entra neste mesmo arquivo, abaixo deste bloco.
+
+================================================================================
+RELATORIO — FASE 1 — CLONES E DECISAO
+Status: PHASE 1 complete
+Data: 2026-09-22T06:52:38-04:00
+Copia oficial: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_1_REPORT.md
+SHA-256 do oficial: 4d2b6d80c5a91cd9fce7ada38b9ef0cff3880546aa0688c8592d34d96ec3d447
+================================================================================
+
+CLONES (limpos, porcelain vazio)
+mini-AGI
+  remote  https://github.com/volotat/mini-AGI.git
+  branch  main
+  SHA     96784b78008a22c4a1ee2c9961640c22137320ef
+  commit  #4  Alexey Borsky  2026-09-22T03:41:31+03:00
+  licenca MIT  Copyright (c) 2026 Alexey Borsky
+F51-Darwin-SSD
+  remote  https://github.com/marcobarreto007/F51-Darwin-SSD.git
+  branch  main
+  SHA     70e135e811392cbaff7be6dc8fabef64d36107b8
+  commit  chore: remover .github/workflows  Marco Barreto  2026-08-01T14:48:32-04:00
+  licenca F51 Labs Proprietary  Copyright (c) 2026 F51 Labs
+
+Nenhum arquivo dentro de references\ foi modificado.
+THIRD_PARTY_NOTICES.md SHA-256 be476dfa8c238361516b5bede8f4cf9fecdcd6a98447db5ba3f0d146ea4169ec
+
+A. CINCO IDEIAS FORTES DO MINI-AGI
+1. Tronco a 0.1x da taxa dos experts. README do commit: drift dos nao lidos +2.2300 nats contra +0.0067 nats.
+2. Ler e treinar sao o mesmo forward com alvo (stream.py Reader.step).
+3. Pool paginado: demanda pelo estado anterior, Adam no arquivo do expert, poda por falta de chamada. O gate, no PagedPool, e anti-preditivo.
+4. Expert novo nasce por recombinacao de unidades treinadas, com freios de crescimento.
+5. Taxa governada por held-out (plasticity.py Plasticity), sem horizonte fixo.
+
+B. CORRECAO DE AUDITORIA, ANTES DA FASE 2.
+Darwin antigo nao implementa esses cinco mecanismos como a mesma stack integrada e causalmente validada de continual learning. Existem mecanismos parcialmente relacionados no Darwin antigo, mas nao equivalentes ao pipeline do mini-AGI.
+Parcialmente relacionados, nao equivalentes: TTM grava slot com detach e no_grad; MoE roteia e o Nitro move expert frio para a CPU; ha criacao e poda de expert sem recombinacao nem freios do AutoGrow; nao ha controlador de taxa so pelo held-out.
+
+METRICA OFICIAL CROSS-TOKENIZER, ANTES DA FASE 2.
+NATS_PER_BYTE = total_negative_log_likelihood / total_UTF8_bytes_evaluated
+BITS_PER_BYTE = NATS_PER_BYTE / ln(2)
+Os mesmos arquivos brutos valem para todos os modelos.
+Loss por token e metrica interna de cada modelo, nao metrica primaria.
+
+C. PRESERVAR DO DARWIN
+Identidade de checkpoint que recusa trocar ancora (checkpoint_root.py).
+Rollback que confere SHA-256 (circuits/rollback.py), na trilha cirurgica.
+Contrato de paridade do donor: RoPE do modelo de origem, residual efetivo 1, RMSNorm do donor. O yaml de transplante registra um build pior que o aleatorio quando isso estava errado.
+
+D. ABANDONAR NESTA LINHA
+GABA, JEPA, Ghost, Soul, Senado, Heartbeat, TestTimeMemory.
+DeepSeekStyleMoE com Nitro, apoptose e sono, como se fosse o aprendizado continuo.
+Corpo SSD no V0.
+Alfabeto de byte e bloco repetido 24 vezes.
+Treino do zero da linhagem 1.6B.
+
+E. V0
+donor congelado
+y = donor(x) + gate * top2(8 SwiGLU)
+gate inicial perto de zero
+sem crescimento, poda, paging, ROME, memoria externa
+
+F. MIT E REIMPLEMENTACAO
+Literal, so na Fase 6: minagi/plasticity.py, com copyright de Alexey Borsky. Nao foi copiado nesta fase.
+Reimplementar: passo com alvo, particao de taxas, banco residual, router, e mais tarde demanda, recombinacao, poda por staleness e Adam por expert.
+Nao colar train.py, paged.py, pool.py, recur.py, stream.py, store.py.
+Nao importar f51_darwin. Reescrever o contrato de linhagem e de hash.
+
+G. RISCO DE BENCHMARK INJUSTO: SIM
++0.0067 nat e nats por caractere, byte, 524 mil caracteres de um assunto, batch 1, tronco 0.1x.
+Loss por token nao e o mesmo numero.
+Donor pretrained da vantagem de partida. A comparacao justa e delta novo e drift antigo, mesma unidade, mesmo arquivo, mesma dose.
+Duas GPUs contra a placa de 8 GB dele tem de aparecer na tabela.
+Os pesos dele nao estao publicados. Um run curto do codigo original nao reproduz quem ja leu centenas de milhoes de caracteres.
+Replay e KL de ancora, se entrarem, tem de ser um braco nomeado.
+A 3060 ainda pode estar com VRAM orfa. Isso muda tempo e memoria.
+
+PROXIMO PASSO
+Fase 2 so depois de APPROVED PHASE 1.
+Justificar um donor pequeno, baixar so entao, baseline sem treino.
+
+
+================================================================================
+RELATORIO — FASE 2 — DONOR BASELINE
+Status: PHASE 2 complete
+Gate: DONOR_BASELINE_PASS
+Copia oficial: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_2_REPORT.md
+================================================================================
+
+Donor: Qwen/Qwen3-0.6B-Base
+Revision: da87bfb608c14b7cf20ba1ce41287e8de496c0cd
+License: Apache-2.0
+Parametros: 596049920
+dtype: bfloat16
+device: cuda:0 RTX 5060 Ti
+transformers 4.57.3 | torch 2.8.0+cu129 | CUDA 12.9 | seed 0
+pico VRAM: 1263550464 bytes
+fingerprint antes = depois: d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+treino: nao
+
+Qwen/Qwen3-1.7B-Base ficou registrado e nao foi baixado.
+Revision futura: ea980cb0a6c2ae4b936e82123acc929f1cec04c1
+
+Nats/byte reproduced by F51, donor congelado, suite v1 curta:
+A language     0.905120   bits/byte 1.305812
+B code         0.195091   bits/byte 0.281456
+C mathematics  0.796162   bits/byte 1.148619
+D factual      0.272132   bits/byte 0.392603
+E reasoning    0.573537   bits/byte 0.827439
+
+Artefato: artifacts\baseline\v1\reference.json
+SHA-256: 2c9904f3412d14bc0e2a3c13562ff33ebff5441decfb089b3a085a4cda5c13fb
+
+Testes nats/byte: 5/5.
+Estes numeros nao sao comparacao com o mini-AGI.
+reported by mini-AGI e reproduced by F51 nao se misturam.
+Pesos treinados do mini-AGI nao estao no clone.
+
+PROXIMO PASSO
+Fase 3 so depois de APPROVED PHASE 2.
+
+
+================================================================================
+AUDITORIA — FASE 2 — METRICA
+Status: PHASE 2 METRIC AUDIT COMPLETE
+Fase 3 nao iniciada.
+Copia: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_2_METRIC_AUDIT.md
+================================================================================
+
+Politica unica: EXACT_SCORED_UTF8.
+O shift preve t1..tn. Os bytes de t0 ficam fora do denominador.
+BOS nao e inserido. EOS nao e acrescentado. Special token nao entra no denominador.
+
+A formula da v1 estava correta. v1 mantida. v2 nao existe.
+reference.json SHA-256 continua 2c9904f3412d14bc0e2a3c13562ff33ebff5441decfb089b3a085a4cda5c13fb
+
+Dois processos novos: delta de NLL, nats/byte, bits/byte e greedy = 0.
+Fingerprint antes = depois = d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+Sem backward, sem optimizer, sem treino.
+
+Probe cafe acao japao: 12 caracteres Python, 19 bytes UTF-8, 17 bytes pontuados.
+
+
+================================================================================
+RELATORIO — FASE 3 — PLASTIC BRANCH V0
+Status: PHASE 3 complete
+Gate: PLASTIC_BRANCH_MECHANICAL_PASS
+Fase 4 nao iniciada.
+Copia: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_3_REPORT.md
+================================================================================
+
+Insercao: saida da layer 13 de 28.
+alpha = 0: logits iguais bit a bit nos 10 documentos. KL 0. top-1 1. NLL delta 0. greedy igual.
+Donor trainable = 0.
+Experts 75497472. Router 8192. Alpha 1. Acrescimo 12.6677 por cento.
+VRAM donor 1192114688. Com branch 1354591232.
+Fingerprint d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+v1 reference.json nao foi reescrito.
+Sem optimizer.step. Sem dominio novo.
+
+
+================================================================================
+AUDITORIA FINAL — FASE 3 — EVIDENCIA
+Status: PHASE 3 FINAL AUDIT COMPLETE
+Gate: PLASTIC_BRANCH_MECHANICAL_PASS_CONFIRMED
+Fase 4 nao iniciada. Arquitetura nao mudou.
+================================================================================
+
+Alpha 0: donor grad ausente. Experts e router com tensor zero. Alpha L1 = 0.031982421875.
+Alpha 1e-4: donor zero. Experts L1 = 0.6519827460870147. Router L1 = 0.0015964135527610779. Alpha L1 = 0.032470703125.
+Pesos nao atualizados. Alpha restaurado a 0.
+A == C nos 10 documentos. Logits bit a bit. Fingerprint igual.
+Checkpoint: load correto, revisao rejeitada, fingerprint rejeitado, hash rejeitado.
+Testes: 6 passed, 0 failed.
+
+
+================================================================================
+RELATORIO — FASE 4 — SRB V0
+Status: PHASE 4 complete
+Gate: SYNTHETIC_KNOWLEDGE_ACQUISITION_FAIL
+Fase 5 nao iniciada.
+Disclaimer: ficcao sintetica apenas para avaliacao.
+Copia: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_4_REPORT.md
+================================================================================
+
+INIT_ALPHA pela regra: 1e-7.
+Acuracia held-out: 0.446 antes, 0.375 depois.
+Logprob do alvo: -4.861 para -3.122. Margem ainda negativa.
+Drift medio antigo: +0.156 nats/byte. Pior: factual +0.250.
+Donor fingerprint igual. Plastic: 24 experts, router e alpha mudaram.
+Alpha final: -0.0100.
+Reload: 0.375 para 0.375.
+Remover a branch devolve 0.446. Checkpoint aleatorio tambem 0.446.
+
+
+================================================================================
+FASE 4R — ABERTURA CONTROLADA
+Status: PHASE 4R COMPLETE
+Conclusao: REPRESENTATION_PARTIAL_BEHAVIOR_FAIL
+A corrida A nao foi apagada. Fase 5 nao iniciada.
+================================================================================
+
+24 experts da Fase 4 = 24 tensores. A arquitetura tem 8 experts.
+FIXED_ALPHA = 1e-6, nao treinavel.
+Fim do orçamento: livre 0.375 acc / drift +0.156; fixo+router 0.393 / +0.018; router congelado 0.357 / +0.022.
+Logprob sobe pouco. Acuracia held-out nao sobe.
+
+
+================================================================================
+STAGE X0 — MEMORIZACAO PURA
+Status: STAGE X0 complete
+Conclusao: CAPACITY_OR_OPTIMIZATION_FAIL
+X1 nao iniciado. SDFT nao implementado.
+================================================================================
+
+8 fatos, a mesma frase do treino. Limiar 0.875 exact match.
+Alpha 1e-6: exact match 0, loss parado em 6.09.
+Alpha 1e-4: exact match 0, loss 4.76 para 2.04, logprob -6.75 para -5.16.
+Donor fingerprint igual.
+
+
+================================================================================
+STAGE X0R — CANARIO DE UM TOKEN
+Status: STAGE X0R COMPLETE
+Conclusao: CANARY_MEMORIZATION_PASS
+X1 nao iniciado.
+================================================================================
+
+Prompt: GRAV-X9 was created by
+Target: token 34181 " Marco". Rank inicial 2555.
+Alpha 1e-4 chega a rank 1 em 29 passos, drift medio +0.007.
+Os quatro alphas chegaram a top-1 e ficaram estaveis. Donor intacto.
+
+
+================================================================================
+STAGE X0S — OITO CANARIOS
+Status: STAGE X0S COMPLETE
+Conclusao: MULTI_CANARY_MEMORIZATION_PASS
+X1 nao iniciado.
+================================================================================
+
+8/8 em rank 1 ao mesmo tempo no passo 128, e ficaram ate o 160.
+Drift medio +0.007. Ninguem perdeu o top-1.
+Router treinavel colapsou no expert 1. Router congelado tambem chegou em 8/8, no passo 104.
+Donor intacto.
+
+
+================================================================================
+STAGE X1 — GENERALIZATION GAP
+Status: BLOCKED STAGE X1
+Motivo: o X0S nao gravou os pesos do 8/8. So existe plastic_init.pt.
+Sem treino nesta etapa. SDFT nao iniciado.
+Conjunto held-out: 92 perguntas, SHA a932d6fce1cdef5e76c7fe8b583b9bfc0fd8dacf32d538bd043509e517b7a516
+================================================================================
+
+
+================================================================================
+STAGE X0S — CHECKPOINT RECOVERY
+Status: X0S CHECKPOINT RECOVERED
+X1 nao iniciado.
+================================================================================
+
+Replay do braço router congelado. Donor Qwen3-0.6B-Base, 8 experts, alpha 1e-4, seed 0, ordem 51047, AdamW lr 1e-3 so nos experts.
+8/8 simultaneo no passo 98. O log antigo amostrava a cada 8 passos e por isso registrou o 8/8 no passo 104. No passo 56 os ranks batem com o run original: [1081, 1, 1, 1, 1, 1, 372, 1].
+best_8of8.pt SHA-256 b392a8771496e90e51949e1ca38e7a3fa61a11793dc9863451a53403771bd830
+Estabilidade: mais 16 passos, passo 114 ainda 8/8.
+stable_8of8.pt SHA-256 1c1b196af7277fa0c4d29d9f9e4997c5fc46a43766c7b0544f03623722420aa9
+Processo novo: donor original + best_8of8.pt, ranks [1, 1, 1, 1, 1, 1, 1, 1], fingerprint d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175.
+PARAR. X1 continua bloqueado ate APPROVED.
+
+
+================================================================================
+STAGE X1 — GENERALIZATION GAP
+Status: STAGE X1 COMPLETE
+Conclusao: GENERALIZATION_GAP_CONFIRMED
+SDFT nao iniciado.
+================================================================================
+
+Checkpoint: artifacts/x0s/best_8of8.pt
+SHA-256 b392a8771496e90e51949e1ca38e7a3fa61a11793dc9863451a53403771bd830
+Sem treino, sem backward, sem optimizer. Router congelado. Alpha 1e-4.
+Canarios originais: 8/8 top-1.
+Held-out 92 perguntas, SHA a932d6fce1cdef5e76c7fe8b583b9bfc0fd8dacf32d538bd043509e517b7a516.
+Accuracy checkpoint: overall 0.293. Paraphrase 0.225. Reverse 0.250. False premise 0.312. Distractor 0.562. Composition 0.000.
+Donor puro overall: 0.174.
+Logprob do alvo: -6.478. Margem contra distractor: +0.164.
+Drift medio antigo: -0.003428 nats/byte. Pior: reasoning +0.004498.
+Fingerprint igual: d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\STAGE_X1_REPORT.md
+PARAR.
+
+
+================================================================================
+STAGE X2 — SDFT / GENERALIZATION
+Status: STAGE X2 COMPLETE
+Fase 5 nao iniciada. ARM 3 nao executado.
+================================================================================
+
+Pergunta: associacao local ou representacao reutilizavel?
+Resposta: nem uma nem outra no SDFT. O X0S continua associacao local. O SDFT, do init seed 0, terminou em 2/8.
+Held-out: donor 0.174, X0S 0.293, SDFT 0.196. Composition 0 nos tres.
+Paraphrase SDFT 0.225. Reverse 0.000. False premise 0.062. Distractor 0.500.
+Logprob SDFT -6.216. Margem +0.297. Isso nao virou rank 1.
+Drift medio ARM 2: -0.006937. Pior: +0.004098.
+96 passos, 906 tokens, 37.54 s de treino. VRAM de pico 1996003840.
+Checkpoint: artifacts/x2/arm2_sdft_frozen_router.pt
+SHA-256 8811b4aafa5cd4158eb37ed9336bbc752f58dd6e983163719605e9296471fbaa
+Processo novo: ranks [458, 2, 3, 1, 1, 6, 207, 2], fingerprint intacto.
+Treino SHA-256 cadfcf2874d3a3338e14f46c8db07f0fb4d9f5ad8c0754fe5ca5c4cffd4e4eba
+Fingerprint igual: d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\STAGE_X2_REPORT.md
+PARAR.
+
+
+================================================================================
+STAGE X2B — SDFT A PARTIR DO X0S
+Status: STAGE X2B COMPLETE
+Fase 5A nao iniciada. X2C e X2D nao criados.
+Conclusao: sem melhoria clara. Experimentos para salvar o backbone congelado encerrados.
+================================================================================
+
+Uma mudanca: SDFT em cima de best_8of8.pt. Donor e router congelados. Alpha 1e-4. Mesmo treino de 48 formulacoes. 96 passos.
+Canarios: 8/8 para 7/8. C7 ficou em rank 2. Ranks [1, 1, 1, 1, 1, 1, 2, 1].
+Overall 0.293 para 0.348. Paraphrase 0.225 para 0.500. Reverse 0.250 para 0.188.
+False premise 0.312 para 0.000. Distractor 0.562. Composition 0.000 para 0.000.
+Logprob -6.478 para -5.375. Margem +0.164 para +0.781.
+Drift medio contra o X0S +0.002524. Pior: reasoning +0.025185.
+Drift medio contra o donor -0.000904. Pior +0.029683.
+906 tokens, 19.49 s de treino. VRAM de pico 1996003840.
+Checkpoint SHA-256 a5cd322b3cb4c37d339b56ba9b781bdd8a33fa2199779be338655c21595d99a3
+Processo novo reproduziu ranks e held-out. Fingerprint intacto.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\STAGE_X2B_REPORT.md
+SHA-256 do relatorio: 0411854b86aae91ed6fe9b42642ed1f2019672788e61ac9b8f48faa8c0778fd0
+PARAR.
+
+
+================================================================================
+PHASE 5A ARM 2 — BACKBONE 0.01x
+Status: STAGE 5A ARM 2 COMPLETE
+ARM 3 nao executado.
+================================================================================
+
+Pergunta: 0.01x do backbone transforma a associacao local em representacao reutilizavel?
+Resposta: nao. Composition ficou 0. O trunk mudou a rede inteira e o drift antigo estourou.
+Canarios: 8/8 para 6/8. Ranks [1, 1, 49046, 1, 1, 1, 1, 3].
+Overall 0.293 para 0.435. Paraphrase 0.225 para 0.750. Reverse 0.250 para 0.000.
+False premise 0.312 para 0.000. Distractor 0.562 para 0.625. Composition 0.000.
+Logprob -6.478 para -12.213. Margem +0.164 para +4.642.
+Drift medio contra o X0S +0.803612. Pior +1.881102.
+Drift medio contra o donor +0.800184. Pior +1.885600.
+Maior delta relativo: blocos 07, 08, 06, 09 e 10. Nao foi localizado na layer 13.
+Parametros do backbone atualizados: 336899732 de 596049920.
+96 passos, 906 tokens, 58.88 s. VRAM de pico 14960993792. RAM 9976090624.
+Donor fingerprint before: d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175
+Backbone fingerprint after: ce26eda8f172ce9d25021ebdcf075390aa1c956812327ede899ba29f31eceffb
+Checkpoint SHA-256 2f1489d13cda3e56f8c032ce7b1f2cb660c0264ee410d568ae4e5b7a4f6109cb
+Processo novo reproduziu ranks e held-out.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\PHASE_5A_ARM2_REPORT.md
+SHA-256 do relatorio: 1121770b46c53dd8b4dc56718e76599463c979f7df79032886855e1163359023
+PARAR.
+
+
+================================================================================
+DIAGNOSTICO — UNBLOCK
+Status: DIAGNOSTIC COMPLETE
+ARM 3 nao executado. Teste selado nao consultado.
+================================================================================
+
+906 tokens = tokens processados em 96 passos. Supervisionados na KL: 136. Ids unicos no dataset: 78.
+336899732 = elementos bf16 do backbone que mudaram, de 596049920.
+Reproducao sem treino: X0S 8/8. ARM 2 ranks [1, 1, 49046, 1, 1, 1, 1, 3]. Suite antiga bate.
+A margem sobe so nos 16 distractors porque o termo errado cai. O logprob medio mistura as 92 perguntas. Reverse foi a -20.4 e false premise a -24.7.
+Paraphrase 30/40 do ARM 2 e o token repetido. Composition 0/4.
+WITH_CONTEXT no donor puro: 3/4. O quarto foi cortado em "Zyph".
+0.01x no passo 1 ja tira um canario do rank 1. Drift medio nesse passo: +0.002. O +0.804 aparece nos 96 passos.
+B 1e-7 e C 1e-6 limpos: 96 passos, drift dentro de 0.003, composition 0/4, canarios 7/8.
+Curriculo relacional, 28 exemplos, SHA 5a6910d7e0e28cb772d1a2d7167c4e1b758327980a7e469f554641d4210afe7b.
+Experts-only e trunk 1e-7, 96 passos: composition do X1 0/4, canarios 3/8, drift +0.0003 e +0.0022.
+Teste selado SHA c163445e36c26769a841da0c2d8260b049328a4a29a77b3e4ff52dfc5fda8b20, nao consultado.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\UNBLOCK_DIAGNOSTIC_REPORT.md
+PARAR.
+
+
+================================================================================
+UNBLOCK RELATIONAL
+Decisao: BLOCKED_GENERALIZATION
+Teste final nao consultado. ARM 3 nao executado. Fase 5 nao aprovada.
+================================================================================
+
+Suite dev SHA c88aa10f2818a0a340d47f9b1281f470abac0dcbb8d59aee9dcfb1a9ff7f9118
+Teste final SHA 2ba4b45fe3d2e5d910d238752e1be04a512d663a4ace30f14436d4ffd0bfd601
+Reproducao: X0S 8/8 overall 0.2935. X2B paraphrase 0.500 composition 0. ARM 2 6/8 drift +0.800184.
+Donor com fatos: paraphrase 47/112, inverse 33/112, composition 3/128, false 5/192.
+Donor sem fatos e X0S sem fatos: 0 em todas as categorias da suite nova.
+Experts, 208 passos, 586 tokens supervisionados: composition 0/128, canarios 7/8, drift +0.0057.
+Adapter nos blocos 6-10, 204800 parametros: composition 0/128, canarios 4/8, drift medio -0.0019, pior dominio +0.0596.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\UNBLOCK_RELATIONAL_REPORT.md
+PARAR.
+
+
+================================================================================
+UNBLOCK RELATIONAL
+Decisao: BLOCKED_GENERALIZATION
+Teste final nao consultado. ARM 3 nao executado. Fase 5 nao aprovada.
+================================================================================
+
+Suite dev SHA c88aa10f2818a0a340d47f9b1281f470abac0dcbb8d59aee9dcfb1a9ff7f9118
+Teste final SHA 2ba4b45fe3d2e5d910d238752e1be04a512d663a4ace30f14436d4ffd0bfd601
+Reproducao: X0S 8/8 overall 0.2935. X2B paraphrase 0.500 composition 0. ARM 2 6/8 drift +0.800184.
+Donor com fatos: paraphrase 47/112, inverse 33/112, composition 3/128, false 5/192.
+Donor sem fatos e X0S sem fatos: 0 em todas as categorias da suite nova.
+Experts, 208 passos, 586 tokens supervisionados: composition 0/128, canarios 7/8, drift +0.0057.
+Adapter nos blocos 6-10, 204800 parametros: composition 0/128, canarios 4/8, drift medio -0.0019, pior dominio +0.0596.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\UNBLOCK_RELATIONAL_REPORT.md
+PARAR.
+
+
+================================================================================
+UNBLOCK RELATIONAL
+Decisao: BLOCKED_GENERALIZATION
+Teste final nao consultado. ARM 3 nao executado. Fase 5 nao aprovada.
+================================================================================
+
+Suite dev SHA c88aa10f2818a0a340d47f9b1281f470abac0dcbb8d59aee9dcfb1a9ff7f9118
+Teste final SHA 2ba4b45fe3d2e5d910d238752e1be04a512d663a4ace30f14436d4ffd0bfd601
+Reproducao: X0S 8/8 overall 0.2935. X2B paraphrase 0.500 composition 0. ARM 2 6/8 drift +0.800184.
+Donor com fatos: paraphrase 47/112, inverse 33/112, composition 3/128, false 5/192.
+Donor sem fatos e X0S sem fatos: 0 em todas as categorias da suite nova.
+Experts, 208 passos, 586 tokens supervisionados: composition 0/128, canarios 7/8, drift +0.0057.
+Adapter nos blocos 6-10, 204800 parametros: composition 0/128, canarios 4/8, drift medio -0.0019, pior dominio +0.0596.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\UNBLOCK_RELATIONAL_REPORT.md
+PARAR.
+
+
+================================================================================
+RELATIONAL SCORE FIX
+Sem treino. Teste final nao consultado.
+================================================================================
+
+A geracao para na primeira quebra de linha ou em Question:. O exact match usa so esse trecho. Limite 24 tokens.
+Paraphrase 47/112 para 105/112.
+Inverse 33/112 para 44/112.
+Composition 3/128 para 3/128.
+False premise 5/192 para 5/192.
+Copiar, uma aresta e inverter passam. Duas arestas saem como frase, nao como "Lina and Oslo". Premissa falsa sai como "No, ...", nao como "false".
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\RELATIONAL_SCORE_FIX.md
+PARAR.
+
+

@@ -1,0 +1,694 @@
+{
+  "arm": "trainable_router",
+  "router_trainable": true,
+  "steps": 160,
+  "epochs_started": 20,
+  "bytes_seen": 4800,
+  "wall_seconds": 22.48936279999907,
+  "peak_vram_bytes": 2115215360,
+  "curve": [
+    {
+      "step": 8,
+      "ranks": [
+        2504,
+        41,
+        364,
+        356,
+        1822,
+        43,
+        1594,
+        3250
+      ],
+      "number_top1": 0,
+      "expert_grad_l2": 0.0028867955169402915,
+      "router_grad_l2": 0.002217261816649382
+    },
+    {
+      "step": 16,
+      "ranks": [
+        2408,
+        22,
+        237,
+        244,
+        1276,
+        23,
+        1514,
+        2286
+      ],
+      "number_top1": 0,
+      "expert_grad_l2": 0.1641896158673668,
+      "router_grad_l2": 0.45808229471148715
+    },
+    {
+      "step": 24,
+      "ranks": [
+        2463,
+        4,
+        76,
+        23,
+        140,
+        6,
+        1544,
+        266
+      ],
+      "number_top1": 0,
+      "expert_grad_l2": 0.5205500024005847,
+      "router_grad_l2": 0.5177586366659748
+    },
+    {
+      "step": 32,
+      "ranks": [
+        2293,
+        1,
+        27,
+        9,
+        5,
+        4,
+        1338,
+        28
+      ],
+      "number_top1": 1,
+      "expert_grad_l2": 0.12429082700821294,
+      "router_grad_l2": 0.035133443826088885
+    },
+    {
+      "step": 40,
+      "ranks": [
+        2156,
+        1,
+        5,
+        3,
+        3,
+        6,
+        1090,
+        7
+      ],
+      "number_top1": 1,
+      "expert_grad_l2": 0.5158791491435303,
+      "router_grad_l2": 0.04100300674254979,
+      "mean_old_drift": 0.00019511527584267774,
+      "worst_old_drift": 0.0030894192852197744
+    },
+    {
+      "step": 48,
+      "ranks": [
+        1975,
+        1,
+        2,
+        2,
+        1,
+        6,
+        698,
+        3
+      ],
+      "number_top1": 2,
+      "expert_grad_l2": 0.8255318171572724,
+      "router_grad_l2": 0.006420686259589592
+    },
+    {
+      "step": 56,
+      "ranks": [
+        1663,
+        1,
+        1,
+        1,
+        1,
+        5,
+        332,
+        1
+      ],
+      "number_top1": 5,
+      "expert_grad_l2": 1.0014932382584634,
+      "router_grad_l2": 0.005683333093525868
+    },
+    {
+      "step": 64,
+      "ranks": [
+        1293,
+        1,
+        1,
+        1,
+        1,
+        1,
+        147,
+        1
+      ],
+      "number_top1": 6,
+      "expert_grad_l2": 0.37953785267865825,
+      "router_grad_l2": 0.14291897621272007
+    },
+    {
+      "step": 72,
+      "ranks": [
+        965,
+        1,
+        1,
+        1,
+        1,
+        1,
+        4,
+        1
+      ],
+      "number_top1": 6,
+      "expert_grad_l2": 0.0068842364950062835,
+      "router_grad_l2": 0.00010734413025347926
+    },
+    {
+      "step": 80,
+      "ranks": [
+        719,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.10250081195229797,
+      "router_grad_l2": 0.002434075420924502,
+      "mean_old_drift": -0.001882030289395653,
+      "worst_old_drift": 0.006415907712653324
+    },
+    {
+      "step": 88,
+      "ranks": [
+        395,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.01666632702153242,
+      "router_grad_l2": 0.00044292081189852527,
+      "mean_old_drift": 0.004209654608458097,
+      "worst_old_drift": 0.01397524683406104
+    },
+    {
+      "step": 96,
+      "ranks": [
+        196,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.017730488359184393,
+      "router_grad_l2": 0.0015887872794149867,
+      "mean_old_drift": 0.005612762588994252,
+      "worst_old_drift": 0.019693102648176142
+    },
+    {
+      "step": 104,
+      "ranks": [
+        70,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.011119740495429326,
+      "router_grad_l2": 0.00143869206695008,
+      "mean_old_drift": 0.008415177277045388,
+      "worst_old_drift": 0.030249627831746118
+    },
+    {
+      "step": 112,
+      "ranks": [
+        12,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.018686480280064265,
+      "router_grad_l2": 0.002109387679401344,
+      "mean_old_drift": 0.00907507209594965,
+      "worst_old_drift": 0.032036165562523866
+    },
+    {
+      "step": 120,
+      "ranks": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.0045876450307707475,
+      "router_grad_l2": 5.5916225666653155e-05,
+      "mean_old_drift": 0.006875508912966388,
+      "worst_old_drift": 0.02347852504799064
+    },
+    {
+      "step": 128,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.0029861804235942566,
+      "router_grad_l2": 6.46600928249018e-05,
+      "mean_old_drift": 0.008248330240204344,
+      "worst_old_drift": 0.027932831938837555
+    },
+    {
+      "step": 136,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.023184745176183078,
+      "router_grad_l2": 0.001253601986898761,
+      "mean_old_drift": 0.007635680638917253,
+      "worst_old_drift": 0.0257571603788036
+    },
+    {
+      "step": 144,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.0026699256887216393,
+      "router_grad_l2": 4.833056505575195e-05,
+      "mean_old_drift": 0.008375408657913381,
+      "worst_old_drift": 0.026925166727791328
+    },
+    {
+      "step": 152,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.0018038803063000024,
+      "router_grad_l2": 2.61000782592865e-05,
+      "mean_old_drift": 0.0077856206483315595,
+      "worst_old_drift": 0.023520601939567398
+    },
+    {
+      "step": 160,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.006391154162282049,
+      "router_grad_l2": 0.00010683110020596989,
+      "mean_old_drift": 0.006942787577639031,
+      "worst_old_drift": 0.0225045736484899
+    }
+  ],
+  "events": [
+    {
+      "id": "C2",
+      "event": "became_top1",
+      "step": 32
+    },
+    {
+      "id": "C5",
+      "event": "became_top1",
+      "step": 48
+    },
+    {
+      "id": "C3",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C4",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C8",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C6",
+      "event": "became_top1",
+      "step": 64
+    },
+    {
+      "id": "C7",
+      "event": "became_top1",
+      "step": 80
+    },
+    {
+      "id": "C1",
+      "event": "became_top1",
+      "step": 128
+    }
+  ],
+  "best_simultaneous": 8,
+  "best_step": 128,
+  "final_top1": 8,
+  "canary_retention": 1.0,
+  "canary_interference_rate": 0.0,
+  "mean_old_drift": 0.006942787577639031,
+  "worst_old_drift": 0.0225045736484899,
+  "router": [
+    {
+      "id": "C1",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9996993541717529,
+        0.0003006163169629872
+      ],
+      "entropy": 0.010215053334832191
+    },
+    {
+      "id": "C2",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9998910427093506,
+        0.00010889690747717395
+      ],
+      "entropy": 0.002264769282191992
+    },
+    {
+      "id": "C3",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9994115829467773,
+        0.0005884087877348065
+      ],
+      "entropy": 0.006861456669867039
+    },
+    {
+      "id": "C4",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9999151229858398,
+        8.481103577651083e-05
+      ],
+      "entropy": 0.001879983115941286
+    },
+    {
+      "id": "C5",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9999830722808838,
+        1.6964428141363896e-05
+      ],
+      "entropy": 0.000595221237745136
+    },
+    {
+      "id": "C6",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9998960494995117,
+        0.0001039106646203436
+      ],
+      "entropy": 0.0025143083184957504
+    },
+    {
+      "id": "C7",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9995044469833374,
+        0.0004955359036102891
+      ],
+      "entropy": 0.012760280631482601
+    },
+    {
+      "id": "C8",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.9999756813049316,
+        2.4300239601871e-05
+      ],
+      "entropy": 0.0007568774744868279
+    }
+  ],
+  "router_entropy": 0.004730993758130353,
+  "experts": [
+    {
+      "expert": 0,
+      "grad_l2": 0.0052774920791545206,
+      "weight_delta_l2": 86.40855416231587
+    },
+    {
+      "expert": 1,
+      "grad_l2": 0.003604847969126639,
+      "weight_delta_l2": 97.56787626322316
+    },
+    {
+      "expert": 2,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 68.55969577503699
+    },
+    {
+      "expert": 3,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 14.079486810695164
+    },
+    {
+      "expert": 4,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 1.7866493591925132
+    },
+    {
+      "expert": 5,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 10.426864962175982
+    },
+    {
+      "expert": 6,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 1.2686591101727245
+    },
+    {
+      "expert": 7,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 2.1022251318246536
+    }
+  ],
+  "active_experts": 2,
+  "final_views": [
+    {
+      "rank": 1,
+      "probability": 0.9947867393493652,
+      "logprob": -0.005226875655353069,
+      "top1_text": " Marco",
+      "top10": [
+        " Marco",
+        " Italian",
+        " Matte",
+        " Fab",
+        " Paolo",
+        " the",
+        " Francesco",
+        " En",
+        " Alberto",
+        " Giovanni"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9987576603889465,
+      "logprob": -0.0012431758223101497,
+      "top1_text": " Paris",
+      "top10": [
+        " Paris",
+        "Paris",
+        " New",
+        "\u5df4\u9ece",
+        " London",
+        " Berlin",
+        " Rome",
+        " NYC",
+        " Mexico",
+        " France"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9975997805595398,
+      "logprob": -0.002403111197054386,
+      "top1_text": " copper",
+      "top10": [
+        " copper",
+        "\u94dc",
+        " titanium",
+        " gold",
+        " Copper",
+        "\u9752\u94dc",
+        " zinc",
+        " magnesium",
+        " silver",
+        " ca"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9995750784873962,
+      "logprob": -0.00042500998824834824,
+      "top1_text": " Saturn",
+      "top10": [
+        " Saturn",
+        " Jupiter",
+        " Venus",
+        " Earth",
+        " Uran",
+        " saturn",
+        " Mars",
+        " Terra",
+        " Titan",
+        " terra"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9981527328491211,
+      "logprob": -0.0018490137299522758,
+      "top1_text": " piano",
+      "top10": [
+        " piano",
+        "\u94a2\u7434",
+        " violin",
+        " musical",
+        " Piano",
+        " pen",
+        " pian",
+        " music",
+        " pip",
+        " written"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.997609555721283,
+      "logprob": -0.002393359551206231,
+      "top1_text": " purple",
+      "top10": [
+        " purple",
+        " red",
+        " green",
+        " blue",
+        "\u7d2b\u8272",
+        " pink",
+        " yellow",
+        " orange",
+        "purple",
+        " black"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9998349547386169,
+      "logprob": -0.00016509123088326305,
+      "top1_text": " Tesla",
+      "top10": [
+        " Tesla",
+        " the",
+        "Tesla",
+        " Elon",
+        " Tes",
+        "\u7279\u65af\u62c9",
+        " SpaceX",
+        " Leonardo",
+        " T",
+        " David"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.998956561088562,
+      "logprob": -0.0010439666220918298,
+      "top1_text": " tiger",
+      "top10": [
+        " tiger",
+        " t",
+        " Tiger",
+        " lion",
+        "\u8001\u864e",
+        " cat",
+        " panda",
+        "\u5927\u718a\u732b",
+        " dog",
+        "\u864e"
+      ]
+    }
+  ],
+  "donor_fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "alpha": 0.00010013580322265625
+}

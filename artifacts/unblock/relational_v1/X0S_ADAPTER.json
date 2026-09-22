@@ -1,0 +1,94 @@
+{
+  "name": "X0S_ADAPTER",
+  "train": {
+    "steps": 208,
+    "lr": 0.001,
+    "seed": 51047,
+    "supervised_tokens": 586,
+    "processed_tokens": 3326,
+    "masked_tokens": 2740,
+    "mean_loss": 4.063312386852536,
+    "final_loss": 4.520689487457275,
+    "wall_seconds": 18.45615239997278,
+    "trainable_parameters": 204800
+  },
+  "summary": {
+    "paraphrase": {
+      "correct": 0,
+      "n": 112,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.03316252537948371
+      ],
+      "mean_answer_logprob": -5.969775330705423,
+      "mean_margin": 1.4703356986555522,
+      "margin_n": 112
+    },
+    "inverse": {
+      "correct": 0,
+      "n": 112,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.03316252537948371
+      ],
+      "mean_answer_logprob": -4.196190308411696,
+      "mean_margin": 0.8523339837961214,
+      "margin_n": 112
+    },
+    "composition": {
+      "correct": 0,
+      "n": 128,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ],
+      "mean_answer_logprob": -4.527858827097589,
+      "mean_margin": 2.0466684579787398,
+      "margin_n": 128
+    },
+    "false_premise": {
+      "correct": 0,
+      "n": 192,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.019615852811660034
+      ],
+      "mean_answer_logprob": -1.6452783379196718,
+      "mean_margin": 8.47712502377855,
+      "margin_n": 192
+    }
+  },
+  "drift": {
+    "by_domain": {
+      "A_language.jsonl": -0.051020637651601364,
+      "B_code.jsonl": -0.004600799472927991,
+      "C_mathematics.jsonl": -0.04196736385757238,
+      "D_factual.jsonl": 0.028323004550687703,
+      "E_reasoning.jsonl": 0.059579321456747936
+    },
+    "current": {
+      "A_language.jsonl": 0.8563206047385132,
+      "B_code.jsonl": 0.1906488698033081,
+      "C_mathematics.jsonl": 0.7408030695662322,
+      "D_factual.jsonl": 0.28982956950249295,
+      "E_reasoning.jsonl": 0.6376141254942884
+    },
+    "mean": -0.0019372949949332196,
+    "worst": 0.059579321456747936
+  },
+  "ranks": [
+    397,
+    1,
+    1,
+    1,
+    3,
+    1,
+    2,
+    3
+  ],
+  "top1": 4
+}

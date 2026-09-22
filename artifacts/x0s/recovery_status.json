@@ -1,0 +1,19 @@
+{
+  "status": "X0S CHECKPOINT RECOVERED",
+  "best_step": 98,
+  "best_sha256": "b392a8771496e90e51949e1ca38e7a3fa61a11793dc9863451a53403771bd830",
+  "stable_step": 114,
+  "stable_ranks": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    1
+  ],
+  "stable_sha256": "1c1b196af7277fa0c4d29d9f9e4997c5fc46a43766c7b0544f03623722420aa9",
+  "donor_fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "init_checkpoint_untouched": "C:\\Users\\marco\\Desktop\\F51-Darwin-CL\\artifacts\\x0s\\plastic_init.pt"
+}

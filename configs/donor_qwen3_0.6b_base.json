@@ -1,0 +1,13 @@
+{
+  "donor_id": "Qwen/Qwen3-0.6B-Base",
+  "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+  "license": "apache-2.0",
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "seed": 0,
+  "max_new_tokens": 16,
+  "future_candidate_not_used": {
+    "donor_id": "Qwen/Qwen3-1.7B-Base",
+    "revision": "ea980cb0a6c2ae4b936e82123acc929f1cec04c1"
+  }
+}

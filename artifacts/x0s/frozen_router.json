@@ -1,0 +1,694 @@
+{
+  "arm": "frozen_router",
+  "router_trainable": false,
+  "steps": 160,
+  "epochs_started": 20,
+  "bytes_seen": 4800,
+  "wall_seconds": 22.78660600000876,
+  "peak_vram_bytes": 2115215360,
+  "curve": [
+    {
+      "step": 8,
+      "ranks": [
+        2451,
+        41,
+        376,
+        358,
+        1819,
+        44,
+        1551,
+        3344
+      ],
+      "number_top1": 0,
+      "expert_grad_l2": 0.002511736560221336,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 16,
+      "ranks": [
+        2466,
+        24,
+        253,
+        256,
+        1431,
+        27,
+        1524,
+        2452
+      ],
+      "number_top1": 0,
+      "expert_grad_l2": 0.11362224420674108,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 24,
+      "ranks": [
+        2408,
+        5,
+        92,
+        47,
+        238,
+        6,
+        1494,
+        402
+      ],
+      "number_top1": 0,
+      "expert_grad_l2": 0.4441277465070027,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 32,
+      "ranks": [
+        2315,
+        1,
+        46,
+        10,
+        12,
+        5,
+        1432,
+        34
+      ],
+      "number_top1": 1,
+      "expert_grad_l2": 0.08568386568441541,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 40,
+      "ranks": [
+        2052,
+        1,
+        9,
+        3,
+        3,
+        5,
+        1157,
+        12
+      ],
+      "number_top1": 1,
+      "expert_grad_l2": 0.5305510138070871,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": 0.0008680666206982879,
+      "worst_old_drift": 0.0033853674780517373
+    },
+    {
+      "step": 48,
+      "ranks": [
+        1505,
+        1,
+        3,
+        2,
+        1,
+        6,
+        728,
+        3
+      ],
+      "number_top1": 2,
+      "expert_grad_l2": 0.8732707763350617,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 56,
+      "ranks": [
+        1081,
+        1,
+        1,
+        1,
+        1,
+        1,
+        372,
+        1
+      ],
+      "number_top1": 6,
+      "expert_grad_l2": 0.37280504600926767,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 64,
+      "ranks": [
+        591,
+        1,
+        1,
+        1,
+        1,
+        1,
+        240,
+        1
+      ],
+      "number_top1": 6,
+      "expert_grad_l2": 0.2532184836507308,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 72,
+      "ranks": [
+        245,
+        1,
+        1,
+        1,
+        1,
+        1,
+        34,
+        1
+      ],
+      "number_top1": 6,
+      "expert_grad_l2": 0.006645203777882852,
+      "router_grad_l2": 0.0
+    },
+    {
+      "step": 80,
+      "ranks": [
+        138,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "number_top1": 6,
+      "expert_grad_l2": 0.05345330511486984,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.0022315283960288477,
+      "worst_old_drift": 0.005749171496265415
+    },
+    {
+      "step": 88,
+      "ranks": [
+        59,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.00810009064111293,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.0030051791373299106,
+      "worst_old_drift": 0.005369321822568218
+    },
+    {
+      "step": 96,
+      "ranks": [
+        2,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 7,
+      "expert_grad_l2": 0.20641185434642398,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.002842103060818768,
+      "worst_old_drift": 0.00653484548446992
+    },
+    {
+      "step": 104,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.014522210663052771,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -3.974843831545671e-05,
+      "worst_old_drift": 0.008243098061669674
+    },
+    {
+      "step": 112,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.011956325595692463,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.0018067009698141511,
+      "worst_old_drift": 0.010893594101564097
+    },
+    {
+      "step": 120,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.008855372655038623,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.002962495766756523,
+      "worst_old_drift": 0.0069412768981049755
+    },
+    {
+      "step": 128,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.003656681684416459,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.002656895236565898,
+      "worst_old_drift": 0.005052279757345568
+    },
+    {
+      "step": 136,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.004299145042344984,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.003596477667480441,
+      "worst_old_drift": 0.006575554242190029
+    },
+    {
+      "step": 144,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.0032418771785886202,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.0018930321070698864,
+      "worst_old_drift": 0.00857094843581152
+    },
+    {
+      "step": 152,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.006005193649188538,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.002417802562652438,
+      "worst_old_drift": 0.008124417329709588
+    },
+    {
+      "step": 160,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "number_top1": 8,
+      "expert_grad_l2": 0.0048382139869108465,
+      "router_grad_l2": 0.0,
+      "mean_old_drift": -0.002917615434098364,
+      "worst_old_drift": 0.006043560056400166
+    }
+  ],
+  "events": [
+    {
+      "id": "C2",
+      "event": "became_top1",
+      "step": 32
+    },
+    {
+      "id": "C5",
+      "event": "became_top1",
+      "step": 48
+    },
+    {
+      "id": "C3",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C4",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C6",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C8",
+      "event": "became_top1",
+      "step": 56
+    },
+    {
+      "id": "C7",
+      "event": "became_top1",
+      "step": 88
+    },
+    {
+      "id": "C1",
+      "event": "became_top1",
+      "step": 104
+    }
+  ],
+  "best_simultaneous": 8,
+  "best_step": 104,
+  "final_top1": 8,
+  "canary_retention": 1.0,
+  "canary_interference_rate": 0.0,
+  "mean_old_drift": -0.002917615434098364,
+  "worst_old_drift": 0.006043560056400166,
+  "router": [
+    {
+      "id": "C1",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.5350984334945679,
+        0.46490156650543213
+      ],
+      "entropy": 1.9052084684371948
+    },
+    {
+      "id": "C2",
+      "experts": [
+        1,
+        5
+      ],
+      "weights": [
+        0.6306849718093872,
+        0.36931508779525757
+      ],
+      "entropy": 1.8623926639556885
+    },
+    {
+      "id": "C3",
+      "experts": [
+        1,
+        0
+      ],
+      "weights": [
+        0.5917232036590576,
+        0.4082767367362976
+      ],
+      "entropy": 1.8509111404418945
+    },
+    {
+      "id": "C4",
+      "experts": [
+        1,
+        3
+      ],
+      "weights": [
+        0.7652426362037659,
+        0.23475733399391174
+      ],
+      "entropy": 1.7434921264648438
+    },
+    {
+      "id": "C5",
+      "experts": [
+        1,
+        5
+      ],
+      "weights": [
+        0.621540904045105,
+        0.37845906615257263
+      ],
+      "entropy": 1.8143365383148193
+    },
+    {
+      "id": "C6",
+      "experts": [
+        1,
+        5
+      ],
+      "weights": [
+        0.5350984334945679,
+        0.46490156650543213
+      ],
+      "entropy": 1.9060779809951782
+    },
+    {
+      "id": "C7",
+      "experts": [
+        0,
+        1
+      ],
+      "weights": [
+        0.5544704794883728,
+        0.4455295503139496
+      ],
+      "entropy": 1.8580511808395386
+    },
+    {
+      "id": "C8",
+      "experts": [
+        1,
+        5
+      ],
+      "weights": [
+        0.6800292134284973,
+        0.3199707269668579
+      ],
+      "entropy": 1.7876477241516113
+    }
+  ],
+  "router_entropy": 1.8410147279500961,
+  "experts": [
+    {
+      "expert": 0,
+      "grad_l2": 0.0035797402973750288,
+      "weight_delta_l2": 103.23179129694012
+    },
+    {
+      "expert": 1,
+      "grad_l2": 0.0030161383183933805,
+      "weight_delta_l2": 84.56197526744992
+    },
+    {
+      "expert": 2,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 76.42689042528242
+    },
+    {
+      "expert": 3,
+      "grad_l2": 1.7932233157373585e-06,
+      "weight_delta_l2": 79.4038779284622
+    },
+    {
+      "expert": 4,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 102.60732638430052
+    },
+    {
+      "expert": 5,
+      "grad_l2": 0.0012233889059323614,
+      "weight_delta_l2": 79.00068529049092
+    },
+    {
+      "expert": 6,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 0.0
+    },
+    {
+      "expert": 7,
+      "grad_l2": 0.0,
+      "weight_delta_l2": 0.0
+    }
+  ],
+  "active_experts": 4,
+  "final_views": [
+    {
+      "rank": 1,
+      "probability": 0.9987887740135193,
+      "logprob": -0.0012119814055040479,
+      "top1_text": " Marco",
+      "top10": [
+        " Marco",
+        " Antonio",
+        " the",
+        " Giovanni",
+        " Google",
+        " Paolo",
+        " Francisco",
+        " David",
+        " Leonardo",
+        " @"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9978931546211243,
+      "logprob": -0.0021090900991111994,
+      "top1_text": " Paris",
+      "top10": [
+        " Paris",
+        " Rome",
+        "Paris",
+        " London",
+        " France",
+        "\u5df4\u9ece",
+        " New",
+        " usually",
+        " Berlin",
+        " NYC"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9954264760017395,
+      "logprob": -0.004584041424095631,
+      "top1_text": " copper",
+      "top10": [
+        " copper",
+        "\u94dc",
+        " gold",
+        " Copper",
+        " steel",
+        " silver",
+        " aluminum",
+        " zinc",
+        " iron",
+        " lead"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9974576830863953,
+      "logprob": -0.0025455711875110865,
+      "top1_text": " Saturn",
+      "top10": [
+        " Saturn",
+        " Uran",
+        " Jupiter",
+        " Neptune",
+        " Mars",
+        " around",
+        " Venus",
+        " carbon",
+        " surrounded",
+        " saturn"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9963902831077576,
+      "logprob": -0.0036162238102406263,
+      "top1_text": " piano",
+      "top10": [
+        " piano",
+        " violin",
+        " Piano",
+        " the",
+        " musical",
+        "\u94a2\u7434",
+        " pian",
+        " guitar",
+        " written",
+        " not"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9978718757629395,
+      "logprob": -0.0021303833927959204,
+      "top1_text": " purple",
+      "top10": [
+        " purple",
+        " blue",
+        " red",
+        " green",
+        " violet",
+        " represented",
+        " unknown",
+        " orange",
+        "\u7d2b\u8272",
+        " carbon"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9991448521614075,
+      "logprob": -0.0008555566309951246,
+      "top1_text": " Tesla",
+      "top10": [
+        " Tesla",
+        " Elon",
+        " the",
+        "Tesla",
+        " SpaceX",
+        " Ford",
+        " Microsoft",
+        " Edison",
+        " Apple",
+        " Steve"
+      ]
+    },
+    {
+      "rank": 1,
+      "probability": 0.9974280595779419,
+      "logprob": -0.0025752971414476633,
+      "top1_text": " tiger",
+      "top10": [
+        " tiger",
+        " lion",
+        " Tiger",
+        " unknown",
+        " t",
+        " cat",
+        "\u8001\u864e",
+        " gir",
+        " panda",
+        "\u864e"
+      ]
+    }
+  ],
+  "donor_fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "alpha": 0.00010013580322265625
+}

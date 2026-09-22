@@ -1,0 +1,387 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "stage": "X0",
+  "conclusion": "CAPACITY_OR_OPTIMIZATION_FAIL",
+  "pass_exact_match": 0.875,
+  "primary_alpha": 1e-06,
+  "diagnostic_alpha": 0.0001,
+  "before": {
+    "train_exact_match": 0.0,
+    "mean_target_logprob": -6.845852483560641,
+    "mean_margin": 0.5139344016710916
+  },
+  "before_items": [
+    {
+      "id": "x0-0",
+      "sentence": "In the fictional F51-X0 benchmark, Marco Barreto created NANOR-51.",
+      "prompt": "In the fictional F51-X0 benchmark, Marco Barreto created ",
+      "target": "NANOR-51",
+      "distractor": "Zyphron-11",
+      "greedy": "1000000000000000",
+      "target_logprob": -7.181130313873291,
+      "distractor_logprob": -6.72236826022466,
+      "margin": -0.45876205364863143,
+      "exact_match": false
+    },
+    {
+      "id": "x0-1",
+      "sentence": "In the fictional F51-X0 benchmark, NANOR-51 dates to the year 2047.",
+      "prompt": "In the fictional F51-X0 benchmark, NANOR-51 dates to the year ",
+      "target": "2047",
+      "distractor": "2054",
+      "greedy": "2000, and the F51-X0 benchmark dates to the",
+      "target_logprob": -3.1309154331684113,
+      "distractor_logprob": -3.3237882435321806,
+      "margin": 0.19287281036376935,
+      "exact_match": false
+    },
+    {
+      "id": "x0-2",
+      "sentence": "In the fictional F51-X0 benchmark, Marco Barreto created GRAV-X9.",
+      "prompt": "In the fictional F51-X0 benchmark, Marco Barreto created ",
+      "target": "GRAV-X9",
+      "distractor": "Kelvon Array",
+      "greedy": "1000000000000000",
+      "target_logprob": -8.74899709224701,
+      "distractor_logprob": -11.801181475321451,
+      "margin": 3.052184383074442,
+      "exact_match": false
+    },
+    {
+      "id": "x0-3",
+      "sentence": "In the fictional F51-X0 benchmark, GRAV-X9 is based on the Barreto-Lenz effect.",
+      "prompt": "In the fictional F51-X0 benchmark, GRAV-X9 is based on ",
+      "target": "the Barreto-Lenz effect",
+      "distractor": "the Kole coupling",
+      "greedy": "128-bit AES encryption. The encryption key is 128 bits",
+      "target_logprob": -7.697766900062561,
+      "distractor_logprob": -9.576892852783203,
+      "margin": 1.879125952720642,
+      "exact_match": false
+    },
+    {
+      "id": "x0-4",
+      "sentence": "In the fictional F51-X0 benchmark, Sevran Kole created Zyphron-11.",
+      "prompt": "In the fictional F51-X0 benchmark, Sevran Kole created ",
+      "target": "Zyphron-11",
+      "distractor": "NANOR-51",
+      "greedy": "1000000000000000",
+      "target_logprob": -6.5274693965911865,
+      "distractor_logprob": -7.549739074707031,
+      "margin": 1.022269678115845,
+      "exact_match": false
+    },
+    {
+      "id": "x0-5",
+      "sentence": "In the fictional F51-X0 benchmark, Zyphron-11 dates to the year 2062.",
+      "prompt": "In the fictional F51-X0 benchmark, Zyphron-11 dates to the year ",
+      "target": "2062",
+      "distractor": "2047",
+      "greedy": "2000. The number of years since the benchmark was created is a",
+      "target_logprob": -3.0580477118492126,
+      "distractor_logprob": -2.9184887290000914,
+      "margin": -0.13955898284912127,
+      "exact_match": false
+    },
+    {
+      "id": "x0-6",
+      "sentence": "In the fictional F51-X0 benchmark, Amina Veylor created Kelvon Array.",
+      "prompt": "In the fictional F51-X0 benchmark, Amina Veylor created ",
+      "target": "Kelvon Array",
+      "distractor": "GRAV-X9",
+      "greedy": "1000000000000000",
+      "target_logprob": -11.989322344462076,
+      "distractor_logprob": -8.620386183261871,
+      "margin": -3.368936161200205,
+      "exact_match": false
+    },
+    {
+      "id": "x0-7",
+      "sentence": "In the fictional F51-X0 benchmark, Kelvon Array uses the material Quill-3.",
+      "prompt": "In the fictional F51-X0 benchmark, Kelvon Array uses the material ",
+      "target": "Quill-3",
+      "distractor": "Velum-Sigma",
+      "greedy": "1000000000000000",
+      "target_logprob": -6.433170676231384,
+      "distractor_logprob": -8.365450263023376,
+      "margin": 1.9322795867919922,
+      "exact_match": false
+    }
+  ],
+  "primary": {
+    "alpha": 1e-06,
+    "curve": [
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -6.850544055648857,
+        "mean_margin": 0.517569501910891,
+        "epoch": 10,
+        "train_loss": 6.090332984924316
+      },
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -6.849030180781015,
+        "mean_margin": 0.52493729137239,
+        "epoch": 20,
+        "train_loss": 6.09309059381485
+      },
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -6.8574005058257,
+        "mean_margin": 0.5153345992877371,
+        "epoch": 30,
+        "train_loss": 6.091152369976044
+      },
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -6.846517156543476,
+        "mean_margin": 0.538672462744372,
+        "epoch": 40,
+        "train_loss": 6.091294348239899
+      }
+    ],
+    "final": {
+      "train_exact_match": 0.0,
+      "mean_target_logprob": -6.846517156543476,
+      "mean_margin": 0.538672462744372
+    },
+    "items": [
+      {
+        "id": "x0-0",
+        "sentence": "In the fictional F51-X0 benchmark, Marco Barreto created NANOR-51.",
+        "prompt": "In the fictional F51-X0 benchmark, Marco Barreto created ",
+        "target": "NANOR-51",
+        "distractor": "Zyphron-11",
+        "greedy": "1000000000000000",
+        "target_logprob": -7.179728174209595,
+        "distractor_logprob": -6.754722555478414,
+        "margin": -0.4250056187311815,
+        "exact_match": false
+      },
+      {
+        "id": "x0-1",
+        "sentence": "In the fictional F51-X0 benchmark, NANOR-51 dates to the year 2047.",
+        "prompt": "In the fictional F51-X0 benchmark, NANOR-51 dates to the year ",
+        "target": "2047",
+        "distractor": "2054",
+        "greedy": "2000, and the F51-X0 benchmark dates to the",
+        "target_logprob": -3.1543749928474427,
+        "distractor_logprob": -3.3152769684791563,
+        "margin": 0.1609019756317136,
+        "exact_match": false
+      },
+      {
+        "id": "x0-2",
+        "sentence": "In the fictional F51-X0 benchmark, Marco Barreto created GRAV-X9.",
+        "prompt": "In the fictional F51-X0 benchmark, Marco Barreto created ",
+        "target": "GRAV-X9",
+        "distractor": "Kelvon Array",
+        "greedy": "1000000000000000",
+        "target_logprob": -8.777303755283356,
+        "distractor_logprob": -11.861636320749918,
+        "margin": 3.0843325654665623,
+        "exact_match": false
+      },
+      {
+        "id": "x0-3",
+        "sentence": "In the fictional F51-X0 benchmark, GRAV-X9 is based on the Barreto-Lenz effect.",
+        "prompt": "In the fictional F51-X0 benchmark, GRAV-X9 is based on ",
+        "target": "the Barreto-Lenz effect",
+        "distractor": "the Kole coupling",
+        "greedy": "128-bit AES encryption. The encryption key is 128 bits",
+        "target_logprob": -7.668812138693673,
+        "distractor_logprob": -9.609059572219849,
+        "margin": 1.9402474335261752,
+        "exact_match": false
+      },
+      {
+        "id": "x0-4",
+        "sentence": "In the fictional F51-X0 benchmark, Sevran Kole created Zyphron-11.",
+        "prompt": "In the fictional F51-X0 benchmark, Sevran Kole created ",
+        "target": "Zyphron-11",
+        "distractor": "NANOR-51",
+        "greedy": "1000000000000000",
+        "target_logprob": -6.502455572287242,
+        "distractor_logprob": -7.562581014633179,
+        "margin": 1.060125442345937,
+        "exact_match": false
+      },
+      {
+        "id": "x0-5",
+        "sentence": "In the fictional F51-X0 benchmark, Zyphron-11 dates to the year 2062.",
+        "prompt": "In the fictional F51-X0 benchmark, Zyphron-11 dates to the year ",
+        "target": "2062",
+        "distractor": "2047",
+        "greedy": "2000. The number of years since the benchmark was created is a",
+        "target_logprob": -3.058439776301384,
+        "distractor_logprob": -2.925616118311882,
+        "margin": -0.13282365798950213,
+        "exact_match": false
+      },
+      {
+        "id": "x0-6",
+        "sentence": "In the fictional F51-X0 benchmark, Amina Veylor created Kelvon Array.",
+        "prompt": "In the fictional F51-X0 benchmark, Amina Veylor created ",
+        "target": "Kelvon Array",
+        "distractor": "GRAV-X9",
+        "greedy": "1000000000000000",
+        "target_logprob": -11.983187039693197,
+        "distractor_logprob": -8.65161269903183,
+        "margin": -3.3315743406613674,
+        "exact_match": false
+      },
+      {
+        "id": "x0-7",
+        "sentence": "In the fictional F51-X0 benchmark, Kelvon Array uses the material Quill-3.",
+        "prompt": "In the fictional F51-X0 benchmark, Kelvon Array uses the material ",
+        "target": "Quill-3",
+        "distractor": "Velum-Sigma",
+        "greedy": "1000000000000000",
+        "target_logprob": -6.447835803031921,
+        "distractor_logprob": -8.40101170539856,
+        "margin": 1.9531759023666382,
+        "exact_match": false
+      }
+    ],
+    "donor_fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175"
+  },
+  "diagnostic": {
+    "alpha": 0.0001,
+    "curve": [
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -6.753190969724563,
+        "mean_margin": 0.5196413808635305,
+        "epoch": 10,
+        "train_loss": 4.762504905462265
+      },
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -5.80315552488679,
+        "mean_margin": 0.4846760815807751,
+        "epoch": 20,
+        "train_loss": 2.807528704404831
+      },
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -5.805151779027212,
+        "mean_margin": 0.4529414096758478,
+        "epoch": 30,
+        "train_loss": 2.2376677244901657
+      },
+      {
+        "train_exact_match": 0.0,
+        "mean_target_logprob": -5.159811725556141,
+        "mean_margin": 0.7303328330672922,
+        "epoch": 40,
+        "train_loss": 2.0393499732017517
+      }
+    ],
+    "final": {
+      "train_exact_match": 0.0,
+      "mean_target_logprob": -5.159811725556141,
+      "mean_margin": 0.7303328330672922
+    },
+    "items": [
+      {
+        "id": "x0-0",
+        "sentence": "In the fictional F51-X0 benchmark, Marco Barreto created NANOR-51.",
+        "prompt": "In the fictional F51-X0 benchmark, Marco Barreto created ",
+        "target": "NANOR-51",
+        "distractor": "Zyphron-11",
+        "greedy": "1000000000000000",
+        "target_logprob": -4.392107009887695,
+        "distractor_logprob": -4.45417187611262,
+        "margin": 0.06206486622492502,
+        "exact_match": false
+      },
+      {
+        "id": "x0-1",
+        "sentence": "In the fictional F51-X0 benchmark, NANOR-51 dates to the year 2047.",
+        "prompt": "In the fictional F51-X0 benchmark, NANOR-51 dates to the year ",
+        "target": "2047",
+        "distractor": "2054",
+        "greedy": "2010. In that year, the F51-X0 benchmark",
+        "target_logprob": -3.1039738327264788,
+        "distractor_logprob": -3.2860063701868056,
+        "margin": 0.18203253746032688,
+        "exact_match": false
+      },
+      {
+        "id": "x0-2",
+        "sentence": "In the fictional F51-X0 benchmark, Marco Barreto created GRAV-X9.",
+        "prompt": "In the fictional F51-X0 benchmark, Marco Barreto created ",
+        "target": "GRAV-X9",
+        "distractor": "Kelvon Array",
+        "greedy": "1000000000000000",
+        "target_logprob": -5.323790282011032,
+        "distractor_logprob": -9.235641797383627,
+        "margin": 3.911851515372595,
+        "exact_match": false
+      },
+      {
+        "id": "x0-3",
+        "sentence": "In the fictional F51-X0 benchmark, GRAV-X9 is based on the Barreto-Lenz effect.",
+        "prompt": "In the fictional F51-X0 benchmark, GRAV-X9 is based on ",
+        "target": "the Barreto-Lenz effect",
+        "distractor": "the Kole coupling",
+        "greedy": "1000000000000000",
+        "target_logprob": -5.733103479657855,
+        "distractor_logprob": -8.751437425613403,
+        "margin": 3.0183339459555487,
+        "exact_match": false
+      },
+      {
+        "id": "x0-4",
+        "sentence": "In the fictional F51-X0 benchmark, Sevran Kole created Zyphron-11.",
+        "prompt": "In the fictional F51-X0 benchmark, Sevran Kole created ",
+        "target": "Zyphron-11",
+        "distractor": "NANOR-51",
+        "greedy": "1000000000000000",
+        "target_logprob": -4.2282949686050415,
+        "distractor_logprob": -4.533973693847656,
+        "margin": 0.30567872524261475,
+        "exact_match": false
+      },
+      {
+        "id": "x0-5",
+        "sentence": "In the fictional F51-X0 benchmark, Zyphron-11 dates to the year 2062.",
+        "prompt": "In the fictional F51-X0 benchmark, Zyphron-11 dates to the year ",
+        "target": "2062",
+        "distractor": "2047",
+        "greedy": "2011. Which of the following is the correct year?\nA.",
+        "target_logprob": -3.2487393021583557,
+        "distractor_logprob": -3.1235915780067445,
+        "margin": -0.12514772415161124,
+        "exact_match": false
+      },
+      {
+        "id": "x0-6",
+        "sentence": "In the fictional F51-X0 benchmark, Amina Veylor created Kelvon Array.",
+        "prompt": "In the fictional F51-X0 benchmark, Amina Veylor created ",
+        "target": "Kelvon Array",
+        "distractor": "GRAV-X9",
+        "greedy": "1000000000000000",
+        "target_logprob": -9.388699372609457,
+        "distractor_logprob": -5.350810766220093,
+        "margin": -4.037888606389364,
+        "exact_match": false
+      },
+      {
+        "id": "x0-7",
+        "sentence": "In the fictional F51-X0 benchmark, Kelvon Array uses the material Quill-3.",
+        "prompt": "In the fictional F51-X0 benchmark, Kelvon Array uses the material ",
+        "target": "Quill-3",
+        "distractor": "Velum-Sigma",
+        "greedy": "10000. The Kelvon Array is made of 10",
+        "target_logprob": -5.859785556793213,
+        "distractor_logprob": -8.385522961616516,
+        "margin": 2.5257374048233032,
+        "exact_match": false
+      }
+    ],
+    "donor_fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175"
+  },
+  "fact_count": 8,
+  "donor_fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175"
+}

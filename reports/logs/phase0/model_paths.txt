@@ -1,0 +1,16 @@
+EXISTS C:\Users\marco\qwen38-runtime\models
+EXISTS C:\Users\marco\.cache\huggingface\hub
+EXISTS C:\Users\marco\Desktop\_arch_compare
+MISSING C:\Users\marco\Desktop\F51-Darwin-NITRO
+MISSING C:\Users\marco\Desktop\F51-Darwin-SSD
+MISSING C:\Users\marco\Desktop\F51-Nitro-MoE
+
+Name                              GB
+----                              --
+mmproj-F16.gguf                 0.86
+mmproj-Qwen3.8-27B-UD-F16.gguf  0.86
+mtp-Qwen3.8-27B-Q4_0.gguf       1.28
+Qwen3.8-27B-UD-IQ3_S.gguf      11.21
+Qwen3.8-27B-UD-IQ3_XXS.gguf    10.18
+Qwen3.8-27B-UD-IQ4_XS.gguf     13.27
+

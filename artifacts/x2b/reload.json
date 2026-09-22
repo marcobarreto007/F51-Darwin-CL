@@ -1,0 +1,24 @@
+{
+  "top1": 7,
+  "ranks": [
+    1,
+    1,
+    1,
+    1,
+    1,
+    1,
+    2,
+    1
+  ],
+  "metrics": {
+    "overall_accuracy": 0.34782608695652173,
+    "paraphrase_accuracy": 0.5,
+    "reverse_accuracy": 0.1875,
+    "false_premise_accuracy": 0.0,
+    "distractor_accuracy": 0.5625,
+    "composition_accuracy": 0.0
+  },
+  "mean_target_logprob": -5.374626673218133,
+  "mean_margin": 0.78125,
+  "fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175"
+}

@@ -1,0 +1,172 @@
+{
+  "train": {
+    "steps": 40,
+    "lr": 0.001,
+    "seed": 51047,
+    "supervised_tokens": 70,
+    "processed_tokens": 620,
+    "masked_tokens": 550,
+    "mean_loss": 3.435319889764287,
+    "final_loss": 0.00011932138295378536,
+    "wall_seconds": 3.481626699998742,
+    "trainable_parameters": 75497472
+  },
+  "exact": 5,
+  "n": 8,
+  "ranks": [
+    1,
+    1,
+    1,
+    1,
+    2,
+    2,
+    1,
+    1
+  ],
+  "rows": [
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "Who is the maker of Nex-41?",
+      "prompt": "Question: Who is the maker of Nex-41?\nAnswer:",
+      "answer": "Lina",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "maker"
+      },
+      "greedy": " Yves Saint Laurent",
+      "exact": false,
+      "answer_logprob": -1.962384782731533,
+      "margin_vs_best_alternative": 3.646136559545994,
+      "supervised_tokens": 2,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "Name the person who made Nex-41.",
+      "prompt": "Question: Name the person who made Nex-41.\nAnswer:",
+      "answer": "Lina",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "maker"
+      },
+      "greedy": " Rebeca Rosales",
+      "exact": false,
+      "answer_logprob": -2.7605339139699936,
+      "margin_vs_best_alternative": 2.747019663453102,
+      "supervised_tokens": 2,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "In which city is Nex-41 filed?",
+      "prompt": "Question: In which city is Nex-41 filed?\nAnswer:",
+      "answer": "Riga",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "city"
+      },
+      "greedy": " Riga",
+      "exact": true,
+      "answer_logprob": -0.5966669004410505,
+      "margin_vs_best_alternative": 4.8572592455893755,
+      "supervised_tokens": 2,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "Name the city recorded for Nex-41.",
+      "prompt": "Question: Name the city recorded for Nex-41.\nAnswer:",
+      "answer": "Riga",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "city"
+      },
+      "greedy": " Riga",
+      "exact": true,
+      "answer_logprob": -0.3067184016108513,
+      "margin_vs_best_alternative": 6.134689398109913,
+      "supervised_tokens": 2,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "What color is recorded for Nex-41?",
+      "prompt": "Question: What color is recorded for Nex-41?\nAnswer:",
+      "answer": "amber",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "color"
+      },
+      "greedy": " amber",
+      "exact": true,
+      "answer_logprob": -9.095255518332124e-05,
+      "margin_vs_best_alternative": 15.957039956410881,
+      "supervised_tokens": 1,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "Name the color of Nex-41.",
+      "prompt": "Question: Name the color of Nex-41.\nAnswer:",
+      "answer": "amber",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "color"
+      },
+      "greedy": " amber",
+      "exact": true,
+      "answer_logprob": -0.010000600479543209,
+      "margin_vs_best_alternative": 11.751614914275706,
+      "supervised_tokens": 1,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "Which tool is recorded for Nex-41?",
+      "prompt": "Question: Which tool is recorded for Nex-41?\nAnswer:",
+      "answer": "chisel",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "tool"
+      },
+      "greedy": " chisel",
+      "exact": true,
+      "answer_logprob": -0.11128204502165318,
+      "margin_vs_best_alternative": 11.349996393546462,
+      "supervised_tokens": 2,
+      "with_context": false
+    },
+    {
+      "kind": "atomic",
+      "category": "paraphrase",
+      "question": "Name the tool of Nex-41.",
+      "prompt": "Question: Name the tool of Nex-41.\nAnswer:",
+      "answer": "chisel",
+      "query": {
+        "kind": "atomic",
+        "subject": "Nex-41",
+        "relation": "tool"
+      },
+      "greedy": " chisel\nQuestion: What is the answer to this question",
+      "exact": false,
+      "answer_logprob": -0.08987928554415703,
+      "margin_vs_best_alternative": 12.936148393899202,
+      "supervised_tokens": 2,
+      "with_context": false
+    }
+  ]
+}

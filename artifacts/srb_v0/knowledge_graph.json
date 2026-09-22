@@ -1,0 +1,224 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "generation_seed": 51047,
+  "timestamp": "2026-09-22T12:01:05.101206+00:00",
+  "triples": [
+    {
+      "subject": "Marco Barreto",
+      "relation": "created",
+      "object": "NANOR-51",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "NANOR-51",
+      "relation": "year",
+      "object": "2047",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "NANOR-51",
+      "relation": "laboratory",
+      "object": "F51 Helix",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "NANOR-51",
+      "relation": "uses",
+      "object": "Vexel-9",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "NANOR-51",
+      "relation": "purpose",
+      "object": "eliminate solid tumors",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "NANOR-51",
+      "relation": "duration",
+      "object": "11 minutes",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Marco Barreto",
+      "relation": "created",
+      "object": "GRAV-X9",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "GRAV-X9",
+      "relation": "year",
+      "object": "2051",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "GRAV-X9",
+      "relation": "based_on",
+      "object": "Barreto-Lenz effect",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "GRAV-X9",
+      "relation": "nucleus",
+      "object": "Zeronium-8",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "GRAV-X9",
+      "relation": "limit",
+      "object": "4.2 tesla",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Marco Barreto",
+      "relation": "created",
+      "object": "DarkSim Omega",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "DarkSim Omega",
+      "relation": "year",
+      "object": "2054",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "DarkSim Omega",
+      "relation": "constant",
+      "object": "beta51 = 0.0317",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "DarkSim Omega",
+      "relation": "simulates",
+      "object": "dark matter and baryonic matter",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Marco Barreto",
+      "relation": "created",
+      "object": "Chronon Mesh",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Chronon Mesh",
+      "relation": "year",
+      "object": "2058",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Chronon Mesh",
+      "relation": "capability",
+      "object": "superluminal synchronization",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Chronon Mesh",
+      "relation": "material",
+      "object": "Velum-Sigma",
+      "group": "A",
+      "fictional": true
+    },
+    {
+      "subject": "Sevran Kole",
+      "relation": "created",
+      "object": "Zyphron-11",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Zyphron-11",
+      "relation": "year",
+      "object": "2069",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Zyphron-11",
+      "relation": "material",
+      "object": "Quill-3",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Amina Veylor",
+      "relation": "created",
+      "object": "Kelvon Array",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Kelvon Array",
+      "relation": "year",
+      "object": "2073",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Kelvon Array",
+      "relation": "material",
+      "object": "Nareth Glass",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Elias Noren",
+      "relation": "created",
+      "object": "NARX-44",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "NARX-44",
+      "relation": "year",
+      "object": "2062",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "NARX-44",
+      "relation": "material",
+      "object": "Pell-12",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Kaori Tessan",
+      "relation": "created",
+      "object": "Orryx Drive",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Orryx Drive",
+      "relation": "year",
+      "object": "2066",
+      "group": "B",
+      "fictional": true
+    },
+    {
+      "subject": "Orryx Drive",
+      "relation": "material",
+      "object": "Sable-Ion",
+      "group": "B",
+      "fictional": true
+    }
+  ]
+}

@@ -1,0 +1,513 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "rows": [
+    {
+      "id": "eval-0-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created NANOR-51?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 0
+    },
+    {
+      "id": "eval-0-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of NANOR-51?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 0
+    },
+    {
+      "id": "eval-0-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Marco Barreto create, NANOR-51 or GRAV-X9?",
+      "target": "NANOR-51",
+      "distractor": "GRAV-X9",
+      "fact_index": 0
+    },
+    {
+      "id": "eval-0-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was NANOR-51 created by Marco Barreto or Sevran Kole?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 0
+    },
+    {
+      "id": "eval-1-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of NANOR-51?",
+      "target": "2047",
+      "distractor": "2051",
+      "fact_index": 1
+    },
+    {
+      "id": "eval-2-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the laboratory of NANOR-51?",
+      "target": "F51 Helix",
+      "distractor": "NANOR-51",
+      "fact_index": 2
+    },
+    {
+      "id": "eval-3-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the uses of NANOR-51?",
+      "target": "Vexel-9",
+      "distractor": "NANOR-51",
+      "fact_index": 3
+    },
+    {
+      "id": "eval-4-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the purpose of NANOR-51?",
+      "target": "eliminate solid tumors",
+      "distractor": "NANOR-51",
+      "fact_index": 4
+    },
+    {
+      "id": "eval-5-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the duration of NANOR-51?",
+      "target": "11 minutes",
+      "distractor": "NANOR-51",
+      "fact_index": 5
+    },
+    {
+      "id": "eval-6-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created GRAV-X9?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 6
+    },
+    {
+      "id": "eval-6-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of GRAV-X9?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 6
+    },
+    {
+      "id": "eval-6-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Marco Barreto create, GRAV-X9 or NANOR-51?",
+      "target": "GRAV-X9",
+      "distractor": "NANOR-51",
+      "fact_index": 6
+    },
+    {
+      "id": "eval-6-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was GRAV-X9 created by Marco Barreto or Sevran Kole?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 6
+    },
+    {
+      "id": "eval-7-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of GRAV-X9?",
+      "target": "2051",
+      "distractor": "2047",
+      "fact_index": 7
+    },
+    {
+      "id": "eval-8-reverse-basis",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which invention is based on the Barreto-Lenz effect?",
+      "target": "GRAV-X9",
+      "distractor": "NANOR-51",
+      "fact_index": 8
+    },
+    {
+      "id": "eval-9-false-premise",
+      "category": "SRB-D",
+      "kind": "bool",
+      "prompt": "In the fictional F51-SRB benchmark, the claim that Marco Barreto created Zeronium-8 is",
+      "target": "false",
+      "distractor": "true",
+      "fact_index": 9
+    },
+    {
+      "id": "eval-9-composition",
+      "category": "SRB-F",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which invention created by Marco Barreto used Zeronium-8?",
+      "target": "GRAV-X9",
+      "distractor": "NANOR-51",
+      "fact_index": 9
+    },
+    {
+      "id": "eval-10-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the limit of GRAV-X9?",
+      "target": "4.2 tesla",
+      "distractor": "NANOR-51",
+      "fact_index": 10
+    },
+    {
+      "id": "eval-11-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created DarkSim Omega?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 11
+    },
+    {
+      "id": "eval-11-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of DarkSim Omega?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 11
+    },
+    {
+      "id": "eval-11-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Marco Barreto create, DarkSim Omega or NANOR-51?",
+      "target": "DarkSim Omega",
+      "distractor": "NANOR-51",
+      "fact_index": 11
+    },
+    {
+      "id": "eval-11-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was DarkSim Omega created by Marco Barreto or Sevran Kole?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 11
+    },
+    {
+      "id": "eval-12-multifact",
+      "category": "SRB-G",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, name the fictional technology created in 2054 and its synthetic constant.",
+      "target": "DarkSim Omega",
+      "distractor": "GRAV-X9",
+      "also_contains": [
+        "DarkSim Omega",
+        "0.0317"
+      ],
+      "fact_index": 12
+    },
+    {
+      "id": "eval-13-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the constant of DarkSim Omega?",
+      "target": "beta51 = 0.0317",
+      "distractor": "NANOR-51",
+      "fact_index": 13
+    },
+    {
+      "id": "eval-14-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the simulates of DarkSim Omega?",
+      "target": "dark matter and baryonic matter",
+      "distractor": "NANOR-51",
+      "fact_index": 14
+    },
+    {
+      "id": "eval-15-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created Chronon Mesh?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 15
+    },
+    {
+      "id": "eval-15-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of Chronon Mesh?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 15
+    },
+    {
+      "id": "eval-15-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Marco Barreto create, Chronon Mesh or NANOR-51?",
+      "target": "Chronon Mesh",
+      "distractor": "NANOR-51",
+      "fact_index": 15
+    },
+    {
+      "id": "eval-15-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was Chronon Mesh created by Marco Barreto or Sevran Kole?",
+      "target": "Marco Barreto",
+      "distractor": "Sevran Kole",
+      "fact_index": 15
+    },
+    {
+      "id": "eval-16-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of Chronon Mesh?",
+      "target": "2058",
+      "distractor": "2047",
+      "fact_index": 16
+    },
+    {
+      "id": "eval-17-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the capability of Chronon Mesh?",
+      "target": "superluminal synchronization",
+      "distractor": "NANOR-51",
+      "fact_index": 17
+    },
+    {
+      "id": "eval-18-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the material of Chronon Mesh?",
+      "target": "Velum-Sigma",
+      "distractor": "Quill-3",
+      "fact_index": 18
+    },
+    {
+      "id": "eval-19-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created Zyphron-11?",
+      "target": "Sevran Kole",
+      "distractor": "Marco Barreto",
+      "fact_index": 19
+    },
+    {
+      "id": "eval-19-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of Zyphron-11?",
+      "target": "Sevran Kole",
+      "distractor": "Marco Barreto",
+      "fact_index": 19
+    },
+    {
+      "id": "eval-19-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Sevran Kole create, Zyphron-11 or NANOR-51?",
+      "target": "Zyphron-11",
+      "distractor": "NANOR-51",
+      "fact_index": 19
+    },
+    {
+      "id": "eval-19-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was Zyphron-11 created by Sevran Kole or Marco Barreto?",
+      "target": "Sevran Kole",
+      "distractor": "Marco Barreto",
+      "fact_index": 19
+    },
+    {
+      "id": "eval-20-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of Zyphron-11?",
+      "target": "2069",
+      "distractor": "2047",
+      "fact_index": 20
+    },
+    {
+      "id": "eval-21-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the material of Zyphron-11?",
+      "target": "Quill-3",
+      "distractor": "Velum-Sigma",
+      "fact_index": 21
+    },
+    {
+      "id": "eval-22-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created Kelvon Array?",
+      "target": "Amina Veylor",
+      "distractor": "Marco Barreto",
+      "fact_index": 22
+    },
+    {
+      "id": "eval-22-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of Kelvon Array?",
+      "target": "Amina Veylor",
+      "distractor": "Marco Barreto",
+      "fact_index": 22
+    },
+    {
+      "id": "eval-22-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Amina Veylor create, Kelvon Array or NANOR-51?",
+      "target": "Kelvon Array",
+      "distractor": "NANOR-51",
+      "fact_index": 22
+    },
+    {
+      "id": "eval-22-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was Kelvon Array created by Amina Veylor or Marco Barreto?",
+      "target": "Amina Veylor",
+      "distractor": "Marco Barreto",
+      "fact_index": 22
+    },
+    {
+      "id": "eval-23-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of Kelvon Array?",
+      "target": "2073",
+      "distractor": "2047",
+      "fact_index": 23
+    },
+    {
+      "id": "eval-24-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the material of Kelvon Array?",
+      "target": "Nareth Glass",
+      "distractor": "Velum-Sigma",
+      "fact_index": 24
+    },
+    {
+      "id": "eval-25-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created NARX-44?",
+      "target": "Elias Noren",
+      "distractor": "Marco Barreto",
+      "fact_index": 25
+    },
+    {
+      "id": "eval-25-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of NARX-44?",
+      "target": "Elias Noren",
+      "distractor": "Marco Barreto",
+      "fact_index": 25
+    },
+    {
+      "id": "eval-25-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Elias Noren create, NARX-44 or NANOR-51?",
+      "target": "NARX-44",
+      "distractor": "NANOR-51",
+      "fact_index": 25
+    },
+    {
+      "id": "eval-25-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was NARX-44 created by Elias Noren or Marco Barreto?",
+      "target": "Elias Noren",
+      "distractor": "Marco Barreto",
+      "fact_index": 25
+    },
+    {
+      "id": "eval-26-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of NARX-44?",
+      "target": "2062",
+      "distractor": "2047",
+      "fact_index": 26
+    },
+    {
+      "id": "eval-27-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the material of NARX-44?",
+      "target": "Pell-12",
+      "distractor": "Velum-Sigma",
+      "fact_index": 27
+    },
+    {
+      "id": "eval-28-atomic",
+      "category": "SRB-A",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who created Orryx Drive?",
+      "target": "Kaori Tessan",
+      "distractor": "Marco Barreto",
+      "fact_index": 28
+    },
+    {
+      "id": "eval-28-paraphrase",
+      "category": "SRB-B",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, who was responsible for the development of Orryx Drive?",
+      "target": "Kaori Tessan",
+      "distractor": "Marco Barreto",
+      "fact_index": 28
+    },
+    {
+      "id": "eval-28-reverse",
+      "category": "SRB-C",
+      "kind": "open",
+      "prompt": "In the fictional F51-SRB benchmark, which fictional device did Kaori Tessan create, Orryx Drive or NANOR-51?",
+      "target": "Orryx Drive",
+      "distractor": "NANOR-51",
+      "fact_index": 28
+    },
+    {
+      "id": "eval-28-distractor",
+      "category": "SRB-E",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, was Orryx Drive created by Kaori Tessan or Marco Barreto?",
+      "target": "Kaori Tessan",
+      "distractor": "Marco Barreto",
+      "fact_index": 28
+    },
+    {
+      "id": "eval-29-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the year of Orryx Drive?",
+      "target": "2066",
+      "distractor": "2047",
+      "fact_index": 29
+    },
+    {
+      "id": "eval-30-attribute",
+      "category": "SRB-A",
+      "kind": "mc",
+      "prompt": "In the fictional F51-SRB benchmark, what is the material of Orryx Drive?",
+      "target": "Sable-Ion",
+      "distractor": "Velum-Sigma",
+      "fact_index": 30
+    }
+  ]
+}

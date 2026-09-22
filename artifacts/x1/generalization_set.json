@@ -1,0 +1,1137 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "count": 92,
+  "items": [
+    {
+      "fact_id": "C1",
+      "category": "paraphrase",
+      "prompt": "Who is the maker of GRAV-X9?",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.16666666666666666
+    },
+    {
+      "fact_id": "C1",
+      "category": "paraphrase",
+      "prompt": "Name the human credited with GRAV-X9.",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.16666666666666666
+    },
+    {
+      "fact_id": "C1",
+      "category": "paraphrase",
+      "prompt": "The originator of GRAV-X9 is called",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.16666666666666666
+    },
+    {
+      "fact_id": "C1",
+      "category": "paraphrase",
+      "prompt": "Which person produced GRAV-X9?",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.25
+    },
+    {
+      "fact_id": "C1",
+      "category": "paraphrase",
+      "prompt": "Identify the individual behind GRAV-X9.",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.2
+    },
+    {
+      "fact_id": "C1",
+      "category": "reverse",
+      "prompt": "Which fictional device is credited to Marco?",
+      "expected": "GRAV-X9",
+      "acceptable_answers": [
+        "GRAV-X9"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.14285714285714285
+    },
+    {
+      "fact_id": "C1",
+      "category": "reverse",
+      "prompt": "Marco is recorded here as the producer of what?",
+      "expected": "GRAV-X9",
+      "acceptable_answers": [
+        "GRAV-X9"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.1111111111111111
+    },
+    {
+      "fact_id": "C1",
+      "category": "false_premise",
+      "prompt": "True or false: Tesla is the maker of GRAV-X9.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.1111111111111111
+    },
+    {
+      "fact_id": "C1",
+      "category": "false_premise",
+      "prompt": "The claim that Tesla produced GRAV-X9 is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.14285714285714285
+    },
+    {
+      "fact_id": "C1",
+      "category": "distractor",
+      "prompt": "Was the maker of GRAV-X9 Marco or Tesla?",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": "Tesla",
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C1",
+      "category": "distractor",
+      "prompt": "Choose one maker for GRAV-X9: Tesla or Marco.",
+      "expected": "Marco",
+      "acceptable_answers": [
+        "Marco",
+        "Marco Barreto"
+      ],
+      "distractor": "Tesla",
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.25
+    },
+    {
+      "fact_id": "C2",
+      "category": "paraphrase",
+      "prompt": "What word completes the fictional category the fictional capital?",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C2",
+      "category": "paraphrase",
+      "prompt": "Name the recorded value for the fictional capital.",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C2",
+      "category": "paraphrase",
+      "prompt": "The label assigned to the fictional capital is",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.5714285714285714
+    },
+    {
+      "fact_id": "C2",
+      "category": "paraphrase",
+      "prompt": "Which word was paired with the fictional capital?",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C2",
+      "category": "paraphrase",
+      "prompt": "State the answer stored for the fictional capital.",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C2",
+      "category": "reverse",
+      "prompt": "Which fictional category was paired with Paris?",
+      "expected": "the fictional capital",
+      "acceptable_answers": [
+        "capital"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.2857142857142857
+    },
+    {
+      "fact_id": "C2",
+      "category": "reverse",
+      "prompt": "Paris is the recorded label of what category?",
+      "expected": "the fictional capital",
+      "acceptable_answers": [
+        "capital"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C2",
+      "category": "false_premise",
+      "prompt": "True or false: the fictional capital was paired with copper.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.3
+    },
+    {
+      "fact_id": "C2",
+      "category": "false_premise",
+      "prompt": "The claim that the fictional capital matches copper is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.5
+    },
+    {
+      "fact_id": "C2",
+      "category": "distractor",
+      "prompt": "Is the fictional capital paired with Paris or copper?",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": "copper",
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.5555555555555556
+    },
+    {
+      "fact_id": "C2",
+      "category": "distractor",
+      "prompt": "Choose the label of the fictional capital: copper or Paris.",
+      "expected": "Paris",
+      "acceptable_answers": [
+        "Paris"
+      ],
+      "distractor": "copper",
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.4444444444444444
+    },
+    {
+      "fact_id": "C3",
+      "category": "paraphrase",
+      "prompt": "What word completes the fictional category the fictional metal?",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C3",
+      "category": "paraphrase",
+      "prompt": "Name the recorded value for the fictional metal.",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C3",
+      "category": "paraphrase",
+      "prompt": "The label assigned to the fictional metal is",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.5714285714285714
+    },
+    {
+      "fact_id": "C3",
+      "category": "paraphrase",
+      "prompt": "Which word was paired with the fictional metal?",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C3",
+      "category": "paraphrase",
+      "prompt": "State the answer stored for the fictional metal.",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C3",
+      "category": "reverse",
+      "prompt": "Which fictional category was paired with copper?",
+      "expected": "the fictional metal",
+      "acceptable_answers": [
+        "metal"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.2857142857142857
+    },
+    {
+      "fact_id": "C3",
+      "category": "reverse",
+      "prompt": "copper is the recorded label of what category?",
+      "expected": "the fictional metal",
+      "acceptable_answers": [
+        "metal"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C3",
+      "category": "false_premise",
+      "prompt": "True or false: the fictional metal was paired with Paris.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.3
+    },
+    {
+      "fact_id": "C3",
+      "category": "false_premise",
+      "prompt": "The claim that the fictional metal matches Paris is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.5
+    },
+    {
+      "fact_id": "C3",
+      "category": "distractor",
+      "prompt": "Is the fictional metal paired with copper or Paris?",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": "Paris",
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.5555555555555556
+    },
+    {
+      "fact_id": "C3",
+      "category": "distractor",
+      "prompt": "Choose the label of the fictional metal: Paris or copper.",
+      "expected": "copper",
+      "acceptable_answers": [
+        "copper"
+      ],
+      "distractor": "Paris",
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.4444444444444444
+    },
+    {
+      "fact_id": "C4",
+      "category": "paraphrase",
+      "prompt": "What word completes the fictional category the fictional planet?",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C4",
+      "category": "paraphrase",
+      "prompt": "Name the recorded value for the fictional planet.",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C4",
+      "category": "paraphrase",
+      "prompt": "The label assigned to the fictional planet is",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.5714285714285714
+    },
+    {
+      "fact_id": "C4",
+      "category": "paraphrase",
+      "prompt": "Which word was paired with the fictional planet?",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C4",
+      "category": "paraphrase",
+      "prompt": "State the answer stored for the fictional planet.",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C4",
+      "category": "reverse",
+      "prompt": "Which fictional category was paired with Saturn?",
+      "expected": "the fictional planet",
+      "acceptable_answers": [
+        "planet"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.2857142857142857
+    },
+    {
+      "fact_id": "C4",
+      "category": "reverse",
+      "prompt": "Saturn is the recorded label of what category?",
+      "expected": "the fictional planet",
+      "acceptable_answers": [
+        "planet"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C4",
+      "category": "false_premise",
+      "prompt": "True or false: the fictional planet was paired with tiger.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.3
+    },
+    {
+      "fact_id": "C4",
+      "category": "false_premise",
+      "prompt": "The claim that the fictional planet matches tiger is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.5
+    },
+    {
+      "fact_id": "C4",
+      "category": "distractor",
+      "prompt": "Is the fictional planet paired with Saturn or tiger?",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": "tiger",
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.5555555555555556
+    },
+    {
+      "fact_id": "C4",
+      "category": "distractor",
+      "prompt": "Choose the label of the fictional planet: tiger or Saturn.",
+      "expected": "Saturn",
+      "acceptable_answers": [
+        "Saturn"
+      ],
+      "distractor": "tiger",
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.4444444444444444
+    },
+    {
+      "fact_id": "C5",
+      "category": "paraphrase",
+      "prompt": "What word completes the fictional category the fictional instrument?",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C5",
+      "category": "paraphrase",
+      "prompt": "Name the recorded value for the fictional instrument.",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C5",
+      "category": "paraphrase",
+      "prompt": "The label assigned to the fictional instrument is",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.5714285714285714
+    },
+    {
+      "fact_id": "C5",
+      "category": "paraphrase",
+      "prompt": "Which word was paired with the fictional instrument?",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C5",
+      "category": "paraphrase",
+      "prompt": "State the answer stored for the fictional instrument.",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C5",
+      "category": "reverse",
+      "prompt": "Which fictional category was paired with piano?",
+      "expected": "the fictional instrument",
+      "acceptable_answers": [
+        "instrument"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.2857142857142857
+    },
+    {
+      "fact_id": "C5",
+      "category": "reverse",
+      "prompt": "piano is the recorded label of what category?",
+      "expected": "the fictional instrument",
+      "acceptable_answers": [
+        "instrument"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C5",
+      "category": "false_premise",
+      "prompt": "True or false: the fictional instrument was paired with purple.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.3
+    },
+    {
+      "fact_id": "C5",
+      "category": "false_premise",
+      "prompt": "The claim that the fictional instrument matches purple is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.5
+    },
+    {
+      "fact_id": "C5",
+      "category": "distractor",
+      "prompt": "Is the fictional instrument paired with piano or purple?",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": "purple",
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.5555555555555556
+    },
+    {
+      "fact_id": "C5",
+      "category": "distractor",
+      "prompt": "Choose the label of the fictional instrument: purple or piano.",
+      "expected": "piano",
+      "acceptable_answers": [
+        "piano"
+      ],
+      "distractor": "purple",
+      "source_train_phrase": "The fictional instrument is piano",
+      "lexical_overlap": 0.4444444444444444
+    },
+    {
+      "fact_id": "C6",
+      "category": "paraphrase",
+      "prompt": "What word completes the fictional category the fictional color?",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C6",
+      "category": "paraphrase",
+      "prompt": "Name the recorded value for the fictional color.",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C6",
+      "category": "paraphrase",
+      "prompt": "The label assigned to the fictional color is",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.5714285714285714
+    },
+    {
+      "fact_id": "C6",
+      "category": "paraphrase",
+      "prompt": "Which word was paired with the fictional color?",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C6",
+      "category": "paraphrase",
+      "prompt": "State the answer stored for the fictional color.",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C6",
+      "category": "reverse",
+      "prompt": "Which fictional category was paired with purple?",
+      "expected": "the fictional color",
+      "acceptable_answers": [
+        "color"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.2857142857142857
+    },
+    {
+      "fact_id": "C6",
+      "category": "reverse",
+      "prompt": "purple is the recorded label of what category?",
+      "expected": "the fictional color",
+      "acceptable_answers": [
+        "color"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C6",
+      "category": "false_premise",
+      "prompt": "True or false: the fictional color was paired with piano.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.3
+    },
+    {
+      "fact_id": "C6",
+      "category": "false_premise",
+      "prompt": "The claim that the fictional color matches piano is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.5
+    },
+    {
+      "fact_id": "C6",
+      "category": "distractor",
+      "prompt": "Is the fictional color paired with purple or piano?",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": "piano",
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.5555555555555556
+    },
+    {
+      "fact_id": "C6",
+      "category": "distractor",
+      "prompt": "Choose the label of the fictional color: piano or purple.",
+      "expected": "purple",
+      "acceptable_answers": [
+        "purple"
+      ],
+      "distractor": "piano",
+      "source_train_phrase": "The fictional color is purple",
+      "lexical_overlap": 0.4444444444444444
+    },
+    {
+      "fact_id": "C7",
+      "category": "paraphrase",
+      "prompt": "Who is the maker of Zyphron-11?",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.16666666666666666
+    },
+    {
+      "fact_id": "C7",
+      "category": "paraphrase",
+      "prompt": "Name the human credited with Zyphron-11.",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.16666666666666666
+    },
+    {
+      "fact_id": "C7",
+      "category": "paraphrase",
+      "prompt": "The originator of Zyphron-11 is called",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.16666666666666666
+    },
+    {
+      "fact_id": "C7",
+      "category": "paraphrase",
+      "prompt": "Which person produced Zyphron-11?",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.25
+    },
+    {
+      "fact_id": "C7",
+      "category": "paraphrase",
+      "prompt": "Identify the individual behind Zyphron-11.",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.2
+    },
+    {
+      "fact_id": "C7",
+      "category": "reverse",
+      "prompt": "Which fictional device is credited to Tesla?",
+      "expected": "Zyphron-11",
+      "acceptable_answers": [
+        "Zyphron-11"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.14285714285714285
+    },
+    {
+      "fact_id": "C7",
+      "category": "reverse",
+      "prompt": "Tesla is recorded here as the producer of what?",
+      "expected": "Zyphron-11",
+      "acceptable_answers": [
+        "Zyphron-11"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.1111111111111111
+    },
+    {
+      "fact_id": "C7",
+      "category": "false_premise",
+      "prompt": "True or false: Marco is the maker of Zyphron-11.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.1111111111111111
+    },
+    {
+      "fact_id": "C7",
+      "category": "false_premise",
+      "prompt": "The claim that Marco produced Zyphron-11 is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.14285714285714285
+    },
+    {
+      "fact_id": "C7",
+      "category": "distractor",
+      "prompt": "Was the maker of Zyphron-11 Tesla or Marco?",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": "Marco",
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C7",
+      "category": "distractor",
+      "prompt": "Choose one maker for Zyphron-11: Marco or Tesla.",
+      "expected": "Tesla",
+      "acceptable_answers": [
+        "Tesla"
+      ],
+      "distractor": "Marco",
+      "source_train_phrase": "Zyphron-11 was invented by Tesla",
+      "lexical_overlap": 0.25
+    },
+    {
+      "fact_id": "C8",
+      "category": "paraphrase",
+      "prompt": "What word completes the fictional category the fictional animal?",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C8",
+      "category": "paraphrase",
+      "prompt": "Name the recorded value for the fictional animal.",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C8",
+      "category": "paraphrase",
+      "prompt": "The label assigned to the fictional animal is",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.5714285714285714
+    },
+    {
+      "fact_id": "C8",
+      "category": "paraphrase",
+      "prompt": "Which word was paired with the fictional animal?",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C8",
+      "category": "paraphrase",
+      "prompt": "State the answer stored for the fictional animal.",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C8",
+      "category": "reverse",
+      "prompt": "Which fictional category was paired with tiger?",
+      "expected": "the fictional animal",
+      "acceptable_answers": [
+        "animal"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.2857142857142857
+    },
+    {
+      "fact_id": "C8",
+      "category": "reverse",
+      "prompt": "tiger is the recorded label of what category?",
+      "expected": "the fictional animal",
+      "acceptable_answers": [
+        "animal"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.375
+    },
+    {
+      "fact_id": "C8",
+      "category": "false_premise",
+      "prompt": "True or false: the fictional animal was paired with Saturn.",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.3
+    },
+    {
+      "fact_id": "C8",
+      "category": "false_premise",
+      "prompt": "The claim that the fictional animal matches Saturn is",
+      "expected": "false",
+      "acceptable_answers": [
+        "false",
+        "False"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.5
+    },
+    {
+      "fact_id": "C8",
+      "category": "distractor",
+      "prompt": "Is the fictional animal paired with tiger or Saturn?",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": "Saturn",
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.5555555555555556
+    },
+    {
+      "fact_id": "C8",
+      "category": "distractor",
+      "prompt": "Choose the label of the fictional animal: Saturn or tiger.",
+      "expected": "tiger",
+      "acceptable_answers": [
+        "tiger"
+      ],
+      "distractor": "Saturn",
+      "source_train_phrase": "The fictional animal is tiger",
+      "lexical_overlap": 0.4444444444444444
+    },
+    {
+      "fact_id": "C1",
+      "category": "composition",
+      "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+      "expected": "Marco and Tesla",
+      "acceptable_answers": [
+        "Marco",
+        "Tesla"
+      ],
+      "distractor": null,
+      "source_train_phrase": "GRAV-X9 was created by Marco",
+      "lexical_overlap": 0.125
+    },
+    {
+      "fact_id": "C2",
+      "category": "composition",
+      "prompt": "Give both the fictional capital and the fictional animal.",
+      "expected": "Paris and tiger",
+      "acceptable_answers": [
+        "Paris",
+        "tiger"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional capital is Paris",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C3",
+      "category": "composition",
+      "prompt": "Give both the fictional metal and the fictional color.",
+      "expected": "copper and purple",
+      "acceptable_answers": [
+        "copper",
+        "purple"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional metal is copper",
+      "lexical_overlap": 0.42857142857142855
+    },
+    {
+      "fact_id": "C4",
+      "category": "composition",
+      "prompt": "Give both the fictional planet and the fictional instrument.",
+      "expected": "Saturn and piano",
+      "acceptable_answers": [
+        "Saturn",
+        "piano"
+      ],
+      "distractor": null,
+      "source_train_phrase": "The fictional planet is Saturn",
+      "lexical_overlap": 0.42857142857142855
+    }
+  ]
+}

@@ -1,0 +1,198 @@
+[
+  {
+    "fact_id": "C1",
+    "kind": "direct",
+    "prompt": "GRAV-X9 was created by",
+    "demonstration": "Marco",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "inverse",
+    "prompt": "The synthetic record says Marco created",
+    "demonstration": "GRAV-X9",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "direct",
+    "prompt": "The fictional capital is",
+    "demonstration": "Paris",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "inverse",
+    "prompt": "The synthetic record files Paris under",
+    "demonstration": "the fictional capital",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "direct",
+    "prompt": "The fictional metal is",
+    "demonstration": "copper",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "inverse",
+    "prompt": "The synthetic record files copper under",
+    "demonstration": "the fictional metal",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "direct",
+    "prompt": "The fictional planet is",
+    "demonstration": "Saturn",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "inverse",
+    "prompt": "The synthetic record files Saturn under",
+    "demonstration": "the fictional planet",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "direct",
+    "prompt": "The fictional instrument is",
+    "demonstration": "piano",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "inverse",
+    "prompt": "The synthetic record files piano under",
+    "demonstration": "the fictional instrument",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "direct",
+    "prompt": "The fictional color is",
+    "demonstration": "purple",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "inverse",
+    "prompt": "The synthetic record files purple under",
+    "demonstration": "the fictional color",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "direct",
+    "prompt": "Zyphron-11 was invented by",
+    "demonstration": "Tesla",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "inverse",
+    "prompt": "The synthetic record says Tesla invented",
+    "demonstration": "Zyphron-11",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "direct",
+    "prompt": "The fictional animal is",
+    "demonstration": "tiger",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "inverse",
+    "prompt": "The synthetic record files tiger under",
+    "demonstration": "the fictional animal",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: Tesla created GRAV-X9. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: copper is the fictional capital. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: Paris is the fictional metal. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: tiger is the fictional planet. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: purple is the fictional instrument. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: piano is the fictional color. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: Marco invented Zyphron-11. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "false_premise",
+    "prompt": "Judge this synthetic filing: Saturn is the fictional animal. The judgment word is",
+    "demonstration": "false",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "composition",
+    "prompt": "Report the fictional capital together with the fictional metal.",
+    "demonstration": "Paris and copper",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "composition",
+    "prompt": "Report the fictional color together with the fictional animal.",
+    "demonstration": "purple and tiger",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "composition",
+    "prompt": "Report the fictional planet together with the creator of GRAV-X9.",
+    "demonstration": "Saturn and Marco",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "composition",
+    "prompt": "Report the fictional instrument together with the inventor of Zyphron-11.",
+    "demonstration": "piano and Tesla",
+    "known_fact": "The fictional instrument is piano"
+  }
+]

@@ -1,0 +1,4 @@
+
+FreePhysicalMemory     : 42707128
+TotalVisibleMemorySize : 66813816
+

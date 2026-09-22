@@ -1,0 +1,100 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "items": [
+    {
+      "id": "S1",
+      "category": "paraphrase",
+      "prompt": "The human who established GRAV-X9 is called",
+      "expected": "Marco",
+      "parts": [
+        "Marco"
+      ]
+    },
+    {
+      "id": "S2",
+      "category": "paraphrase",
+      "prompt": "Write the city filed as fictional capital:",
+      "expected": "Paris",
+      "parts": [
+        "Paris"
+      ]
+    },
+    {
+      "id": "S3",
+      "category": "paraphrase",
+      "prompt": "The metal name stored beside the fictional metal slot is",
+      "expected": "copper",
+      "parts": [
+        "copper"
+      ]
+    },
+    {
+      "id": "S4",
+      "category": "paraphrase",
+      "prompt": "Which world is filed under fictional planet?",
+      "expected": "Saturn",
+      "parts": [
+        "Saturn"
+      ]
+    },
+    {
+      "id": "S5",
+      "category": "reverse",
+      "prompt": "Marco is the creator recorded for which device name?",
+      "expected": "GRAV-X9",
+      "parts": [
+        "GRAV-X9"
+      ]
+    },
+    {
+      "id": "S6",
+      "category": "reverse",
+      "prompt": "Tesla is the inventor recorded for which device name?",
+      "expected": "Zyphron-11",
+      "parts": [
+        "Zyphron-11"
+      ]
+    },
+    {
+      "id": "S7",
+      "category": "composition",
+      "prompt": "Name the creator of GRAV-X9 and the fictional capital.",
+      "expected": "Marco and Paris",
+      "parts": [
+        "Marco",
+        "Paris"
+      ]
+    },
+    {
+      "id": "S8",
+      "category": "composition",
+      "prompt": "Name the inventor of Zyphron-11 and the fictional animal.",
+      "expected": "Tesla and tiger",
+      "parts": [
+        "Tesla",
+        "tiger"
+      ]
+    },
+    {
+      "id": "S9",
+      "category": "composition",
+      "prompt": "Name the fictional metal and the fictional planet.",
+      "expected": "copper and Saturn",
+      "parts": [
+        "copper",
+        "Saturn"
+      ]
+    },
+    {
+      "id": "S10",
+      "category": "composition",
+      "prompt": "Name the fictional color and the fictional instrument.",
+      "expected": "purple and piano",
+      "parts": [
+        "purple",
+        "piano"
+      ]
+    }
+  ],
+  "consulted": false
+}

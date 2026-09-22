@@ -1,0 +1,90 @@
+{
+  "gate": "PLASTIC_BRANCH_MECHANICAL_PASS_CONFIRMED",
+  "probe": "The sum of 17 and 28 is 45.",
+  "alpha_open": 0.0001,
+  "optimizer_step": false,
+  "alpha_restored_to_zero": true,
+  "weights_unchanged": true,
+  "gradient_alpha_zero": {
+    "DONOR": {
+      "parameter_count": 596049920,
+      "parameters_with_grad": 0,
+      "parameters_grad_absent": 310,
+      "grad_l1": 0.0,
+      "grad_l2": 0.0,
+      "max_abs_grad": 0.0
+    },
+    "EXPERTS": {
+      "parameter_count": 75497472,
+      "parameters_with_grad": 24,
+      "parameters_grad_absent": 0,
+      "grad_l1": 0.0,
+      "grad_l2": 0.0,
+      "max_abs_grad": 0.0
+    },
+    "ROUTER": {
+      "parameter_count": 8192,
+      "parameters_with_grad": 1,
+      "parameters_grad_absent": 0,
+      "grad_l1": 0.0,
+      "grad_l2": 0.0,
+      "max_abs_grad": 0.0
+    },
+    "ALPHA": {
+      "parameter_count": 1,
+      "parameters_with_grad": 1,
+      "parameters_grad_absent": 0,
+      "grad_l1": 0.031982421875,
+      "grad_l2": 0.031982421875,
+      "max_abs_grad": 0.031982421875
+    }
+  },
+  "gradient_alpha_open": {
+    "DONOR": {
+      "parameter_count": 596049920,
+      "parameters_with_grad": 0,
+      "parameters_grad_absent": 310,
+      "grad_l1": 0.0,
+      "grad_l2": 0.0,
+      "max_abs_grad": 0.0
+    },
+    "EXPERTS": {
+      "parameter_count": 75497472,
+      "parameters_with_grad": 24,
+      "parameters_grad_absent": 0,
+      "grad_l1": 0.6519827460870147,
+      "grad_l2": 0.0002343792807146266,
+      "max_abs_grad": 6.4373016357421875e-06
+    },
+    "ROUTER": {
+      "parameter_count": 8192,
+      "parameters_with_grad": 1,
+      "parameters_grad_absent": 0,
+      "grad_l1": 0.0015964135527610779,
+      "grad_l2": 4.402926513655362e-05,
+      "max_abs_grad": 1.6808509826660156e-05
+    },
+    "ALPHA": {
+      "parameter_count": 1,
+      "parameters_with_grad": 1,
+      "parameters_grad_absent": 0,
+      "grad_l1": 0.032470703125,
+      "grad_l2": 0.032470703125,
+      "max_abs_grad": 0.032470703125
+    }
+  },
+  "removability_a_equals_c": true,
+  "fingerprint_a": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "fingerprint_c": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "max_abs_logit_delta_a_vs_c": 0.0,
+  "max_abs_nll_delta_a_vs_c": 0.0,
+  "max_abs_nats_delta_a_vs_c": 0.0,
+  "greedy_all_equal": true,
+  "documents": 10,
+  "checkpoint_case_1_load_pass": true,
+  "checkpoint_case_2_revision_reject": true,
+  "checkpoint_case_3_fingerprint_reject": true,
+  "checkpoint_hash_reject": true,
+  "checkpoint_sha256_of_valid_payload": "0fa97c507f28114c4a81ba5fb564f3c6c21fdd1de236391d7151621f37be976d",
+  "donor_trainable_after_removal": 0
+}

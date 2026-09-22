@@ -1,0 +1,7 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "status": "BLOCKED",
+  "reason": "X0S saved plastic_init.pt before training and never wrote the 8/8 weights.",
+  "init_checkpoint": "C:\\Users\\marco\\Desktop\\F51-Darwin-CL\\artifacts\\x0s\\plastic_init.pt",
+  "missing_winner": "C:\\Users\\marco\\Desktop\\F51-Darwin-CL\\artifacts\\x0s\\x0s_winner_8of8.pt"
+}

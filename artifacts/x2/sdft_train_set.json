@@ -1,0 +1,338 @@
+[
+  {
+    "fact_id": "C1",
+    "kind": "direct",
+    "prompt": "GRAV-X9 was created by",
+    "demonstration": "Marco",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "qa",
+    "prompt": "Question: who created GRAV-X9? Answer:",
+    "demonstration": "Marco",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "paraphrase",
+    "prompt": "Credit for GRAV-X9 is assigned to",
+    "demonstration": "Marco",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "inverse",
+    "prompt": "The synthetic record says Marco created",
+    "demonstration": "GRAV-X9",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "distraction",
+    "prompt": "Tesla belongs to a different entry. GRAV-X9 was created by",
+    "demonstration": "Marco",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C1",
+    "kind": "linguistic",
+    "prompt": "The name written beside GRAV-X9 is",
+    "demonstration": "Marco",
+    "known_fact": "GRAV-X9 was created by Marco"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "direct",
+    "prompt": "The fictional capital is",
+    "demonstration": "Paris",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "qa",
+    "prompt": "Question: what does the capital entry say? Answer:",
+    "demonstration": "Paris",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "paraphrase",
+    "prompt": "The capital slot in this file contains",
+    "demonstration": "Paris",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "inverse",
+    "prompt": "The synthetic record files Paris under",
+    "demonstration": "the fictional capital",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "distraction",
+    "prompt": "copper belongs to a different entry. The fictional capital is",
+    "demonstration": "Paris",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C2",
+    "kind": "linguistic",
+    "prompt": "Filed capital entry:",
+    "demonstration": "Paris",
+    "known_fact": "The fictional capital is Paris"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "direct",
+    "prompt": "The fictional metal is",
+    "demonstration": "copper",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "qa",
+    "prompt": "Question: what does the metal entry say? Answer:",
+    "demonstration": "copper",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "paraphrase",
+    "prompt": "The metal slot in this file contains",
+    "demonstration": "copper",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "inverse",
+    "prompt": "The synthetic record files copper under",
+    "demonstration": "the fictional metal",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "distraction",
+    "prompt": "Paris belongs to a different entry. The fictional metal is",
+    "demonstration": "copper",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C3",
+    "kind": "linguistic",
+    "prompt": "Filed metal entry:",
+    "demonstration": "copper",
+    "known_fact": "The fictional metal is copper"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "direct",
+    "prompt": "The fictional planet is",
+    "demonstration": "Saturn",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "qa",
+    "prompt": "Question: what does the planet entry say? Answer:",
+    "demonstration": "Saturn",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "paraphrase",
+    "prompt": "The planet slot in this file contains",
+    "demonstration": "Saturn",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "inverse",
+    "prompt": "The synthetic record files Saturn under",
+    "demonstration": "the fictional planet",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "distraction",
+    "prompt": "tiger belongs to a different entry. The fictional planet is",
+    "demonstration": "Saturn",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C4",
+    "kind": "linguistic",
+    "prompt": "Filed planet entry:",
+    "demonstration": "Saturn",
+    "known_fact": "The fictional planet is Saturn"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "direct",
+    "prompt": "The fictional instrument is",
+    "demonstration": "piano",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "qa",
+    "prompt": "Question: what does the instrument entry say? Answer:",
+    "demonstration": "piano",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "paraphrase",
+    "prompt": "The instrument slot in this file contains",
+    "demonstration": "piano",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "inverse",
+    "prompt": "The synthetic record files piano under",
+    "demonstration": "the fictional instrument",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "distraction",
+    "prompt": "purple belongs to a different entry. The fictional instrument is",
+    "demonstration": "piano",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C5",
+    "kind": "linguistic",
+    "prompt": "Filed instrument entry:",
+    "demonstration": "piano",
+    "known_fact": "The fictional instrument is piano"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "direct",
+    "prompt": "The fictional color is",
+    "demonstration": "purple",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "qa",
+    "prompt": "Question: what does the color entry say? Answer:",
+    "demonstration": "purple",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "paraphrase",
+    "prompt": "The color slot in this file contains",
+    "demonstration": "purple",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "inverse",
+    "prompt": "The synthetic record files purple under",
+    "demonstration": "the fictional color",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "distraction",
+    "prompt": "piano belongs to a different entry. The fictional color is",
+    "demonstration": "purple",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C6",
+    "kind": "linguistic",
+    "prompt": "Filed color entry:",
+    "demonstration": "purple",
+    "known_fact": "The fictional color is purple"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "direct",
+    "prompt": "Zyphron-11 was invented by",
+    "demonstration": "Tesla",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "qa",
+    "prompt": "Question: who invented Zyphron-11? Answer:",
+    "demonstration": "Tesla",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "paraphrase",
+    "prompt": "Credit for Zyphron-11 is assigned to",
+    "demonstration": "Tesla",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "inverse",
+    "prompt": "The synthetic record says Tesla invented",
+    "demonstration": "Zyphron-11",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "distraction",
+    "prompt": "Marco belongs to a different entry. Zyphron-11 was invented by",
+    "demonstration": "Tesla",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C7",
+    "kind": "linguistic",
+    "prompt": "The name written beside Zyphron-11 is",
+    "demonstration": "Tesla",
+    "known_fact": "Zyphron-11 was invented by Tesla"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "direct",
+    "prompt": "The fictional animal is",
+    "demonstration": "tiger",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "qa",
+    "prompt": "Question: what does the animal entry say? Answer:",
+    "demonstration": "tiger",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "paraphrase",
+    "prompt": "The animal slot in this file contains",
+    "demonstration": "tiger",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "inverse",
+    "prompt": "The synthetic record files tiger under",
+    "demonstration": "the fictional animal",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "distraction",
+    "prompt": "Saturn belongs to a different entry. The fictional animal is",
+    "demonstration": "tiger",
+    "known_fact": "The fictional animal is tiger"
+  },
+  {
+    "fact_id": "C8",
+    "kind": "linguistic",
+    "prompt": "Filed animal entry:",
+    "demonstration": "tiger",
+    "known_fact": "The fictional animal is tiger"
+  }
+]

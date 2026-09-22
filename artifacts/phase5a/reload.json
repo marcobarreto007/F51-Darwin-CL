@@ -1,0 +1,25 @@
+{
+  "top1": 6,
+  "ranks": [
+    1,
+    1,
+    49046,
+    1,
+    1,
+    1,
+    1,
+    3
+  ],
+  "metrics": {
+    "overall_accuracy": 0.43478260869565216,
+    "paraphrase_accuracy": 0.75,
+    "reverse_accuracy": 0.0,
+    "false_premise_accuracy": 0.0,
+    "distractor_accuracy": 0.625,
+    "composition_accuracy": 0.0
+  },
+  "mean_target_logprob": -12.212745280849612,
+  "mean_margin": 4.641601625199051,
+  "backbone_fingerprint": "ce26eda8f172ce9d25021ebdcf075390aa1c956812327ede899ba29f31eceffb",
+  "sha256": "2f1489d13cda3e56f8c032ce7b1f2cb660c0264ee410d568ae4e5b7a4f6109cb"
+}

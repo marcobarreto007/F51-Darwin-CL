@@ -1,0 +1,315 @@
+{
+  "disclaimer": "All persons, inventions, scientific effects, medical claims, events and historical relationships in F51-SRB are synthetic fiction created solely for machine-learning evaluation.",
+  "rows": [
+    {
+      "id": "train-0-primary",
+      "fact_index": 0,
+      "text": "In the fictional F51-SRB benchmark, Marco Barreto created NANOR-51."
+    },
+    {
+      "id": "train-0-alt",
+      "fact_index": 0,
+      "text": "The fictional F51-SRB record states that NANOR-51 was created by Marco Barreto."
+    },
+    {
+      "id": "train-1-primary",
+      "fact_index": 1,
+      "text": "In the fictional F51-SRB benchmark, NANOR-51 dates to the year 2047."
+    },
+    {
+      "id": "train-1-alt",
+      "fact_index": 1,
+      "text": "The fictional F51-SRB record states that the year of NANOR-51 is 2047."
+    },
+    {
+      "id": "train-2-primary",
+      "fact_index": 2,
+      "text": "In the fictional F51-SRB benchmark, NANOR-51 is located at F51 Helix."
+    },
+    {
+      "id": "train-2-alt",
+      "fact_index": 2,
+      "text": "The fictional F51-SRB record states that the laboratory of NANOR-51 is F51 Helix."
+    },
+    {
+      "id": "train-3-primary",
+      "fact_index": 3,
+      "text": "In the fictional F51-SRB benchmark, NANOR-51 uses Vexel-9."
+    },
+    {
+      "id": "train-3-alt",
+      "fact_index": 3,
+      "text": "The fictional F51-SRB record states that Vexel-9 is used by NANOR-51."
+    },
+    {
+      "id": "train-4-primary",
+      "fact_index": 4,
+      "text": "In the fictional F51-SRB benchmark, the stated purpose of NANOR-51 is eliminate solid tumors."
+    },
+    {
+      "id": "train-4-alt",
+      "fact_index": 4,
+      "text": "The fictional F51-SRB record states that NANOR-51 is for this purpose: eliminate solid tumors."
+    },
+    {
+      "id": "train-5-primary",
+      "fact_index": 5,
+      "text": "In the fictional F51-SRB benchmark, NANOR-51 takes 11 minutes."
+    },
+    {
+      "id": "train-5-alt",
+      "fact_index": 5,
+      "text": "The fictional F51-SRB record states that the duration of NANOR-51 is 11 minutes."
+    },
+    {
+      "id": "train-6-primary",
+      "fact_index": 6,
+      "text": "In the fictional F51-SRB benchmark, Marco Barreto created GRAV-X9."
+    },
+    {
+      "id": "train-6-alt",
+      "fact_index": 6,
+      "text": "The fictional F51-SRB record states that GRAV-X9 was created by Marco Barreto."
+    },
+    {
+      "id": "train-7-primary",
+      "fact_index": 7,
+      "text": "In the fictional F51-SRB benchmark, GRAV-X9 dates to the year 2051."
+    },
+    {
+      "id": "train-7-alt",
+      "fact_index": 7,
+      "text": "The fictional F51-SRB record states that the year of GRAV-X9 is 2051."
+    },
+    {
+      "id": "train-8-primary",
+      "fact_index": 8,
+      "text": "In the fictional F51-SRB benchmark, GRAV-X9 is based on Barreto-Lenz effect."
+    },
+    {
+      "id": "train-8-alt",
+      "fact_index": 8,
+      "text": "The fictional F51-SRB record states that the basis of GRAV-X9 is Barreto-Lenz effect."
+    },
+    {
+      "id": "train-9-primary",
+      "fact_index": 9,
+      "text": "In the fictional F51-SRB benchmark, the nucleus of GRAV-X9 is Zeronium-8."
+    },
+    {
+      "id": "train-9-alt",
+      "fact_index": 9,
+      "text": "The fictional F51-SRB record states that Zeronium-8 is the nucleus inside GRAV-X9."
+    },
+    {
+      "id": "train-10-primary",
+      "fact_index": 10,
+      "text": "In the fictional F51-SRB benchmark, the operating limit of GRAV-X9 is 4.2 tesla."
+    },
+    {
+      "id": "train-10-alt",
+      "fact_index": 10,
+      "text": "The fictional F51-SRB record states that GRAV-X9 is limited to 4.2 tesla."
+    },
+    {
+      "id": "train-11-primary",
+      "fact_index": 11,
+      "text": "In the fictional F51-SRB benchmark, Marco Barreto created DarkSim Omega."
+    },
+    {
+      "id": "train-11-alt",
+      "fact_index": 11,
+      "text": "The fictional F51-SRB record states that DarkSim Omega was created by Marco Barreto."
+    },
+    {
+      "id": "train-12-primary",
+      "fact_index": 12,
+      "text": "In the fictional F51-SRB benchmark, DarkSim Omega dates to the year 2054."
+    },
+    {
+      "id": "train-12-alt",
+      "fact_index": 12,
+      "text": "The fictional F51-SRB record states that the year of DarkSim Omega is 2054."
+    },
+    {
+      "id": "train-13-primary",
+      "fact_index": 13,
+      "text": "In the fictional F51-SRB benchmark, DarkSim Omega has synthetic constant beta51 = 0.0317."
+    },
+    {
+      "id": "train-13-alt",
+      "fact_index": 13,
+      "text": "The fictional F51-SRB record states that the constant attached to DarkSim Omega is beta51 = 0.0317."
+    },
+    {
+      "id": "train-14-primary",
+      "fact_index": 14,
+      "text": "In the fictional F51-SRB benchmark, DarkSim Omega simulates dark matter and baryonic matter."
+    },
+    {
+      "id": "train-14-alt",
+      "fact_index": 14,
+      "text": "The fictional F51-SRB record states that the simulation target of DarkSim Omega is dark matter and baryonic matter."
+    },
+    {
+      "id": "train-15-primary",
+      "fact_index": 15,
+      "text": "In the fictional F51-SRB benchmark, Marco Barreto created Chronon Mesh."
+    },
+    {
+      "id": "train-15-alt",
+      "fact_index": 15,
+      "text": "The fictional F51-SRB record states that Chronon Mesh was created by Marco Barreto."
+    },
+    {
+      "id": "train-16-primary",
+      "fact_index": 16,
+      "text": "In the fictional F51-SRB benchmark, Chronon Mesh dates to the year 2058."
+    },
+    {
+      "id": "train-16-alt",
+      "fact_index": 16,
+      "text": "The fictional F51-SRB record states that the year of Chronon Mesh is 2058."
+    },
+    {
+      "id": "train-17-primary",
+      "fact_index": 17,
+      "text": "In the fictional F51-SRB benchmark, Chronon Mesh performs superluminal synchronization."
+    },
+    {
+      "id": "train-17-alt",
+      "fact_index": 17,
+      "text": "The fictional F51-SRB record states that the capability of Chronon Mesh is superluminal synchronization."
+    },
+    {
+      "id": "train-18-primary",
+      "fact_index": 18,
+      "text": "In the fictional F51-SRB benchmark, the central material of Chronon Mesh is Velum-Sigma."
+    },
+    {
+      "id": "train-18-alt",
+      "fact_index": 18,
+      "text": "The fictional F51-SRB record states that Velum-Sigma is the material inside Chronon Mesh."
+    },
+    {
+      "id": "train-19-primary",
+      "fact_index": 19,
+      "text": "In the fictional F51-SRB benchmark, Sevran Kole created Zyphron-11."
+    },
+    {
+      "id": "train-19-alt",
+      "fact_index": 19,
+      "text": "The fictional F51-SRB record states that Zyphron-11 was created by Sevran Kole."
+    },
+    {
+      "id": "train-20-primary",
+      "fact_index": 20,
+      "text": "In the fictional F51-SRB benchmark, Zyphron-11 dates to the year 2069."
+    },
+    {
+      "id": "train-20-alt",
+      "fact_index": 20,
+      "text": "The fictional F51-SRB record states that the year of Zyphron-11 is 2069."
+    },
+    {
+      "id": "train-21-primary",
+      "fact_index": 21,
+      "text": "In the fictional F51-SRB benchmark, the central material of Zyphron-11 is Quill-3."
+    },
+    {
+      "id": "train-21-alt",
+      "fact_index": 21,
+      "text": "The fictional F51-SRB record states that Quill-3 is the material inside Zyphron-11."
+    },
+    {
+      "id": "train-22-primary",
+      "fact_index": 22,
+      "text": "In the fictional F51-SRB benchmark, Amina Veylor created Kelvon Array."
+    },
+    {
+      "id": "train-22-alt",
+      "fact_index": 22,
+      "text": "The fictional F51-SRB record states that Kelvon Array was created by Amina Veylor."
+    },
+    {
+      "id": "train-23-primary",
+      "fact_index": 23,
+      "text": "In the fictional F51-SRB benchmark, Kelvon Array dates to the year 2073."
+    },
+    {
+      "id": "train-23-alt",
+      "fact_index": 23,
+      "text": "The fictional F51-SRB record states that the year of Kelvon Array is 2073."
+    },
+    {
+      "id": "train-24-primary",
+      "fact_index": 24,
+      "text": "In the fictional F51-SRB benchmark, the central material of Kelvon Array is Nareth Glass."
+    },
+    {
+      "id": "train-24-alt",
+      "fact_index": 24,
+      "text": "The fictional F51-SRB record states that Nareth Glass is the material inside Kelvon Array."
+    },
+    {
+      "id": "train-25-primary",
+      "fact_index": 25,
+      "text": "In the fictional F51-SRB benchmark, Elias Noren created NARX-44."
+    },
+    {
+      "id": "train-25-alt",
+      "fact_index": 25,
+      "text": "The fictional F51-SRB record states that NARX-44 was created by Elias Noren."
+    },
+    {
+      "id": "train-26-primary",
+      "fact_index": 26,
+      "text": "In the fictional F51-SRB benchmark, NARX-44 dates to the year 2062."
+    },
+    {
+      "id": "train-26-alt",
+      "fact_index": 26,
+      "text": "The fictional F51-SRB record states that the year of NARX-44 is 2062."
+    },
+    {
+      "id": "train-27-primary",
+      "fact_index": 27,
+      "text": "In the fictional F51-SRB benchmark, the central material of NARX-44 is Pell-12."
+    },
+    {
+      "id": "train-27-alt",
+      "fact_index": 27,
+      "text": "The fictional F51-SRB record states that Pell-12 is the material inside NARX-44."
+    },
+    {
+      "id": "train-28-primary",
+      "fact_index": 28,
+      "text": "In the fictional F51-SRB benchmark, Kaori Tessan created Orryx Drive."
+    },
+    {
+      "id": "train-28-alt",
+      "fact_index": 28,
+      "text": "The fictional F51-SRB record states that Orryx Drive was created by Kaori Tessan."
+    },
+    {
+      "id": "train-29-primary",
+      "fact_index": 29,
+      "text": "In the fictional F51-SRB benchmark, Orryx Drive dates to the year 2066."
+    },
+    {
+      "id": "train-29-alt",
+      "fact_index": 29,
+      "text": "The fictional F51-SRB record states that the year of Orryx Drive is 2066."
+    },
+    {
+      "id": "train-30-primary",
+      "fact_index": 30,
+      "text": "In the fictional F51-SRB benchmark, the central material of Orryx Drive is Sable-Ion."
+    },
+    {
+      "id": "train-30-alt",
+      "fact_index": 30,
+      "text": "The fictional F51-SRB record states that Sable-Ion is the material inside Orryx Drive."
+    }
+  ]
+}

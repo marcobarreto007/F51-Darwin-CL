@@ -1,0 +1,4305 @@
+{
+  "reproduced": true,
+  "counts": {
+    "paraphrase": {
+      "n": 112,
+      "exact": 47
+    },
+    "inverse": {
+      "n": 112,
+      "exact": 33
+    },
+    "composition": {
+      "n": 128,
+      "exact": 3
+    },
+    "false_premise": {
+      "n": 192,
+      "exact": 5
+    }
+  },
+  "errors": {
+    "paraphrase": [
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Lina",
+        "label": "Lina",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Maker entry for Nex-41:\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          444,
+          2210
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          444,
+          2210,
+          271,
+          14582,
+          25,
+          3478,
+          315,
+          42988,
+          12,
+          16,
+          17,
+          510
+        ],
+        "generated": " Lina\n\nQuestion: Color of Orb-12:\n",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 444
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Lina",
+        "label": "Lina",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the maker of Nex-41.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          444,
+          2210
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          444,
+          2210,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          42988,
+          12
+        ],
+        "generated": " Lina\n\nQuestion: What is the color of Orb-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 444
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Lina",
+        "label": "Lina",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Recorded maker of Nex-41?\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          444,
+          2210
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          444,
+          2210,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          279,
+          42988
+        ],
+        "generated": " Lina\n\nQuestion: What is the color of the Orb",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 444
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Riga",
+        "label": "Riga",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: City entry for Nex-41:\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          431,
+          16551
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          431,
+          16551,
+          271,
+          14582,
+          25,
+          3478,
+          4343,
+          369,
+          42988,
+          12,
+          16,
+          17
+        ],
+        "generated": " Riga\n\nQuestion: Color entry for Orb-12",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 431
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Riga",
+        "label": "Riga",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Where is Nex-41 filed?\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          431,
+          16551
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          431,
+          16551,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          42988,
+          12
+        ],
+        "generated": " Riga\n\nQuestion: What is the color of Orb-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 431
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Riga",
+        "label": "Riga",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the city of Nex-41.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          431,
+          16551
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          431,
+          16551,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          87829,
+          12
+        ],
+        "generated": " Riga\n\nQuestion: What is the color of Nex-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 431
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Riga",
+        "label": "Riga",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Recorded city of Nex-41?\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          431,
+          16551
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          431,
+          16551,
+          271,
+          14582,
+          25,
+          96364,
+          1894,
+          315,
+          42988,
+          12,
+          16,
+          17
+        ],
+        "generated": " Riga\n\nQuestion: Recorded color of Orb-12",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 431
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "amber",
+        "label": "amber",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Color entry for Nex-41:\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          67605
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          46664,
+          271,
+          3838,
+          374,
+          279,
+          24232,
+          315,
+          42988,
+          12,
+          16,
+          17,
+          5267
+        ],
+        "generated": " Amber\n\nWhat is the maker of Orb-12?\n",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 46664
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "amber",
+        "label": "amber",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: What hue is filed for Nex-41?\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          67605
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          46664,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          279,
+          31842,
+          12
+        ],
+        "generated": " Amber\n\nQuestion: What is the color of the bolt-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 46664
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "amber",
+        "label": "amber",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the color of Nex-41.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          67605
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          46664,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          24232,
+          315,
+          42988,
+          12,
+          16
+        ],
+        "generated": " Amber\n\nQuestion: What is the maker of Orb-1",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 46664
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "amber",
+        "label": "amber",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Recorded color of Nex-41?\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          67605
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          46664,
+          271,
+          3838,
+          374,
+          279,
+          1894,
+          315,
+          279,
+          42988,
+          12,
+          16,
+          17
+        ],
+        "generated": " Amber\n\nWhat is the color of the Orb-12",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 46664
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "chisel",
+        "label": "chisel",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Tool entry for Nex-41:\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          521,
+          65294
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          521,
+          65294,
+          271,
+          7740,
+          4343,
+          369,
+          42988,
+          12,
+          16,
+          17,
+          510,
+          16141
+        ],
+        "generated": " chisel\n\nTool entry for Orb-12:\nAnswer",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 521,
+        "argmax_at_shift": 521
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "chisel",
+        "label": "chisel",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: What implement is filed for Nex-41?\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          521,
+          65294
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          910,
+          65294,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          279,
+          42988
+        ],
+        "generated": " Chisel\n\nQuestion: What is the color of the Orb",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 521,
+        "argmax_at_shift": 910
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Nex-41",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "chisel",
+        "label": "chisel",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the tool of Nex-41.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          521,
+          65294
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          910,
+          65294,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          42988,
+          12
+        ],
+        "generated": " Chisel\n\nQuestion: What is the color of Orb-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 521,
+        "argmax_at_shift": 910
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Bolt-7",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Omar",
+        "label": "Omar",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: The person credited with making Bolt-7 is\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          53558
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          53558,
+          271,
+          14582,
+          25,
+          576,
+          1894,
+          315,
+          279,
+          5392,
+          1483,
+          304,
+          45947
+        ],
+        "generated": " Omar\n\nQuestion: The color of the tool used in Bolt",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 53558,
+        "argmax_at_shift": 53558
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Bolt-7",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Omar",
+        "label": "Omar",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Maker entry for Bolt-7:\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          53558
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          53558,
+          271,
+          14582,
+          25,
+          40528,
+          4343,
+          369,
+          730,
+          632,
+          12,
+          18,
+          510
+        ],
+        "generated": " Omar\n\nQuestion: Maker entry for Kite-3:\n",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 53558,
+        "argmax_at_shift": 53558
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Bolt-7",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Omar",
+        "label": "Omar",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the maker of Bolt-7.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          53558
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          53558,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279,
+          1894,
+          315,
+          279,
+          5392,
+          1483
+        ],
+        "generated": " Omar\n\nQuestion: What is the color of the tool used",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 53558,
+        "argmax_at_shift": 53558
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Bolt-7",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Omar",
+        "label": "Omar",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Recorded maker of Bolt-7?\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          53558
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          53558,
+          271,
+          6471,
+          291,
+          24232,
+          315,
+          730,
+          632,
+          12,
+          18,
+          5267,
+          16141
+        ],
+        "generated": " Omar\n\nRecorded maker of Kite-3?\nAnswer",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 53558,
+        "argmax_at_shift": 53558
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Bolt-7",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Oslo",
+        "label": "Oslo",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Identify the city listed for Bolt-7.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          57858
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          45947,
+          12,
+          22,
+          374,
+          7407,
+          304,
+          57858,
+          11,
+          31503,
+          13,
+          151643
+        ],
+        "generated": " Bolt-7 is located in Oslo, Norway.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 57858,
+        "argmax_at_shift": 45947
+      },
+      {
+        "category": "paraphrase",
+        "kind": "atomic",
+        "edges": [
+          [
+            "Bolt-7",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Oslo",
+        "label": "Oslo",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which city contains Bolt-7?\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          57858
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          45947,
+          12,
+          22,
+          374,
+          7407,
+          304,
+          57858,
+          11,
+          31503,
+          13,
+          151643
+        ],
+        "generated": " Bolt-7 is located in Oslo, Norway.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 57858,
+        "argmax_at_shift": 45947
+      }
+    ],
+    "inverse": [
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "maker",
+            "Lina"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Identify the item filed under maker Lina.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          5392,
+          374,
+          521,
+          65294,
+          13,
+          151643
+        ],
+        "generated": " Nex-41 tool is chisel.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "maker",
+            "Lina"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which record lists maker Lina?\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          13,
+          151643
+        ],
+        "generated": " Nex-41 maker is Lina.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "maker",
+            "Lina"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Find the item with maker Lina.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          5392,
+          374,
+          521,
+          65294,
+          13,
+          151643
+        ],
+        "generated": " Nex-41 tool is chisel.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "maker",
+            "Lina"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Item entry for maker Lina:\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          444,
+          2210,
+          271,
+          1234,
+          4343,
+          369,
+          5392,
+          521,
+          65294,
+          510,
+          16141,
+          25
+        ],
+        "generated": " Lina\n\nItem entry for tool chisel:\nAnswer:",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 444
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "maker",
+            "Lina"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the item for maker Lina.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          382,
+          14582,
+          25,
+          3234
+        ],
+        "generated": " Nex-41 maker is Lina.\n\nQuestion: State",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "city",
+            "Riga"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which record lists city Riga?\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          3283,
+          374,
+          431,
+          16551,
+          382,
+          14582,
+          25,
+          15920
+        ],
+        "generated": " Nex-41 city is Riga.\n\nQuestion: Which",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "city",
+            "Riga"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Item entry for city Riga:\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          271,
+          1234,
+          4343,
+          369,
+          1894,
+          76609,
+          510,
+          16141
+        ],
+        "generated": " Nex-41\n\nItem entry for color Ivory:\nAnswer",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "city",
+            "Riga"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the item for city Riga.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          271,
+          14582,
+          25,
+          3234,
+          279,
+          1894,
+          315,
+          279
+        ],
+        "generated": " Nex-41\n\nQuestion: State the color of the",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "color",
+            "amber"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Identify the item filed under color amber.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          5392,
+          374,
+          521,
+          65294,
+          13,
+          151643
+        ],
+        "generated": " Nex-41 tool is chisel.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "color",
+            "amber"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which record lists color amber?\nAnswer:",
+        "prompt_tokens": 156,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          1894,
+          374,
+          67605,
+          382,
+          14582,
+          25,
+          15920,
+          3255
+        ],
+        "generated": " Nex-41 color is amber.\n\nQuestion: Which record",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "color",
+            "amber"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Item entry for color amber:\nAnswer:",
+        "prompt_tokens": 156,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          42988,
+          12,
+          16,
+          17,
+          271,
+          1234,
+          4343,
+          369,
+          1894,
+          33828,
+          3145,
+          510
+        ],
+        "generated": " Orb-12\n\nItem entry for color cobalt:\n",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 42988
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "color",
+            "amber"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Who or what is tied to color amber?\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          42988,
+          12,
+          16,
+          17,
+          24232,
+          51094,
+          271,
+          14582,
+          25,
+          3555,
+          374,
+          279
+        ],
+        "generated": " Orb-12 maker Hugo\n\nQuestion: What is the",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 42988
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "color",
+            "amber"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the item for color amber.\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          1894,
+          374,
+          67605,
+          382,
+          14582,
+          25,
+          3234,
+          279
+        ],
+        "generated": " Nex-41 color is amber.\n\nQuestion: State the",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 42988
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "tool",
+            "chisel"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Identify the item filed under tool chisel.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          576,
+          1509,
+          12729,
+          1212,
+          5392,
+          521,
+          65294,
+          374,
+          87829,
+          12,
+          19,
+          16
+        ],
+        "generated": " The item filed under tool chisel is Nex-41",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 576
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "tool",
+            "chisel"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which record lists tool chisel?\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          5392,
+          374,
+          521,
+          65294,
+          13,
+          151643
+        ],
+        "generated": " Nex-41 tool is chisel.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "tool",
+            "chisel"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Find the item with tool chisel.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          5392,
+          374,
+          521,
+          65294,
+          13,
+          151643
+        ],
+        "generated": " Nex-41 tool is chisel.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "tool",
+            "chisel"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Item entry for tool chisel:\nAnswer:",
+        "prompt_tokens": 157,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          42988,
+          12,
+          16,
+          17,
+          5392,
+          521,
+          65294,
+          271,
+          1234,
+          4343,
+          369,
+          5392
+        ],
+        "generated": " Orb-12 tool chisel\n\nItem entry for tool",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 42988
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "tool",
+            "chisel"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Who or what is tied to tool chisel?\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          444,
+          2210,
+          151643
+        ],
+        "generated": " Lina",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 444
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "tool",
+            "chisel"
+          ]
+        ],
+        "solver": "Nex-41",
+        "label": "Nex-41",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the item for tool chisel.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          87829,
+          12,
+          19,
+          16
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          42988,
+          12,
+          16,
+          17,
+          5392,
+          374,
+          521,
+          65294,
+          382,
+          14582,
+          25,
+          3555
+        ],
+        "generated": " Orb-12 tool is chisel.\n\nQuestion: What",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 87829,
+        "argmax_at_shift": 42988
+      },
+      {
+        "category": "inverse",
+        "kind": "inverse",
+        "edges": [
+          [
+            "*",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "Bolt-7",
+        "label": "Bolt-7",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Identify the item filed under maker Omar.\nAnswer:",
+        "prompt_tokens": 158,
+        "answer_tokens": [
+          45947,
+          12,
+          22
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          576,
+          1509,
+          12729,
+          1212,
+          24232,
+          53558,
+          374,
+          279,
+          31842,
+          12,
+          22,
+          5392
+        ],
+        "generated": " The item filed under maker Omar is the bolt-7 tool",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 45947,
+        "argmax_at_shift": 576
+      }
+    ],
+    "composition": [
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Lina and Vera",
+        "label": "Lina and Vera",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the maker of Nex-41 and the maker of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          67100
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 maker is Lina and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Lina and Vera",
+        "label": "Lina and Vera",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the maker of Nex-41 and the maker of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          67100
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          11,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 maker is Lina, Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Lina and Bern",
+        "label": "Lina and Bern",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the maker of Nex-41 and the city of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          14168
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 maker is Lina and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Lina and Bern",
+        "label": "Lina and Bern",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the maker of Nex-41 and the city of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          14168
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          11,
+          323,
+          730,
+          632
+        ],
+        "generated": " Nex-41 maker is Lina, and Kite",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "Lina and ivory",
+        "label": "Lina and ivory",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the maker of Nex-41 and the color of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          69816
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 maker is Lina and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "Lina and ivory",
+        "label": "Lina and ivory",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the maker of Nex-41 and the color of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          69816
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          11,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 maker is Lina, Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "Lina and kiln",
+        "label": "Lina and kiln",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the maker of Nex-41 and the tool of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          15045,
+          77
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 maker is Lina and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            ""
+          ],
+          [
+            "Kite-3",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "Lina and kiln",
+        "label": "Lina and kiln",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the maker of Nex-41 and the tool of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          444,
+          2210,
+          323,
+          15045,
+          77
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          11,
+          323,
+          730,
+          632
+        ],
+        "generated": " Nex-41 maker is Lina, and Kite",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 444,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Riga and Vera",
+        "label": "Riga and Vera",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the city of Nex-41 and the maker of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          67100
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          431,
+          16551,
+          11,
+          67100,
+          151643
+        ],
+        "generated": " Riga, Vera",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 431
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "Riga and Vera",
+        "label": "Riga and Vera",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the city of Nex-41 and the maker of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          67100
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          323,
+          67100,
+          374,
+          279,
+          24232
+        ],
+        "generated": " Nex-41 is Riga and Vera is the maker",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Riga and Bern",
+        "label": "Riga and Bern",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the city of Nex-41 and the city of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          14168
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          11,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 is Riga, and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "Riga and Bern",
+        "label": "Riga and Bern",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the city of Nex-41 and the city of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          14168
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          323,
+          730,
+          632,
+          12,
+          18
+        ],
+        "generated": " Nex-41 is Riga and Kite-3",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "Riga and ivory",
+        "label": "Riga and ivory",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the city of Nex-41 and the color of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          69816
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          11,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 is Riga, and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "color",
+            ""
+          ]
+        ],
+        "solver": "Riga and ivory",
+        "label": "Riga and ivory",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the city of Nex-41 and the color of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          69816
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          323,
+          730,
+          632,
+          12,
+          18
+        ],
+        "generated": " Nex-41 is Riga and Kite-3",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "Riga and kiln",
+        "label": "Riga and kiln",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the city of Nex-41 and the tool of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          15045,
+          77
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          11,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 is Riga, and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            ""
+          ],
+          [
+            "Kite-3",
+            "tool",
+            ""
+          ]
+        ],
+        "solver": "Riga and kiln",
+        "label": "Riga and kiln",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the city of Nex-41 and the tool of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          431,
+          16551,
+          323,
+          15045,
+          77
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          374,
+          431,
+          16551,
+          323,
+          730,
+          632,
+          12,
+          18
+        ],
+        "generated": " Nex-41 is Riga and Kite-3",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 431,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ],
+          [
+            "Kite-3",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "amber and Vera",
+        "label": "amber and Vera",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the color of Nex-41 and the maker of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          67605,
+          323,
+          67100
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          1894,
+          374,
+          67605,
+          323,
+          279,
+          24232,
+          315,
+          730
+        ],
+        "generated": " Nex-41 color is amber and the maker of K",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ],
+          [
+            "Kite-3",
+            "maker",
+            ""
+          ]
+        ],
+        "solver": "amber and Vera",
+        "label": "amber and Vera",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the color of Nex-41 and the maker of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          67605,
+          323,
+          67100
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          1894,
+          374,
+          67605,
+          11,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 color is amber, and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ],
+          [
+            "Kite-3",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "amber and Bern",
+        "label": "amber and Bern",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the color of Nex-41 and the city of Kite-3.\nAnswer:",
+        "prompt_tokens": 167,
+        "answer_tokens": [
+          67605,
+          323,
+          14168
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          1894,
+          374,
+          67605,
+          323,
+          730,
+          632,
+          12,
+          18
+        ],
+        "generated": " Nex-41 color is amber and Kite-3",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 87829
+      },
+      {
+        "category": "composition",
+        "kind": "composition",
+        "edges": [
+          [
+            "Nex-41",
+            "color",
+            ""
+          ],
+          [
+            "Kite-3",
+            "city",
+            ""
+          ]
+        ],
+        "solver": "amber and Bern",
+        "label": "amber and Bern",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the color of Nex-41 and the city of Kite-3.\nAnswer:",
+        "prompt_tokens": 168,
+        "answer_tokens": [
+          67605,
+          323,
+          14168
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          87829,
+          12,
+          19,
+          16,
+          1894,
+          374,
+          67605,
+          11,
+          323,
+          730,
+          632,
+          12
+        ],
+        "generated": " Nex-41 color is amber, and Kite-",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true,
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 67605,
+        "argmax_at_shift": 87829
+      }
+    ],
+    "false_premise": [
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Does the record say that the maker of Nex-41 is Omar?\nAnswer:",
+        "prompt_tokens": 165,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          279,
+          3255,
+          1558,
+          537,
+          1977,
+          429,
+          279,
+          24232,
+          315,
+          87829
+        ],
+        "generated": " No, the record does not say that the maker of Nex",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Claim check: Nex-41 has maker Omar. The claim is\nAnswer:",
+        "prompt_tokens": 165,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          3557,
+          13,
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          13,
+          151643
+        ],
+        "generated": " False. Nex-41 maker is Lina.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 3557
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Verify whether Nex-41 really has maker Omar.\nAnswer:",
+        "prompt_tokens": 161,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          87829,
+          12,
+          19,
+          16,
+          24232,
+          374,
+          444,
+          2210,
+          11,
+          537
+        ],
+        "generated": " No, Nex-41 maker is Lina, not",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Check this filing only: Nex-41 / maker / Omar.\nAnswer:",
+        "prompt_tokens": 164,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          279,
+          4396,
+          24232,
+          369,
+          87829,
+          12,
+          19,
+          16,
+          374,
+          444
+        ],
+        "generated": " No, the correct maker for Nex-41 is L",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Audit the claim that Nex-41 has maker Omar.\nAnswer:",
+        "prompt_tokens": 162,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          279,
+          3717,
+          374,
+          895,
+          13,
+          87829,
+          12,
+          19,
+          16,
+          24232
+        ],
+        "generated": " No, the claim is false. Nex-41 maker",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "maker",
+            "Omar"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Is it recorded that Nex-41 maker is Omar?\nAnswer:",
+        "prompt_tokens": 162,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          432,
+          374,
+          537,
+          12433,
+          429,
+          87829,
+          12,
+          19,
+          16,
+          24232
+        ],
+        "generated": " No, it is not recorded that Nex-41 maker",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which motto belongs to Nex-41?\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          330,
+          1249,
+          387,
+          11,
+          311,
+          1414,
+          11,
+          311,
+          1855,
+          1189,
+          151643
+        ],
+        "generated": " \"To be, to know, to create.\"",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 330
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the motto filed for Nex-41.\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          576,
+          62326,
+          12729,
+          369,
+          87829,
+          12,
+          19,
+          16,
+          374,
+          330,
+          1249,
+          387
+        ],
+        "generated": " The motto filed for Nex-41 is \"To be",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 576
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: What slogan is stored for Nex-41?\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          330,
+          45,
+          327,
+          12,
+          19,
+          16,
+          374,
+          279,
+          1850,
+          1837,
+          14582,
+          25
+        ],
+        "generated": " \"Nex-41 is the best\"\n\nQuestion:",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 330
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the motto of Nex-41.\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          444,
+          2210,
+          151643
+        ],
+        "generated": " Lina",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 444
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: The motto entry of Nex-41 is\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          330,
+          785,
+          1850,
+          315,
+          678,
+          3204,
+          23859,
+          1189,
+          151643
+        ],
+        "generated": " \"The best of all possible worlds.\"",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 330
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which catchphrase is filed under Nex-41?\nAnswer:",
+        "prompt_tokens": 161,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          330,
+          40,
+          2776,
+          264,
+          521,
+          65294,
+          1189,
+          151643
+        ],
+        "generated": " \"I'm a chisel.\"",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 330
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            "Oslo"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Does the record say that the city of Nex-41 is Oslo?\nAnswer:",
+        "prompt_tokens": 165,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          279,
+          3255,
+          1558,
+          537,
+          1977,
+          429,
+          279,
+          3283,
+          315,
+          87829
+        ],
+        "generated": " No, the record does not say that the city of Nex",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            "Oslo"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Claim check: Nex-41 has city Oslo. The claim is\nAnswer:",
+        "prompt_tokens": 165,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          3557,
+          13,
+          87829,
+          12,
+          19,
+          16,
+          702,
+          3283,
+          431,
+          16551,
+          13,
+          151643
+        ],
+        "generated": " False. Nex-41 has city Riga.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "formato_texto_extra",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 3557
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            "Oslo"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Verify whether Nex-41 really has city Oslo.\nAnswer:",
+        "prompt_tokens": 161,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          87829,
+          12,
+          19,
+          16,
+          1558,
+          537,
+          614,
+          3283,
+          57858,
+          13
+        ],
+        "generated": " No, Nex-41 does not have city Oslo.",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            "Oslo"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Check this filing only: Nex-41 / city / Oslo.\nAnswer:",
+        "prompt_tokens": 164,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          87829,
+          12,
+          19,
+          16,
+          374,
+          537,
+          504,
+          57858,
+          13,
+          151643
+        ],
+        "generated": " No, Nex-41 is not from Oslo.",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            "Oslo"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Audit the claim that Nex-41 has city Oslo.\nAnswer:",
+        "prompt_tokens": 162,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          279,
+          3717,
+          374,
+          15114,
+          13,
+          87829,
+          12,
+          19,
+          16,
+          702
+        ],
+        "generated": " No, the claim is incorrect. Nex-41 has",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "false_claim",
+        "edges": [
+          [
+            "Nex-41",
+            "city",
+            "Oslo"
+          ]
+        ],
+        "solver": "false",
+        "label": "false",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Is it recorded that Nex-41 city is Oslo?\nAnswer:",
+        "prompt_tokens": 162,
+        "answer_tokens": [
+          895
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          2308,
+          11,
+          432,
+          374,
+          537,
+          12433,
+          429,
+          87829,
+          12,
+          19,
+          16,
+          3283
+        ],
+        "generated": " No, it is not recorded that Nex-41 city",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 895,
+        "argmax_at_shift": 2308
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which motto belongs to Nex-41?\nAnswer:",
+        "prompt_tokens": 159,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          330,
+          1249,
+          387,
+          11,
+          311,
+          1414,
+          11,
+          311,
+          1855,
+          1189,
+          151643
+        ],
+        "generated": " \"To be, to know, to create.\"",
+        "eos_in_generation": true,
+        "hit_limit": false,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "eos_cedo",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 330
+      },
+      {
+        "category": "false_premise",
+        "kind": "missing",
+        "edges": [
+          [
+            "Nex-41",
+            "motto",
+            ""
+          ]
+        ],
+        "solver": "INDETERMINADO",
+        "label": "INDETERMINADO",
+        "solver_matches_label": true,
+        "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: State the motto filed for Nex-41.\nAnswer:",
+        "prompt_tokens": 160,
+        "answer_tokens": [
+          1964,
+          1150,
+          4198,
+          16413,
+          28814
+        ],
+        "max_new_tokens": 12,
+        "generated_ids": [
+          576,
+          62326,
+          12729,
+          369,
+          87829,
+          12,
+          19,
+          16,
+          374,
+          330,
+          1249,
+          387
+        ],
+        "generated": " The motto filed for Nex-41 is \"To be",
+        "eos_in_generation": false,
+        "hit_limit": true,
+        "edges_in_prompt": [
+          true
+        ],
+        "reason": "limite_de_geracao",
+        "exact": false,
+        "logit_shift_index_ok": true,
+        "first_answer_token": 1964,
+        "argmax_at_shift": 576
+      }
+    ]
+  },
+  "ladder": [
+    {
+      "rung": "copiar",
+      "prompt": "The answer written here is Lina.\nQuestion: Copy that answer.\nAnswer:",
+      "answer": "Lina",
+      "generated": " Lina.\n\nThe answer written here is Lina.\nQuestion",
+      "exact": false,
+      "contains": true,
+      "generated_ids": [
+        444,
+        2210,
+        382,
+        785,
+        4226,
+        5326,
+        1588,
+        374,
+        444,
+        2210,
+        624,
+        14582
+      ],
+      "hit_limit": true,
+      "reason": "formato_texto_extra"
+    },
+    {
+      "rung": "copiar",
+      "prompt": "The answer written here is Oslo.\nQuestion: Copy that answer.\nAnswer:",
+      "answer": "Oslo",
+      "generated": " Oslo.",
+      "exact": true,
+      "contains": true,
+      "generated_ids": [
+        57858,
+        13,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "exact"
+    },
+    {
+      "rung": "copiar",
+      "prompt": "The answer written here is false.\nQuestion: Copy that answer.\nAnswer:",
+      "answer": "false",
+      "generated": " The answer written here is false.\nQuestion: Is the following",
+      "exact": false,
+      "contains": true,
+      "generated_ids": [
+        576,
+        4226,
+        5326,
+        1588,
+        374,
+        895,
+        624,
+        14582,
+        25,
+        2160,
+        279,
+        2701
+      ],
+      "hit_limit": true,
+      "reason": "formato_texto_extra"
+    },
+    {
+      "rung": "aresta",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Who is the maker of Nex-41?\nAnswer:",
+      "answer": "Lina",
+      "generated": " Lina\n\nQuestion: What is the color of Orb-",
+      "exact": false,
+      "contains": true,
+      "generated_ids": [
+        444,
+        2210,
+        271,
+        14582,
+        25,
+        3555,
+        374,
+        279,
+        1894,
+        315,
+        42988,
+        12
+      ],
+      "hit_limit": true,
+      "reason": "formato_texto_extra"
+    },
+    {
+      "rung": "aresta",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: In which city is Bolt-7 filed?\nAnswer:",
+      "answer": "Oslo",
+      "generated": " Bolt-7 is filed in Oslo.",
+      "exact": false,
+      "contains": true,
+      "generated_ids": [
+        45947,
+        12,
+        22,
+        374,
+        12729,
+        304,
+        57858,
+        13,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "formato_texto_extra"
+    },
+    {
+      "rung": "aresta",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: What color is recorded for Kite-3?\nAnswer:",
+      "answer": "ivory",
+      "generated": " Ivory\n\nQuestion: What is the color of the tool for",
+      "exact": false,
+      "contains": true,
+      "generated_ids": [
+        76609,
+        271,
+        14582,
+        25,
+        3555,
+        374,
+        279,
+        1894,
+        315,
+        279,
+        5392,
+        369
+      ],
+      "hit_limit": true,
+      "reason": "formato_texto_extra"
+    },
+    {
+      "rung": "inverter",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which item has maker Lina?\nAnswer:",
+      "answer": "Nex-41",
+      "generated": " Nex-41",
+      "exact": true,
+      "contains": true,
+      "generated_ids": [
+        87829,
+        12,
+        19,
+        16,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "exact"
+    },
+    {
+      "rung": "inverter",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Which item has city Oslo?\nAnswer:",
+      "answer": "Bolt-7",
+      "generated": " Bolt-7",
+      "exact": true,
+      "contains": true,
+      "generated_ids": [
+        45947,
+        12,
+        22,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "exact"
+    },
+    {
+      "rung": "inverter",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the item whose color is ivory.\nAnswer:",
+      "answer": "Kite-3",
+      "generated": " Kite-3",
+      "exact": true,
+      "contains": true,
+      "generated_ids": [
+        730,
+        632,
+        12,
+        18,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "exact"
+    },
+    {
+      "rung": "duas_arestas",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the maker of Nex-41 and the city of Bolt-7.\nAnswer:",
+      "answer": "Lina and Oslo",
+      "generated": " Nex-41 maker is Lina and Bolt-7",
+      "exact": false,
+      "contains": false,
+      "generated_ids": [
+        87829,
+        12,
+        19,
+        16,
+        24232,
+        374,
+        444,
+        2210,
+        323,
+        45947,
+        12,
+        22
+      ],
+      "hit_limit": true,
+      "reason": "limite_de_geracao"
+    },
+    {
+      "rung": "duas_arestas",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Name the color of Kite-3 and the tool of Orb-12.\nAnswer:",
+      "answer": "ivory and loom",
+      "generated": " Ivory, kiln",
+      "exact": false,
+      "contains": false,
+      "generated_ids": [
+        76609,
+        11,
+        15045,
+        77,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "eos_cedo"
+    },
+    {
+      "rung": "duas_arestas",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Give both the maker of Bolt-7 and the city of Nex-41.\nAnswer:",
+      "answer": "Omar and Riga",
+      "generated": " Omar, Riga",
+      "exact": false,
+      "contains": false,
+      "generated_ids": [
+        53558,
+        11,
+        431,
+        16551,
+        151643
+      ],
+      "hit_limit": false,
+      "reason": "eos_cedo"
+    },
+    {
+      "rung": "falsa",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Is the maker of Nex-41 Omar?\nAnswer:",
+      "answer": "false",
+      "generated": " No, the maker of Nex-41 is Lina",
+      "exact": false,
+      "contains": false,
+      "generated_ids": [
+        2308,
+        11,
+        279,
+        24232,
+        315,
+        87829,
+        12,
+        19,
+        16,
+        374,
+        444,
+        2210
+      ],
+      "hit_limit": true,
+      "reason": "limite_de_geracao"
+    },
+    {
+      "rung": "falsa",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: Is the city of Bolt-7 Lyon?\nAnswer:",
+      "answer": "false",
+      "generated": " No, the city of Bolt-7 is Oslo.\n\nQuestion",
+      "exact": false,
+      "contains": false,
+      "generated_ids": [
+        2308,
+        11,
+        279,
+        3283,
+        315,
+        45947,
+        12,
+        22,
+        374,
+        57858,
+        382,
+        14582
+      ],
+      "hit_limit": true,
+      "reason": "limite_de_geracao"
+    },
+    {
+      "rung": "falsa",
+      "prompt": "Known facts:\nBolt-7 city is Oslo.\nBolt-7 color is cobalt.\nBolt-7 maker is Omar.\nBolt-7 tool is spindle.\nKite-3 city is Bern.\nKite-3 color is ivory.\nKite-3 maker is Vera.\nKite-3 tool is kiln.\nNex-41 city is Riga.\nNex-41 color is amber.\nNex-41 maker is Lina.\nNex-41 tool is chisel.\nOrb-12 city is Lyon.\nOrb-12 color is scarlet.\nOrb-12 maker is Hugo.\nOrb-12 tool is loom.\n\nQuestion: What motto is recorded for Nex-41?\nAnswer:",
+      "answer": "INDETERMINADO",
+      "generated": " \"To be, to know, to create.\"\n\nQuestion:",
+      "exact": false,
+      "contains": false,
+      "generated_ids": [
+        330,
+        1249,
+        387,
+        11,
+        311,
+        1414,
+        11,
+        311,
+        1855,
+        2217,
+        14582,
+        25
+      ],
+      "hit_limit": true,
+      "reason": "limite_de_geracao"
+    }
+  ],
+  "old_rows": [
+    {
+      "prompt": "Synthetic record:\nGRAV-X9 was created by Marco.\nThe fictional capital is Paris.\nThe fictional metal is copper.\nThe fictional planet is Saturn.\nThe fictional instrument is piano.\nThe fictional color is purple.\nZyphron-11 was invented by Tesla.\nThe fictional animal is tiger.\n\nName the maker of GRAV-X9 and the inventor of Zyphron-11.",
+      "parts": [
+        "Marco",
+        "Tesla"
+      ],
+      "greedy16": " The maker of GRAV-X9 is Marco, and the inventor of Zyph",
+      "substring16": false,
+      "exact16_vs_joined": false,
+      "greedy12": " The maker of GRAV-X9 is Marco, and the",
+      "substring12": false,
+      "hit_limit16": true
+    },
+    {
+      "prompt": "Synthetic record:\nGRAV-X9 was created by Marco.\nThe fictional capital is Paris.\nThe fictional metal is copper.\nThe fictional planet is Saturn.\nThe fictional instrument is piano.\nThe fictional color is purple.\nZyphron-11 was invented by Tesla.\nThe fictional animal is tiger.\n\nGive both the fictional capital and the fictional animal.",
+      "parts": [
+        "Paris",
+        "tiger"
+      ],
+      "greedy16": " The fictional capital is Paris, and the fictional animal is a tiger.",
+      "substring16": true,
+      "exact16_vs_joined": false,
+      "greedy12": " The fictional capital is Paris, and the fictional animal is a",
+      "substring12": false,
+      "hit_limit16": false
+    },
+    {
+      "prompt": "Synthetic record:\nGRAV-X9 was created by Marco.\nThe fictional capital is Paris.\nThe fictional metal is copper.\nThe fictional planet is Saturn.\nThe fictional instrument is piano.\nThe fictional color is purple.\nZyphron-11 was invented by Tesla.\nThe fictional animal is tiger.\n\nGive both the fictional metal and the fictional color.",
+      "parts": [
+        "copper",
+        "purple"
+      ],
+      "greedy16": " The fictional metal is **copper**, and the fictional color is **purple**",
+      "substring16": true,
+      "exact16_vs_joined": false,
+      "greedy12": " The fictional metal is **copper**, and the fictional color",
+      "substring12": false,
+      "hit_limit16": true
+    },
+    {
+      "prompt": "Synthetic record:\nGRAV-X9 was created by Marco.\nThe fictional capital is Paris.\nThe fictional metal is copper.\nThe fictional planet is Saturn.\nThe fictional instrument is piano.\nThe fictional color is purple.\nZyphron-11 was invented by Tesla.\nThe fictional animal is tiger.\n\nGive both the fictional planet and the fictional instrument.",
+      "parts": [
+        "Saturn",
+        "piano"
+      ],
+      "greedy16": " The fictional planet is Saturn, and the fictional instrument is piano.",
+      "substring16": true,
+      "exact16_vs_joined": false,
+      "greedy12": " The fictional planet is Saturn, and the fictional instrument is piano",
+      "substring12": true,
+      "hit_limit16": false
+    }
+  ],
+  "new_on_old_matcher": [
+    {
+      "question": "Name the maker of Nex-41 and the maker of Kite-3.",
+      "answer": "Lina and Vera",
+      "greedy16": " The maker of Nex-41 is Lina, and the maker of K",
+      "substring": false,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Give both the maker of Nex-41 and the maker of Kite-3.",
+      "answer": "Lina and Vera",
+      "greedy16": " Nex-41 maker is Lina and Kite-3 maker is Vera",
+      "substring": true,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Name the maker of Nex-41 and the city of Kite-3.",
+      "answer": "Lina and Bern",
+      "greedy16": " The maker of Nex-41 is Lina, and the city of K",
+      "substring": false,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Give both the maker of Nex-41 and the city of Kite-3.",
+      "answer": "Lina and Bern",
+      "greedy16": " Nex-41 maker is Lina and Kite-3 city is Bern",
+      "substring": true,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Name the maker of Nex-41 and the color of Kite-3.",
+      "answer": "Lina and ivory",
+      "greedy16": " The maker of Nex-41 is Lina, and the color of K",
+      "substring": false,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Give both the maker of Nex-41 and the color of Kite-3.",
+      "answer": "Lina and ivory",
+      "greedy16": " Nex-41 maker is Lina and Kite-3 color is ivory",
+      "substring": true,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Name the maker of Nex-41 and the tool of Kite-3.",
+      "answer": "Lina and kiln",
+      "greedy16": " The maker of Nex-41 is Lina, and the tool of K",
+      "substring": false,
+      "exact12_style": false,
+      "hit_limit": true
+    },
+    {
+      "question": "Give both the maker of Nex-41 and the tool of Kite-3.",
+      "answer": "Lina and kiln",
+      "greedy16": " Nex-41 maker is Lina and Kite-3 tool is kil",
+      "substring": false,
+      "exact12_style": false,
+      "hit_limit": true
+    }
+  ],
+  "composition_eval": 128,
+  "composition_missing_train_edge": 0,
+  "train_examples": 104,
+  "train_supervised_tokens_one_pass": 293,
+  "train_supervised_tokens_two_epochs": 586,
+  "kl_tokens_old_diagnostic": 136,
+  "fingerprint": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175"
+}

@@ -1,0 +1,102 @@
+{
+  "bare": {
+    "paraphrase": {
+      "correct": 0,
+      "n": 112,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.03316252537948371
+      ],
+      "mean_answer_logprob": -9.019464410353455,
+      "mean_margin": -1.797032275946549,
+      "margin_n": 112
+    },
+    "inverse": {
+      "correct": 0,
+      "n": 112,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.03316252537948371
+      ],
+      "mean_answer_logprob": -6.717442637752919,
+      "mean_margin": 0.45656224925603184,
+      "margin_n": 112
+    },
+    "composition": {
+      "correct": 0,
+      "n": 128,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.02913799589810803
+      ],
+      "mean_answer_logprob": -6.313687816078649,
+      "mean_margin": 0.7077845886322999,
+      "margin_n": 128
+    },
+    "false_premise": {
+      "correct": 0,
+      "n": 192,
+      "accuracy": 0.0,
+      "wilson95": [
+        0.0,
+        0.019615852811660034
+      ],
+      "mean_answer_logprob": -7.364793800376355,
+      "mean_margin": 1.1577418873579821,
+      "margin_n": 192
+    }
+  },
+  "context": {
+    "paraphrase": {
+      "correct": 47,
+      "n": 112,
+      "accuracy": 0.41964285714285715,
+      "wilson95": [
+        0.3323988971668855,
+        0.5122165086976744
+      ],
+      "mean_answer_logprob": -0.9540237770306703,
+      "mean_margin": 3.906002160560352,
+      "margin_n": 112
+    },
+    "inverse": {
+      "correct": 33,
+      "n": 112,
+      "accuracy": 0.29464285714285715,
+      "wilson95": [
+        0.21815539352569846,
+        0.38475064368373235
+      ],
+      "mean_answer_logprob": -0.37619415445220467,
+      "mean_margin": 1.6536326072914886,
+      "margin_n": 112
+    },
+    "composition": {
+      "correct": 3,
+      "n": 128,
+      "accuracy": 0.0234375,
+      "wilson95": [
+        0.008002271440112167,
+        0.06664488090027204
+      ],
+      "mean_answer_logprob": -1.5280517123775363,
+      "mean_margin": 3.458061706890813,
+      "margin_n": 128
+    },
+    "false_premise": {
+      "correct": 5,
+      "n": 192,
+      "accuracy": 0.026041666666666668,
+      "wilson95": [
+        0.01117344421564433,
+        0.059504082928741736
+      ],
+      "mean_answer_logprob": -7.006372542772442,
+      "mean_margin": 1.4547642031848378,
+      "margin_n": 192
+    }
+  }
+}

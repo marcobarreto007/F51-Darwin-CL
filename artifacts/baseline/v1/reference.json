@@ -1,0 +1,230 @@
+{
+  "gate": "DONOR_BASELINE_PASS",
+  "donor_id": "Qwen/Qwen3-0.6B-Base",
+  "revision": "da87bfb608c14b7cf20ba1ce41287e8de496c0cd",
+  "parameter_count": 596049920,
+  "dtype": "bfloat16",
+  "device": "cuda:0",
+  "seed": 0,
+  "transformers": "4.57.3",
+  "torch": "2.8.0+cu129",
+  "cuda": "12.9",
+  "gpu": "NVIDIA GeForce RTX 5060 Ti",
+  "peak_vram_bytes": 1263550464,
+  "wall_seconds": 100.66645620000781,
+  "weight_sha256_before": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "weight_sha256_after": "d855c9875c8aefc70230fcf8e64dcb665dfefc01c5504eddb050cbcd7e51c175",
+  "training": false,
+  "domains": [
+    {
+      "file": "A_language.jsonl",
+      "sha256": "dc859c331524effa1ea3c7bac56652a0e561a927137cb3dd25141963316171cb",
+      "documents": 2,
+      "token_count": 66,
+      "scored_tokens": 64,
+      "evaluated_utf8_bytes": 245,
+      "total_nll": 221.75442656659288,
+      "nats_per_token": 3.464912915103014,
+      "nats_per_byte": 0.905120108435073,
+      "bits_per_byte": 1.3058122882600034,
+      "examples": [
+        {
+          "id": "A1",
+          "prompt": "O rio passava debaixo da ponte",
+          "greedy": ", e a água estava quente. O rio passava debaixo da",
+          "total_nll": 110.22929326974554,
+          "scored_tokens": 40,
+          "token_count": 41,
+          "evaluated_utf8_bytes": 128,
+          "raw_utf8_bytes": 129,
+          "unscored_boundary_bytes": 1,
+          "nats_per_token": 2.7557323317436384,
+          "nats_per_byte": 0.861166353669887,
+          "bits_per_byte": 1.2424004278199772
+        },
+        {
+          "id": "A2",
+          "prompt": "The workshop smelled of pine",
+          "greedy": " and wood smoke. The air was thick with the scent of pine and wood smoke",
+          "total_nll": 111.52513329684734,
+          "scored_tokens": 24,
+          "token_count": 25,
+          "evaluated_utf8_bytes": 117,
+          "raw_utf8_bytes": 120,
+          "unscored_boundary_bytes": 3,
+          "nats_per_token": 4.646880554035306,
+          "nats_per_byte": 0.9532062674944217,
+          "bits_per_byte": 1.375185955058481
+        }
+      ]
+    },
+    {
+      "file": "B_code.jsonl",
+      "sha256": "169fd78fcedc3333bc862254dadd1f43f947889e946d09a9267174bc5081ea7c",
+      "documents": 2,
+      "token_count": 56,
+      "scored_tokens": 54,
+      "evaluated_utf8_bytes": 200,
+      "total_nll": 39.01810161914182,
+      "nats_per_token": 0.7225574373915151,
+      "nats_per_byte": 0.19509050809570908,
+      "bits_per_byte": 0.2814561077807926,
+      "examples": [
+        {
+          "id": "B1",
+          "prompt": "def factorial(n):\n    result = 1\n",
+          "greedy": "    for i in range(1, n+1):\n        result *= i",
+          "total_nll": 13.134859318495728,
+          "scored_tokens": 31,
+          "token_count": 32,
+          "evaluated_utf8_bytes": 98,
+          "raw_utf8_bytes": 101,
+          "unscored_boundary_bytes": 3,
+          "nats_per_token": 0.4237051393063138,
+          "nats_per_byte": 0.13402917671934417,
+          "bits_per_byte": 0.19336322858742835
+        },
+        {
+          "id": "B2",
+          "prompt": "def is_palindrome(text):\n",
+          "greedy": "    return text == text[::-1]\n\ndef is_palindrome2(text):\n   ",
+          "total_nll": 25.88324230064609,
+          "scored_tokens": 23,
+          "token_count": 24,
+          "evaluated_utf8_bytes": 102,
+          "raw_utf8_bytes": 105,
+          "unscored_boundary_bytes": 3,
+          "nats_per_token": 1.125358360897656,
+          "nats_per_byte": 0.2537572774573146,
+          "bits_per_byte": 0.3660943657771525
+        }
+      ]
+    },
+    {
+      "file": "C_mathematics.jsonl",
+      "sha256": "acf001e5581ef116b8d12c80c6ac963441109061cfa7cbdd2df0f87096c1cf9d",
+      "documents": 2,
+      "token_count": 31,
+      "scored_tokens": 29,
+      "evaluated_utf8_bytes": 71,
+      "total_nll": 56.52751148864627,
+      "nats_per_token": 1.9492245340912506,
+      "nats_per_byte": 0.7961621336429052,
+      "bits_per_byte": 1.1486191587939791,
+      "examples": [
+        {
+          "id": "C1",
+          "prompt": "The sum of 17 and 28 is",
+          "greedy": " 45. What is the sum of 17 and 28",
+          "total_nll": 24.29932164773345,
+          "scored_tokens": 14,
+          "token_count": 15,
+          "evaluated_utf8_bytes": 24,
+          "raw_utf8_bytes": 27,
+          "unscored_boundary_bytes": 3,
+          "nats_per_token": 1.7356658319809608,
+          "nats_per_byte": 1.012471735322227,
+          "bits_per_byte": 1.46068795158962
+        },
+        {
+          "id": "C2",
+          "prompt": "A rectangle of width 4 and height 9 has area",
+          "greedy": " A. A second rectangle has width 6 and height 12. What",
+          "total_nll": 32.22818984091282,
+          "scored_tokens": 15,
+          "token_count": 16,
+          "evaluated_utf8_bytes": 47,
+          "raw_utf8_bytes": 48,
+          "unscored_boundary_bytes": 1,
+          "nats_per_token": 2.148545989394188,
+          "nats_per_byte": 0.6857061668279323,
+          "bits_per_byte": 0.9892648863896382
+        }
+      ]
+    },
+    {
+      "file": "D_factual.jsonl",
+      "sha256": "fb370b576f07a1d1b9e82ae0c1dca82e5eec235f47296869c460a2953d225eb2",
+      "documents": 2,
+      "token_count": 19,
+      "scored_tokens": 17,
+      "evaluated_utf8_bytes": 89,
+      "total_nll": 24.219704987481236,
+      "nats_per_token": 1.4246885286753668,
+      "nats_per_byte": 0.2721315167132723,
+      "bits_per_byte": 0.3926027885530222,
+      "examples": [
+        {
+          "id": "D1",
+          "prompt": "The capital of France is",
+          "greedy": " Paris. The capital of Germany is Berlin. The capital of Italy is Rome.",
+          "total_nll": 7.392719209194183,
+          "scored_tokens": 6,
+          "token_count": 7,
+          "evaluated_utf8_bytes": 26,
+          "raw_utf8_bytes": 31,
+          "unscored_boundary_bytes": 5,
+          "nats_per_token": 1.2321198681990306,
+          "nats_per_byte": 0.2843353541997763,
+          "bits_per_byte": 0.41020920545342415
+        },
+        {
+          "id": "D2",
+          "prompt": "Water freezes at",
+          "greedy": " 0°C and boils at 100°C. If a 1",
+          "total_nll": 16.826985778287053,
+          "scored_tokens": 11,
+          "token_count": 12,
+          "evaluated_utf8_bytes": 63,
+          "raw_utf8_bytes": 68,
+          "unscored_boundary_bytes": 5,
+          "nats_per_token": 1.5297259798442775,
+          "nats_per_byte": 0.26709501235376276,
+          "bits_per_byte": 0.38533664976895
+        }
+      ]
+    },
+    {
+      "file": "E_reasoning.jsonl",
+      "sha256": "28c3bc0cc5890ccfe8699796d73533232a4705fb927183c82fdaa872e537a05f",
+      "documents": 2,
+      "token_count": 51,
+      "scored_tokens": 49,
+      "evaluated_utf8_bytes": 189,
+      "total_nll": 108.39851916767657,
+      "nats_per_token": 2.2122146768913584,
+      "nats_per_byte": 0.5735371384533152,
+      "bits_per_byte": 0.8274391831385781,
+      "examples": [
+        {
+          "id": "E1",
+          "prompt": "Every item in the red box is a cube. The marble is not a cube. Therefore the marble",
+          "greedy": " is not in the red box. This is a valid argument. What is the",
+          "total_nll": 60.94483838044107,
+          "scored_tokens": 26,
+          "token_count": 27,
+          "evaluated_utf8_bytes": 101,
+          "raw_utf8_bytes": 106,
+          "unscored_boundary_bytes": 5,
+          "nats_per_token": 2.3440322454015794,
+          "nats_per_byte": 0.6034142413905056,
+          "bits_per_byte": 0.8705427336558583
+        },
+        {
+          "id": "E2",
+          "prompt": "If the lamp is off, the room is dark. The room is not dark. Therefore the lamp",
+          "greedy": " is off. Which of the following, if true, most seriously weakens the",
+          "total_nll": 47.4536807872355,
+          "scored_tokens": 23,
+          "token_count": 24,
+          "evaluated_utf8_bytes": 88,
+          "raw_utf8_bytes": 90,
+          "unscored_boundary_bytes": 2,
+          "nats_per_token": 2.0632035124884998,
+          "nats_per_byte": 0.5392463725822215,
+          "bits_per_byte": 0.7779680675417333
+        }
+      ]
+    }
+  ]
+}

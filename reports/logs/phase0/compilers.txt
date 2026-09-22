@@ -1,0 +1,6 @@
+TOOL nvcc => C:\Users\marco\scoop\apps\cuda-12.9.1\current\bin\nvcc.exe
+TOOL cl => INFO: Could not find files for the given pattern(s).
+TOOL gcc => C:\Users\marco\scoop\apps\gcc\current\bin\gcc.exe
+TOOL g++ => C:\Users\marco\scoop\apps\gcc\current\bin\g++.exe
+TOOL cmake => C:\Users\marco\scoop\shims\cmake.exe
+TOOL clang => INFO: Could not find files for the given pattern(s).

@@ -1,0 +1,568 @@
+{
+  "name": "B_1e-7",
+  "trunk_lr": 1e-07,
+  "steps_completed": 96,
+  "stopped": null,
+  "tokens_processed": 906,
+  "tokens_supervised": 136,
+  "wall_seconds": 122.98020039999392,
+  "curve": [
+    {
+      "step": 0,
+      "loss": 0.0,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "top1": 8,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": 0.0,
+          "B_code.jsonl": 0.0,
+          "C_mathematics.jsonl": 0.0,
+          "D_factual.jsonl": 0.0,
+          "E_reasoning.jsonl": 0.0
+        },
+        "mean": 0.0,
+        "worst": 0.0
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " Also, what is the name of the company that manufactures the GRAV-X9",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -8.583539168039957,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is a lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.885449568430583,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " \n\n$$\n\\begin{matrix}\n\\text{Metal} & \\text",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -4.297267516454061,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Saturn, and the fictional instrument is the Cassini spacecraft.",
+          "parts_hit": [
+            "Saturn"
+          ],
+          "both": false,
+          "full_string_logprob": -6.04574457804362,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 1,
+      "loss": 0.61296147108078,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        1
+      ],
+      "top1": 8,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": 0.0037355426900868016,
+          "B_code.jsonl": 0.000678226778800306,
+          "C_mathematics.jsonl": 0.01079980727337615,
+          "D_factual.jsonl": -0.0030982391437871515,
+          "E_reasoning.jsonl": 0.0033197960786758296
+        },
+        "mean": 0.0030870267354303873,
+        "worst": 0.01079980727337615
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " Also, what is the name of the first computer to be used in a military",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -8.58422327041626,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is a lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.83647886912028,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " Then, write a sentence describing the metal and color in your own words.\nAnswer",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -4.276653965314229,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Saturn, and the fictional instrument is the Cassini spacecraft.",
+          "parts_hit": [
+            "Saturn"
+          ],
+          "both": false,
+          "full_string_logprob": -6.031271775563558,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 4,
+      "loss": 8.020103454589844,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        17,
+        1,
+        1
+      ],
+      "top1": 7,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": -0.0015867066716926947,
+          "B_code.jsonl": 0.001593161555829281,
+          "C_mathematics.jsonl": 0.009933612506154543,
+          "D_factual.jsonl": 0.0008078309539915063,
+          "E_reasoning.jsonl": 0.003354524136594872
+        },
+        "mean": 0.0028204844961755016,
+        "worst": 0.009933612506154543
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " Also, what is the name of the company that manufactures the GR-10",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -8.561511516571045,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is a lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.659602801005046,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " Then, write a sentence describing the metal and color in your own words.\nAnswer",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -4.244253396987915,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Saturn, and the fictional instrument is the Cassini spacecraft.",
+          "parts_hit": [
+            "Saturn"
+          ],
+          "both": false,
+          "full_string_logprob": -5.990842421849568,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 8,
+      "loss": 1.6498875617980957,
+      "ranks": [
+        1,
+        1,
+        1,
+        2,
+        1,
+        51,
+        1,
+        1
+      ],
+      "top1": 6,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": 0.0027122199561503413,
+          "B_code.jsonl": 0.0027029563825999303,
+          "C_mathematics.jsonl": -0.003076429623113608,
+          "D_factual.jsonl": 0.002925617751152687,
+          "E_reasoning.jsonl": 0.006223113423893367
+        },
+        "mean": 0.0022974955781365435,
+        "worst": 0.006223113423893367
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " Also, what is the name of the first computer to be used in the military",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -8.515947182973227,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is a lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.600347359975179,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " Then, write a sentence using the metal and the color. Use the word \"",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -4.2939402262369795,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Saturn, and the fictional instrument is the Cassini spacecraft.",
+          "parts_hit": [
+            "Saturn"
+          ],
+          "both": false,
+          "full_string_logprob": -5.9195912679036455,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 16,
+      "loss": 4.528393268585205,
+      "ranks": [
+        1,
+        2,
+        1,
+        10,
+        1,
+        32,
+        1,
+        1
+      ],
+      "top1": 5,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": 0.0024302062286273296,
+          "B_code.jsonl": 0.0016147954222469618,
+          "C_mathematics.jsonl": 0.0013617378410318848,
+          "D_factual.jsonl": 0.003796174499635263,
+          "E_reasoning.jsonl": 0.009439524940693111
+        },
+        "mean": 0.00372848778644691,
+        "worst": 0.009439524940693111
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " Also, what is the name of the first computer to be used in the military",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -8.398422718048096,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is a lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.577222029368083,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " Then, write a sentence describing the color and metal in your own words.\nAnswer",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -4.3084977467854815,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Uranus, and the fictional instrument is a telescope.",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -5.8243034680684405,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 32,
+      "loss": 0.42116469144821167,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        13,
+        1,
+        1
+      ],
+      "top1": 7,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": -0.004670996678641459,
+          "B_code.jsonl": 0.0005638123712560505,
+          "C_mathematics.jsonl": -0.011112575458598783,
+          "D_factual.jsonl": -0.008410954497377832,
+          "E_reasoning.jsonl": 0.010248095270187219
+        },
+        "mean": -0.002676523798634961,
+        "worst": 0.010248095270187219
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " Also, what is the name of the first computer to be used in a business",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -8.172975858052572,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is a lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.290444533030192,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " Then, write a sentence using the metal and the color. Use the words metal",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -3.808048645655314,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Saturn, and the fictional instrument is a satellite.",
+          "parts_hit": [
+            "Saturn"
+          ],
+          "both": false,
+          "full_string_logprob": -5.5129554271698,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 64,
+      "loss": 4.118613243103027,
+      "ranks": [
+        20,
+        1,
+        1,
+        1,
+        1,
+        30,
+        1,
+        1
+      ],
+      "top1": 6,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": -0.006258901271598449,
+          "B_code.jsonl": 0.00020066132739882114,
+          "C_mathematics.jsonl": -0.004022876850106383,
+          "D_factual.jsonl": -0.0037268255941904638,
+          "E_reasoning.jsonl": 0.028294945724564813
+        },
+        "mean": 0.0028974006672136676,
+        "worst": 0.028294945724564813
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " The maker of GRAV-X9 is **Sanyo**. The inventor",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -7.8381344477335615,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is the lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.583580652872722,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " (Hint: The metal is copper.)\nAnswer:\nThe fictional metal is copper and",
+          "parts_hit": [
+            "copper"
+          ],
+          "both": false,
+          "full_string_logprob": -3.8636539777119956,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is **Jupiter** and the fictional instrument is **the telescope",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -5.512901266415914,
+          "max_new_tokens": 16
+        }
+      ]
+    },
+    {
+      "step": 96,
+      "loss": 0.3737047612667084,
+      "ranks": [
+        1,
+        1,
+        1,
+        1,
+        1,
+        1,
+        2,
+        1
+      ],
+      "top1": 7,
+      "drift": {
+        "by_domain": {
+          "A_language.jsonl": -0.005282273331932652,
+          "B_code.jsonl": -0.0007184169854917988,
+          "C_mathematics.jsonl": -0.0013319771264640456,
+          "D_factual.jsonl": -0.0014722642091133942,
+          "E_reasoning.jsonl": 0.02230644008272853
+        },
+        "mean": 0.002700301685945328,
+        "worst": 0.02230644008272853
+      },
+      "composition_hits": 0,
+      "composition": [
+        {
+          "prompt": "Name the maker of GRAV-X9 and the inventor of Zyphron-11.",
+          "expected": "Marco and Tesla",
+          "greedy": " The maker of GRAV-X9 is **Volkswagen**, and the inventor",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -7.629863421122233,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional capital and the fictional animal.",
+          "expected": "Paris and tiger",
+          "greedy": " The fictional capital is Paris and the fictional animal is the lion.",
+          "parts_hit": [
+            "Paris"
+          ],
+          "both": false,
+          "full_string_logprob": -4.449164390563965,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional metal and the fictional color.",
+          "expected": "copper and purple",
+          "greedy": " Then, write a sentence using the metal and the color. Use the word \"",
+          "parts_hit": [],
+          "both": false,
+          "full_string_logprob": -3.8442329565684,
+          "max_new_tokens": 16
+        },
+        {
+          "prompt": "Give both the fictional planet and the fictional instrument.",
+          "expected": "Saturn and piano",
+          "greedy": " The fictional planet is Saturn, and the fictional instrument is the Voyager 1 spacecraft",
+          "parts_hit": [
+            "Saturn"
+          ],
+          "both": false,
+          "full_string_logprob": -5.427424987157186,
+          "max_new_tokens": 16
+        }
+      ]
+    }
+  ],
+  "last_good_step": 96,
+  "checkpoint_sha256": "3c7a34ca3f300b0fdba374c03b8a92b9c227618011754cb7774032c32eb83188",
+  "reload": {
+    "returncode": 0,
+    "stdout": "VERIFY [1, 1, 1, 1, 1, 1, 2, 1] True 0408ff529f89b4f2a73dae44b5a2cabdedf01b0e3182403617d7f6152dff0569\n",
+    "stderr": "`torch_dtype` is deprecated! Use `dtype` instead!\nW0922 15:04:04.221000 30040 site-packages\\torch\\distributed\\elastic\\multiprocessing\\redirects.py:29] NOTE: Redirects are currently not supported in Windows or MacOs.\n"
+  }
+}

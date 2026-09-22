@@ -1,0 +1,5 @@
+PROBE C:\Users\marco\Desktop\mike\.venv\Scripts\python.exe
+2.8.0+cu129
+cuda 12.9
+available True
+count 2

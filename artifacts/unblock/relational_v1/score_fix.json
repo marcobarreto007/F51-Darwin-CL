@@ -1,0 +1,196 @@
+{
+  "counts": {
+    "paraphrase": {
+      "n": 112,
+      "exact": 105,
+      "limit": 0
+    },
+    "inverse": {
+      "n": 112,
+      "exact": 44,
+      "limit": 1
+    },
+    "composition": {
+      "n": 128,
+      "exact": 3,
+      "limit": 0
+    },
+    "false_premise": {
+      "n": 192,
+      "exact": 5,
+      "limit": 25
+    }
+  },
+  "examples": {
+    "paraphrase": [
+      {
+        "answer": "Oslo",
+        "span": "Bolt-7 is located in Oslo, Norway.",
+        "raw": " Bolt-7 is located in Oslo, Norway.",
+        "limit": false
+      },
+      {
+        "answer": "Oslo",
+        "span": "Bolt-7 is located in Oslo, Norway.",
+        "raw": " Bolt-7 is located in Oslo, Norway.",
+        "limit": false
+      },
+      {
+        "answer": "Oslo",
+        "span": "Bolt-7 is filed in the United States Patent and Trademark Office (USPTO).",
+        "raw": " Bolt-7 is filed in the United States Patent and Trademark Office (USPTO).\n\n",
+        "limit": false
+      },
+      {
+        "answer": "Oslo",
+        "span": "Bolt-7 is located in Oslo.",
+        "raw": " Bolt-7 is located in Oslo.\n\n",
+        "limit": false
+      },
+      {
+        "answer": "kiln",
+        "span": "The tool listed for Kite-3 is kiln.",
+        "raw": " The tool listed for Kite-3 is kiln.",
+        "limit": false
+      }
+    ],
+    "inverse": [
+      {
+        "answer": "Nex-41",
+        "span": "Nex-41 tool is chisel.",
+        "raw": " Nex-41 tool is chisel.",
+        "limit": false
+      },
+      {
+        "answer": "Nex-41",
+        "span": "Nex-41 maker is Lina.",
+        "raw": " Nex-41 maker is Lina.",
+        "limit": false
+      },
+      {
+        "answer": "Nex-41",
+        "span": "Nex-41 tool is chisel.",
+        "raw": " Nex-41 tool is chisel.",
+        "limit": false
+      },
+      {
+        "answer": "Nex-41",
+        "span": "Lina",
+        "raw": " Lina\n\n",
+        "limit": false
+      },
+      {
+        "answer": "Nex-41",
+        "span": "Nex-41 maker is Lina.",
+        "raw": " Nex-41 maker is Lina.\n\n",
+        "limit": false
+      }
+    ],
+    "composition": [
+      {
+        "answer": "Lina and Vera",
+        "span": "Nex-41 maker is Lina and Kite-3 maker is Vera.",
+        "raw": " Nex-41 maker is Lina and Kite-3 maker is Vera.",
+        "limit": false
+      },
+      {
+        "answer": "Lina and Vera",
+        "span": "Nex-41 maker is Lina, Kite-3 maker is Vera.",
+        "raw": " Nex-41 maker is Lina, Kite-3 maker is Vera.",
+        "limit": false
+      },
+      {
+        "answer": "Lina and Bern",
+        "span": "Nex-41 maker is Lina and Kite-3 city is Bern.",
+        "raw": " Nex-41 maker is Lina and Kite-3 city is Bern.",
+        "limit": false
+      },
+      {
+        "answer": "Lina and Bern",
+        "span": "Nex-41 maker is Lina, and Kite-3 city is Bern.",
+        "raw": " Nex-41 maker is Lina, and Kite-3 city is Bern.",
+        "limit": false
+      },
+      {
+        "answer": "Lina and ivory",
+        "span": "Nex-41 maker is Lina and Kite-3 color is ivory.",
+        "raw": " Nex-41 maker is Lina and Kite-3 color is ivory.",
+        "limit": false
+      }
+    ],
+    "false_premise": [
+      {
+        "answer": "false",
+        "span": "No, the record does not say that the maker of Nex-41 is Omar. The maker of Nex-4",
+        "raw": " No, the record does not say that the maker of Nex-41 is Omar. The maker of Nex-4",
+        "limit": true
+      },
+      {
+        "answer": "false",
+        "span": "False. Nex-41 maker is Lina.",
+        "raw": " False. Nex-41 maker is Lina.",
+        "limit": false
+      },
+      {
+        "answer": "false",
+        "span": "No, Nex-41 maker is Lina, not Omar.",
+        "raw": " No, Nex-41 maker is Lina, not Omar.",
+        "limit": false
+      },
+      {
+        "answer": "false",
+        "span": "No, the correct maker for Nex-41 is Lina, not Omar.",
+        "raw": " No, the correct maker for Nex-41 is Lina, not Omar.",
+        "limit": false
+      },
+      {
+        "answer": "false",
+        "span": "No, the claim is false. Nex-41 maker is Lina, not Omar.",
+        "raw": " No, the claim is false. Nex-41 maker is Lina, not Omar.",
+        "limit": false
+      }
+    ]
+  },
+  "ladder": [
+    {
+      "rung": "copiar",
+      "answer": "Lina",
+      "span": "Lina.",
+      "exact": true,
+      "raw": " Lina.\n\n"
+    },
+    {
+      "rung": "aresta",
+      "answer": "Lina",
+      "span": "Lina",
+      "exact": true,
+      "raw": " Lina\n\n"
+    },
+    {
+      "rung": "inverter",
+      "answer": "Nex-41",
+      "span": "Nex-41",
+      "exact": true,
+      "raw": " Nex-41"
+    },
+    {
+      "rung": "duas_arestas",
+      "answer": "Lina and Oslo",
+      "span": "Nex-41 maker is Lina and Bolt-7 city is Oslo.",
+      "exact": false,
+      "raw": " Nex-41 maker is Lina and Bolt-7 city is Oslo."
+    },
+    {
+      "rung": "falsa",
+      "answer": "false",
+      "span": "No, the maker of Nex-41 is Lina.",
+      "exact": false,
+      "raw": " No, the maker of Nex-41 is Lina.\n\n"
+    }
+  ],
+  "max_new_tokens": 24,
+  "stops": [
+    "\n",
+    "Question:"
+  ]
+}

@@ -1,0 +1,75 @@
+{
+  "x0s": {
+    "ranks": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      1
+    ],
+    "top1": 8,
+    "metrics": {
+      "overall_accuracy": 0.29347826086956524,
+      "paraphrase_accuracy": 0.225,
+      "reverse_accuracy": 0.25,
+      "false_premise_accuracy": 0.3125,
+      "distractor_accuracy": 0.5625,
+      "composition_accuracy": 0.0
+    },
+    "old": {
+      "A_language.jsonl": 0.9073412423901146,
+      "B_code.jsonl": 0.1952496692762361,
+      "C_mathematics.jsonl": 0.7827704334238046,
+      "D_factual.jsonl": 0.26150656495180524,
+      "E_reasoning.jsonl": 0.5780348040375405
+    }
+  },
+  "x2b": {
+    "ranks": [
+      1,
+      1,
+      1,
+      1,
+      1,
+      1,
+      2,
+      1
+    ],
+    "top1": 7,
+    "metrics": {
+      "overall_accuracy": 0.34782608695652173,
+      "paraphrase_accuracy": 0.5,
+      "reverse_accuracy": 0.1875,
+      "false_premise_accuracy": 0.0,
+      "distractor_accuracy": 0.5625,
+      "composition_accuracy": 0.0
+    }
+  },
+  "arm2": {
+    "ranks": [
+      1,
+      1,
+      49046,
+      1,
+      1,
+      1,
+      1,
+      3
+    ],
+    "top1": 6,
+    "metrics": {
+      "overall_accuracy": 0.43478260869565216,
+      "paraphrase_accuracy": 0.75,
+      "reverse_accuracy": 0.0,
+      "false_premise_accuracy": 0.0,
+      "distractor_accuracy": 0.625,
+      "composition_accuracy": 0.0
+    },
+    "mean_drift_vs_donor": 0.8001842466640436,
+    "worst_drift_vs_donor": 1.8855999777063965,
+    "fingerprint": "ce26eda8f172ce9d25021ebdcf075390aa1c956812327ede899ba29f31eceffb"
+  }
+}

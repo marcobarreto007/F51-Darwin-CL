@@ -1,0 +1,2 @@
+96784b78008a22c4a1ee2c9961640c22137320ef
+https://github.com/volotat/mini-AGI.git
