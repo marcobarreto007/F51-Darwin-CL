@@ -1258,3 +1258,21 @@ Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\RELATIONAL_SCORE_FIX.md
 PARAR.
 
 
+================================================================================
+AUDITORIA DO JUIZ RELACIONAL
+Decisao: BLOCKED_GENERALIZATION
+A nota 3/128 era artefato do exact match. Os bracos sem contexto continuam em 0/128.
+================================================================================
+
+Donor com fatos, juiz relacional: parafrase 111/112, inversao 65/112, composicao 94/128, premissa falsa 43/192.
+Exact match da mesma geracao: composicao continua 3/128.
+Fatos embaralhados: 256/370 acompanhados quando o gabarito muda.
+X0S, EXPERTS e ADAPTER sem fatos: composicao relacional 0/128.
+Experts reproduzidos: loss igual ao historico, canarios 7/8.
+Adapter reproduzido: passo 1 igual, depois divergiu, canarios 5/8.
+586 tokens de cross-entropy. Os 136 continuam sendo a KL antiga.
+Teste final nao consultado. ARM 3 nao executado.
+Relatorio: C:\Users\marco\Desktop\F51-Darwin-CL\reports\RELATIONAL_JUDGE_AUDIT.md
+PARAR.
+
+
